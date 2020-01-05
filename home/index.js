@@ -3,24 +3,16 @@ $(document).ready(function(){
   var language = $('#page').text();
 
   $('th').hover(function() {
-    $(this).css('background-color', '#380606');
-  });
-
-  $('th').hover(function() {
       $(this).css('background-color', '#380606')},
       function() {
         $(this).css('background-color', '')
   });
 
   $('td').hover(function() {
-      $(this).css('background-color', '#380606');
-    });
-
-    $('td').hover(function() {
-        $(this).css('background-color', '#380606')},
-        function() {
-          $(this).css('background-color', '')
-    });
+    $(this).css('background-color', '#eb4034')},
+    function() {
+      $(this).css('background-color', '')
+  });
 
 //  add effect of dropping down
   $( "#weddingHeader" ).click(function() {

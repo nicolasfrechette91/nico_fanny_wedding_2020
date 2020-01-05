@@ -1,5 +1,8 @@
-body {
-  background-color: powderblue;
+html{
+  background-color: white;
+  background-image: url("../pictures/background_header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 33%;
 }
 h1 {
   color: white;
