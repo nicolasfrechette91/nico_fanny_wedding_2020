@@ -1,0 +1,29 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: white;
+  background-color: black;
+}
+p {
+  color: black;
+}
+table {
+    table-layout:fixed;
+    width: 100%;
+}
+
+th {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-width: thin;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  color: black;
+  visibility: hidden;
+}
