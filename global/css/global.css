@@ -4,6 +4,10 @@ html{
   background-repeat: no-repeat;
   background-size: 100% 33%;
 }
+html, body{min-height:100%;}
+body{
+height:100vh;
+}
 h1 {
   color: white;
   background-color: black;
@@ -31,7 +35,7 @@ p.constructionTop {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  padding-top: 11%;
+  padding-top: 25vh;
   text-align: left;
 }
 
@@ -43,6 +47,8 @@ p.constructionBottom {
   font-weight: 700;
   line-height: 26.4px;
   text-align: right;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 th {
