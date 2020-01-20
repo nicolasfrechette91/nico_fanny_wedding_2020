@@ -35,7 +35,7 @@ p.constructionTop {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  padding-top: 25vh;
+  padding-top: 30vh;
   text-align: left;
 }
 
@@ -64,4 +64,15 @@ td {
   background-color: white;
   color: black;
   visibility: hidden;
+}
+
+div.plumber {
+    height:55vh;
+}
+
+.imageCentered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
 }
