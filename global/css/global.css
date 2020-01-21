@@ -8,10 +8,6 @@ html, body{min-height:100%;}
 body{
 height:100vh;
 }
-h1 {
-  color: white;
-  background-color: black;
-}
 h2 {
     font-size: 24px;
     font-style: normal;
@@ -26,6 +22,41 @@ p {
 table {
     table-layout:fixed;
     width: 100%;
+}
+
+p.mainTop1 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+p.mainTop2 {
+  font-family: 'Parisienne',cursive;
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+p.mainTop3 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
 }
 
 p.constructionTop {
