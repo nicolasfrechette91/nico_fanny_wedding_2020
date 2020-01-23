@@ -31,7 +31,7 @@ p.mainTop1 {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  padding-top: 30vh;
+  padding-top: 25vh;
   text-align: center;
 }
 
@@ -61,7 +61,7 @@ p.mainTop3 {
 
 p.constructionTop {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 24px;
+  font-size: 36px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -72,7 +72,7 @@ p.constructionTop {
 
 p.constructionBottom {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 24px;
+  font-size: 36px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -98,12 +98,24 @@ td {
 }
 
 div.plumber {
-    height:55vh;
+    height:45vh;
 }
 
-.imageCentered {
+div.mainMenuFrame {
+    height:35vh;
+}
+
+.imageCenteredPlumber {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height:100%;
+}
+
+.imageCenteredMainMenu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
 }
