@@ -119,3 +119,22 @@ div.mainMenuFrame {
     height: 100%;
     width: 100%;
 }
+
+.mobileNavBar {
+  color: white;
+  width: 10%;
+}
+
+.mobileNavBarSection a {
+  color: black;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 2vh;
+}
+
+.mobileNavBarSection a:hover {
+  background-color: #ddd;
+  color: black;
+}

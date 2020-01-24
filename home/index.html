@@ -3,6 +3,7 @@
     <head>
         <title>Fanny and Nico's Wedding</title>
         <link rel="stylesheet" href="../global/css/global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Parisienne&display=swap" rel="stylesheet">
         <script src="../global/jquery/jquery-3.4.1.min.js"></script>
         <script src="index.js"></script>
@@ -69,6 +70,19 @@
                 <td></td>
             </tr>
         </table>
+        <div class="mobile">
+            <div class="mobileNavBarSection">
+                <a href="javascript:void(0);" class="mobileNavBar" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="menus" hidden>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+        </div>
+
         <div class="mainMenuFrame">
             <img class="imageCenteredMainMenu" src="../global/pictures/pictureFrame.png" alt="awesome frame">
         </div>

@@ -10,6 +10,8 @@ $(document).ready(function(){
   if(isMobile){
     // hide or show css
     $('.desktop').hide();
+  } else {
+    $('.mobile').hide();
   }
 
   var language = $('#page').text();
@@ -121,3 +123,11 @@ $(document).ready(function(){
   });
 
 });
+
+function openMenu(){
+  if($("#menus").is(":visible")){
+    $('#menus').hide('slow');
+  } else{
+    $('#menus').slideDown(1000).show();
+  }
+}
