@@ -4,29 +4,28 @@ html{
   background-repeat: no-repeat;
   background-size: 100% 33%;
 }
-html, body{min-height:100%;}
-body{
-height:100vh;
+
+html, body {
+  min-height:100%;
 }
-h2 {
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
+
+body{
+  height:100vh;
 }
 
 p {
   color: black;
 }
+
 table {
     table-layout:fixed;
     width: 100%;
+    font-size: 20px;
 }
 
 p.mainTop1 {
   font-family: 'Berkshire Swash',cursive;
-  font-size: 24px;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -37,7 +36,7 @@ p.mainTop1 {
 
 p.mainTop2 {
   font-family: 'Parisienne',cursive;
-  font-size: 2em;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -51,12 +50,82 @@ p.mainTop2 {
 
 p.mainTop3 {
   font-family: 'Berkshire Swash',cursive;
-  font-size: 24px;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
   text-align: center;
+}
+
+th {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-width: thin;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  color: black;
+  visibility: hidden;
+}
+
+div.mainMenuFrame {
+    height:35vh;
+}
+
+.imageCenteredMainMenu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+}
+
+p.mobileMenus {
+    font-size: 28px;
+}
+
+p.mobileMenus:hover {
+    background-color: #eb4034;
+}
+
+p.mobileSubMenus {
+    font-size: 22px;
+    padding-left: 8vh;
+}
+
+.mobileNavBar {
+  width: 10%;
+}
+
+.mobileNavBarSection a {
+  color: black;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  margin-bottom: 2vh;
+}
+
+.mobileNavBarSection a:hover {
+  color: black;
+}
+
+/* UnderConstruction Exclusive css */
+
+div.plumber {
+    height:45vh;
+}
+
+.imageCenteredPlumber {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
 }
 
 p.constructionTop {
@@ -80,61 +149,4 @@ p.constructionBottom {
   text-align: right;
   padding-top: 5vh;
   padding-bottom: 5vh;
-}
-
-th {
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-width: thin;
-}
-
-td {
-  border: 1px solid black;
-  text-align: center;
-  background-color: white;
-  color: black;
-  visibility: hidden;
-}
-
-div.plumber {
-    height:45vh;
-}
-
-div.mainMenuFrame {
-    height:35vh;
-}
-
-.imageCenteredPlumber {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height:100%;
-}
-
-.imageCenteredMainMenu {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 100%;
-}
-
-.mobileNavBar {
-  color: white;
-  width: 10%;
-}
-
-.mobileNavBarSection a {
-  color: black;
-  padding: 4px 6px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  margin-bottom: 2vh;
-}
-
-.mobileNavBarSection a:hover {
-  background-color: #ddd;
-  color: black;
 }

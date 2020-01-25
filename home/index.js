@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   var isMobile = false; //initiate as false
   // device detection
   if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
@@ -16,6 +15,39 @@ $(document).ready(function(){
 
   var language = $('#page').text();
 
+ // Mobile Exclusive
+  // Menus functions
+  $( "#weddingHeaderMobile" ).click(function() {
+      $('p.mobileSubMenus:visible').each(function () {
+        $(this).hide('slow');
+      });
+      $('.wedding').slideDown(500).show();
+  });
+
+  $( "#brideHeaderMobile" ).click(function() {
+    $('p.mobileSubMenus:visible').each(function () {
+      $(this).hide('slow');
+    });
+    $('.bride').slideDown(500).show();
+  });
+
+  $( "#groomHeaderMobile" ).click(function() {
+      $('p.mobileSubMenus:visible').each(function () {
+        $(this).hide('slow');
+      });
+      $('.groom').slideDown(500).show();
+   });
+
+    $( "#languageHeaderMobile" ).click(function() {
+      $('p.mobileSubMenus:visible').each(function () {
+        $(this).hide('slow');
+      });
+      $('.language').slideDown(500).show();
+    });
+
+ // Desktop exclusive
+
+ // Menus functions
   $('th').hover(function() {
       $(this).css('background-color', '#380606')},
       function() {
@@ -28,7 +60,6 @@ $(document).ready(function(){
       $(this).css('background-color', '')
   });
 
-//  add effect of dropping down
   $( "#weddingHeader" ).click(function() {
     $('td:visible').each(function () {
       $(this).css('visibility', 'hidden');
@@ -57,68 +88,70 @@ $(document).ready(function(){
     $('.language').css('visibility', 'visible');
   });
 
+  // Global
+
   //Page redirection
-  $('#coupleHeader').click(function() {
+  $("[id^='coupleHeader']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#ceremony').click(function() {
+  $("[id^='ceremony']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#party').click(function() {
+ $("[id^='party']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#hotels').click(function() {
+  $("[id^='hotels']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#gifts').click(function() {
+  $("[id^='gifts']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#teamBride').click(function() {
+  $("[id^='teamBride']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#bachelorette').click(function() {
+  $("[id^='bachelorette']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#teamGroom').click(function() {
+  $("[id^='teamGroom']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#bachelor').click(function() {
+  $("[id^='bachelor']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#godParentsHeader').click(function() {
+  $("[id^='godParentsHeader']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#cheesyHeader').click(function() {
+  $("[id^='cheesyHeader']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#picturesHeader').click(function() {
+  $("[id^='picturesHeader']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#contactHeader').click(function() {
+  $("[id^='contactHeader']").click(function() {
     window.location.href = "../underConstruction" + language + ".html";
   });
 
-  $('#espanol').click(function() {
+  $("[id^='espanol']").click(function() {
     window.location.href = "index_es.html";
   });
 
-  $('#english').click(function() {
+  $("[id^='english']").click(function() {
     window.location.href = "index.html";
   });
 
-  $('#french').click(function() {
+  $("[id^='french']").click(function() {
     window.location.href = "index_fr.html";
   });
 

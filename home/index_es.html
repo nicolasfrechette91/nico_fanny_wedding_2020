@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Basic Web Page</title>
+    <title>Fanny Y Nico Boda</title>
     <link rel="stylesheet" href="../global/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Parisienne&display=swap" rel="stylesheet">
     <script src="../global/jquery/jquery-3.4.1.min.js"></script>
     <script src="index.js"></script>
   </head>
@@ -47,7 +49,7 @@
       </tr>
       <tr>
         <td></td>
-        <td id="hotels" class="wedding">Hotels</td>
+        <td id="hotels" class="wedding">Hoteles</td>
         <td></td>
         <td></td>
         <td></td>
@@ -58,7 +60,7 @@
       </tr>
       <tr>
         <td></td>
-        <td id="gifts" class="wedding">Gifts</td>
+        <td id="gifts" class="wedding">Regalos</td>
         <td></td>
         <td></td>
         <td></td>
@@ -68,6 +70,37 @@
         <td></td>
       </tr>
     </table>
+
+    <div class="mobile">
+      <div class="mobileNavBarSection">
+        <a href="javascript:void(0);" class="mobileNavBar" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div id="menus" hidden>
+          <p id="languageHeaderMobile" class="mobileMenus">Language</p>
+          <p id="espanolMobile" class="mobileSubMenus language" hidden>Español</p>
+          <p id="englishMobile" class="mobileSubMenus language" hidden>English</p>
+          <p id="frenchMobile" class="mobileSubMenus language" hidden>Français</p>
+          <p id="coupleHeaderMobile" class="mobileMenus">La Pareja</p>
+          <p id="weddingHeaderMobile" class="mobileMenus">La Boda</p>
+          <p id="ceremonyMobile" class="mobileSubMenus wedding" hidden>Ceremonia Religiosa</p>
+          <p id="partyMobile" class="mobileSubMenus wedding" hidden>Fiesta</p>
+          <p id="hotelsMobile" class="mobileSubMenus wedding" hidden>Hoteles</p>
+          <p id="giftsMobile" class="mobileSubMenus wedding" hidden>Regalos</p>
+          <p id="brideHeaderMobile" class="mobileMenus">Bride</p>
+          <p id="teamBrideMobile" class="mobileSubMenus bride" hidden>Team Bride</p>
+          <p id="bacheloretteMobile" class="mobileSubMenus bride" hidden>Despedida de Soltera</p>
+          <p id="groomHeaderMobile" class="mobileMenus">Groom</p>
+          <p id="teamGroomMobile" class="mobileSubMenus groom" hidden>Team Groom</p>
+          <p id="bachelorMobile" class="mobileSubMenus groom" hidden>Despedida de Soltero</p>
+          <p id="godParentsHeaderMobile" class="mobileMenus">Padrinos</p>
+          <p id="cheesyHeaderMobile" class="mobileMenus">Cosas Cursi</p>
+          <p id="picturesHeaderMobile" class="mobileMenus">Fotos de Boda</p>
+          <p id="contactHeaderMobile" class="mobileMenus">Contáctanos</p>
+        </div>
+      </div>
+    </div>
+
     <div class="mainMenuFrame">
       <img class="imageCenteredMainMenu" src="../global/pictures/pictureFrame.png" alt="awesome frame">
     </div>
