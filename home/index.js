@@ -18,74 +18,140 @@ $(document).ready(function(){
  // Mobile Exclusive
   // Menus functions
   $( "#weddingHeaderMobile" ).click(function() {
-      $('p.mobileSubMenus:visible').each(function () {
-        $(this).hide('slow');
-      });
-      $('.wedding').slideDown(500).show();
+     if(!$('p.mobileSubMenus.wedding').is(":visible")){
+       $('p.mobileSubMenus:visible').each(function () {
+         $(this).hide('slow');
+       });
+       $('.wedding').slideDown(500).show();
+     } else {
+        $('p.mobileSubMenus:visible').each(function () {
+          $(this).hide('slow');
+        });
+        $(this).css('background-color', '#ffffff');
+     }
   });
 
   $( "#brideHeaderMobile" ).click(function() {
-    $('p.mobileSubMenus:visible').each(function () {
-      $(this).hide('slow');
-    });
-    $('.bride').slideDown(500).show();
+      if(!$('p.mobileSubMenus.bride').is(":visible")){
+        $('p.mobileSubMenus:visible').each(function () {
+          $(this).hide('slow');
+        });
+        $('.bride').slideDown(500).show();
+      } else {
+        $('p.mobileSubMenus:visible').each(function () {
+          $(this).hide('slow');
+        });
+        $(this).css('background-color', '#ffffff');
+      }
   });
 
   $( "#groomHeaderMobile" ).click(function() {
+    if(!$('p.mobileSubMenus.groom').is(":visible")){
       $('p.mobileSubMenus:visible').each(function () {
         $(this).hide('slow');
       });
       $('.groom').slideDown(500).show();
+    } else {
+        $('p.mobileSubMenus:visible').each(function () {
+          $(this).hide('slow');
+        });
+        $(this).css('background-color', '#ffffff');
+    }
    });
 
     $( "#languageHeaderMobile" ).click(function() {
-      $('p.mobileSubMenus:visible').each(function () {
-        $(this).hide('slow');
-      });
-      $('.language').slideDown(500).show();
+      if(!$('p.mobileSubMenus.language').is(":visible")){
+        $('p.mobileSubMenus:visible').each(function () {
+          $(this).hide('slow');
+        });
+        $('.language').slideDown(500).show();
+      } else {
+        $('p.mobileSubMenus:visible').each(function () {
+          $(this).hide('slow');
+        });
+        $(this).css('background-color', '#ffffff');
+      }
     });
 
  // Desktop exclusive
+
+ var currentMenu = '';
 
  // Menus functions
   $('th').hover(function() {
       $(this).css('background-color', '#380606')},
       function() {
-        $(this).css('background-color', '')
+        $(this).css('background-color', '');
   });
 
   $('td').hover(function() {
     $(this).css('background-color', '#eb4034')},
     function() {
-      $(this).css('background-color', '')
+      $(this).css('background-color', '');
   });
 
   $( "#weddingHeader" ).click(function() {
-    $('td:visible').each(function () {
-      $(this).css('visibility', 'hidden');
-    });
-    $('.wedding').css('visibility', 'visible');
+    if(currentMenu === $(this).attr("id")){
+      $('td:visible').each(function () {
+        $(this).css('visibility', 'hidden');
+      });
+      currentMenu = '';
+    } else {
+      $('td:visible').each(function () {
+        $(this).css('visibility', 'hidden');
+      });
+
+      $('.wedding').css('visibility', 'visible');
+       currentMenu = $(this).attr("id");
+    }
   });
 
   $( "#brideHeader" ).click(function() {
-    $('td:visible').each(function () {
-      $(this).css('visibility', 'hidden');
-    });
-    $('.bride').css('visibility', 'visible');
+     if(currentMenu === $(this).attr("id")){
+       $('td:visible').each(function () {
+         $(this).css('visibility', 'hidden');
+       });
+       currentMenu = '';
+     } else {
+      $('td:visible').each(function () {
+        $(this).css('visibility', 'hidden');
+      });
+
+      $('.bride').css('visibility', 'visible');
+       currentMenu = $(this).attr("id");
+     }
   });
 
   $( "#groomHeader" ).click(function() {
-    $('td:visible').each(function () {
+    if(currentMenu === $(this).attr("id")){
+       $('td:visible').each(function () {
+         $(this).css('visibility', 'hidden');
+       });
+       currentMenu = '';
+    } else {
+      $('td:visible').each(function () {
         $(this).css('visibility', 'hidden');
-    });
-    $('.groom').css('visibility', 'visible');
+      });
+
+      $('.groom').css('visibility', 'visible');
+       currentMenu = $(this).attr("id");
+    }
   });
 
   $( "#languageHeader" ).click(function() {
-    $('td:visible').each(function () {
-      $(this).css('visibility', 'hidden');
-    });
-    $('.language').css('visibility', 'visible');
+    if(currentMenu === $(this).attr("id")){
+       $('td:visible').each(function () {
+         $(this).css('visibility', 'hidden');
+       });
+       currentMenu = '';
+    } else {
+      $('td:visible').each(function () {
+        $(this).css('visibility', 'hidden');
+      });
+
+      $('.language').css('visibility', 'visible');
+       currentMenu = $(this).attr("id");
+    }
   });
 
   // Global
