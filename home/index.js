@@ -158,55 +158,55 @@ $(document).ready(function(){
 
   //Page redirection
   $("[id^='coupleHeader']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='ceremony']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
  $("[id^='party']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='hotels']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='gifts']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='teamBride']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='bachelorette']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='teamGroom']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='bachelor']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='godParentsHeader']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='cheesyHeader']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='picturesHeader']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='contactHeader']").click(function() {
-    window.location.href = "../underConstruction" + language + ".html";
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
   $("[id^='espanol']").click(function() {
