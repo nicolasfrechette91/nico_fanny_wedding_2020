@@ -23,7 +23,7 @@ table {
     font-size: 20px;
 }
 
-p.mainTop1 {
+p.mainDesktopTop1 {
   font-family: 'Berkshire Swash',cursive;
   font-size: 40px;
   font-style: normal;
@@ -34,7 +34,7 @@ p.mainTop1 {
   text-align: center;
 }
 
-p.mainTop2 {
+p.mainDesktopTop2 {
   font-family: 'Parisienne',cursive;
   font-size: 40px;
   font-style: normal;
@@ -48,9 +48,44 @@ p.mainTop2 {
   padding-bottom: 1vh;
 }
 
-p.mainTop3 {
+p.mainDesktopTop3 {
   font-family: 'Berkshire Swash',cursive;
   font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+p.mainMobileTop1 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 80px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 25vh;
+  text-align: center;
+}
+
+p.mainMobileTop2 {
+  font-family: 'Parisienne',cursive;
+  font-size: 60px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+p.mainMobileTop3 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 36px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -86,7 +121,7 @@ div.mainMenuFrame {
 }
 
 p.mobileMenus {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 p.mobileMenus:hover {
@@ -94,7 +129,7 @@ p.mobileMenus:hover {
 }
 
 p.mobileSubMenus {
-    font-size: 22px;
+    font-size: 18px;
     padding-left: 8vh;
 }
 
