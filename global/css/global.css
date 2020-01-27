@@ -164,7 +164,7 @@ div.plumber {
 }
 
 p.constructionTop {
-  font-family: 'Century Gothic','Futura','Didact Gothic';
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 36px;
   font-style: normal;
   font-variant: normal;
@@ -175,7 +175,7 @@ p.constructionTop {
 }
 
 p.constructionTopFrench {
-  font-family: 'Century Gothic','Futura','Didact Gothic';
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 31px;
   font-style: normal;
   font-variant: normal;
