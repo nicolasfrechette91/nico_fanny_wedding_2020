@@ -185,3 +185,39 @@ p.constructionBottom {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
+
+/* contactUs Exclusive css */
+
+p.contactHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+}
+
+p.contactTop {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 5vh;
+  text-align: left;
+}
+
+p.contactBottom {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}

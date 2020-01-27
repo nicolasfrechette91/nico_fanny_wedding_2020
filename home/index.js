@@ -206,7 +206,7 @@ $(document).ready(function(){
   });
 
   $("[id^='contactHeader']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../contactUS/contactUs" + language + ".html";
   });
 
   $("[id^='espanol']").click(function() {
