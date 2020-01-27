@@ -212,7 +212,7 @@ $(document).ready(function(){
   });
 
   $("[id^='contactHeader']").click(function() {
-    window.location.href = "../contactUS/contactUs" + language + ".html";
+    window.location.href = "../contactUs/contactUs" + language + ".html";
   });
 
   $("[id^='espanol']").click(function() {
