@@ -16,6 +16,12 @@ $(document).ready(function(){
   var language = $('#page').text();
 
  // Mobile Exclusive
+  $('#menuButtons').click(function() {
+    $('p.mobileSubMenus:visible').each(function () {
+      $(this).hide();
+    });
+  });
+
   // Menus functions
   $( "#weddingHeaderMobile" ).click(function() {
      if(!$('p.mobileSubMenus.wedding').is(":visible")){

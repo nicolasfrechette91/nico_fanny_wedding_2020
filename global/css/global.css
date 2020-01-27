@@ -221,3 +221,14 @@ p.contactBottom {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
+
+div.contact {
+    height:45vh;
+}
+
+.imageContact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
