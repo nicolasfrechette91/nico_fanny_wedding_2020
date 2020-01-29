@@ -109,15 +109,25 @@ td {
 }
 
 div.mainMenuFrame {
+    height:100vh;
+}
+
+div.mainMenuFrameMobile {
     height:35vh;
 }
 
 .imageCenteredMainMenu {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 33%;
     height: 100%;
-    width: 100%;
+}
+
+.imageCenteredMainMenuMobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 49%;
+    height: 100%;
 }
 
 p.mobileMenus {
