@@ -23,6 +23,20 @@ $(document).ready(function(){
   });
 
   // Menus functions
+  $( "#coupleHeaderMobile" ).click(function() {
+       if(!$('p.mobileSubMenus.couple').is(":visible")){
+         $('p.mobileSubMenus:visible').each(function () {
+           $(this).hide('slow');
+         });
+         $('.couple').slideDown(500).show();
+       } else {
+          $('p.mobileSubMenus:visible').each(function () {
+            $(this).hide('slow');
+          });
+          $(this).css('background-color', '#ffffff');
+       }
+    });
+
   $( "#weddingHeaderMobile" ).click(function() {
      if(!$('p.mobileSubMenus.wedding').is(":visible")){
        $('p.mobileSubMenus:visible').each(function () {
@@ -65,6 +79,20 @@ $(document).ready(function(){
     }
    });
 
+   $( "#travelHeaderMobile" ).click(function() {
+       if(!$('p.mobileSubMenus.travel').is(":visible")){
+         $('p.mobileSubMenus:visible').each(function () {
+           $(this).hide('slow');
+         });
+         $('.travel').slideDown(500).show();
+       } else {
+           $('p.mobileSubMenus:visible').each(function () {
+             $(this).hide('slow');
+           });
+           $(this).css('background-color', '#ffffff');
+       }
+      });
+
     $( "#languageHeaderMobile" ).click(function() {
       if(!$('p.mobileSubMenus.language').is(":visible")){
         $('p.mobileSubMenus:visible').each(function () {
@@ -95,6 +123,22 @@ $(document).ready(function(){
     function() {
       $(this).css('background-color', '');
   });
+
+  $( "#coupleHeader" ).click(function() {
+      if(currentMenu === $(this).attr("id")){
+        $('td:visible').each(function () {
+          $(this).css('visibility', 'hidden');
+        });
+        currentMenu = '';
+      } else {
+        $('td:visible').each(function () {
+          $(this).css('visibility', 'hidden');
+        });
+
+        $('.couple').css('visibility', 'visible');
+         currentMenu = $(this).attr("id");
+      }
+    });
 
   $( "#weddingHeader" ).click(function() {
     if(currentMenu === $(this).attr("id")){
@@ -144,6 +188,22 @@ $(document).ready(function(){
     }
   });
 
+  $( "#travelHeader" ).click(function() {
+    if(currentMenu === $(this).attr("id")){
+       $('td:visible').each(function () {
+         $(this).css('visibility', 'hidden');
+       });
+       currentMenu = '';
+    } else {
+      $('td:visible').each(function () {
+        $(this).css('visibility', 'hidden');
+      });
+
+      $('.travel').css('visibility', 'visible');
+       currentMenu = $(this).attr("id");
+    }
+  });
+
   $( "#languageHeader" ).click(function() {
     if(currentMenu === $(this).attr("id")){
        $('td:visible').each(function () {
@@ -163,7 +223,11 @@ $(document).ready(function(){
   // Global
 
   //Page redirection
-  $("[id^='coupleHeader']").click(function() {
+  $("[id^='meetCouple']").click(function() {
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+  });
+
+  $("[id^='cheesy']").click(function() {
     window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
@@ -175,7 +239,15 @@ $(document).ready(function(){
     window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
+  $("[id^='airplane']").click(function() {
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+  });
+
   $("[id^='hotels']").click(function() {
+    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+  });
+
+  $("[id^='whatToDo']").click(function() {
     window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
@@ -200,10 +272,6 @@ $(document).ready(function(){
   });
 
   $("[id^='godParentsHeader']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
-  });
-
-  $("[id^='cheesyHeader']").click(function() {
     window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
