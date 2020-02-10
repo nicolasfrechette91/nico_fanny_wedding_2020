@@ -1,3 +1,4 @@
+/*Global*/
 html{
   background-color: white;
   background-image: url("../pictures/background_header.png");
@@ -22,6 +23,8 @@ table {
     width: 100%;
     font-size: 20px;
 }
+
+/*Main Exclusive css*/
 
 p.mainDesktopTop1 {
   font-family: 'Berkshire Swash',cursive;
@@ -93,14 +96,14 @@ p.mainMobileTop3 {
   text-align: center;
 }
 
-th {
+th.main {
   background-color: black;
   color: white;
   text-align: center;
   border-width: thin;
 }
 
-td {
+td.main {
   border: 1px solid black;
   text-align: center;
   background-color: white;
@@ -260,6 +263,80 @@ div.contact {
 }
 
 .imageContact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:80%;
+}
+
+/* airplane Exclusive css */
+
+p.airplaneHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+  padding-left: 2vh;
+}
+
+p.airplaneTop {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  background-color: #f6c09c;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+p.airplaneMiddle {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+p.airplaneLink {
+    text-align: right !important;
+}
+
+/*p.airplaneBottom {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}*/
+
+th.airplane {
+    text-align: center;
+}
+
+.airplaneButton {
+    border-color: #f6c09c;
+    background-color: white;
+    font-size: 28px;
+    border-style: solid;
+    border-width: thick;
+}
+
+.imageAirplane {
     display: block;
     margin-left: auto;
     margin-right: auto;

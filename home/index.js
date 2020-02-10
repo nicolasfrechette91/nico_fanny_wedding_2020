@@ -118,8 +118,9 @@ $(document).ready(function(){
         $(this).css('background-color', '');
   });
 
-  $('td').hover(function() {
-    $(this).css('background-color', '#eb4034')},
+  $('td.main').hover(function() {
+    $(this).css('background-color', '#eb4034')
+    },
     function() {
       $(this).css('background-color', '');
   });
@@ -240,7 +241,7 @@ $(document).ready(function(){
   });
 
   $("[id^='airplane']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+   window.location.href = "../airplane/airplane" + language + ".html";
   });
 
   $("[id^='hotels']").click(function() {
