@@ -245,7 +245,7 @@ $(document).ready(function(){
   });
 
   $("[id^='hotels']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../hotel/hotel" + language + ".html";
   });
 
   $("[id^='whatToDo']").click(function() {

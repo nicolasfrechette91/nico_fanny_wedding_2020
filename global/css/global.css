@@ -342,3 +342,120 @@ th.airplane {
     margin-right: auto;
     height:80%;
 }
+
+/* hotel Exclusive css */
+
+div.hotelSpacer {
+    padding-top: 5vh;
+}
+
+p.hotelHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+  padding-left: 2vh;
+}
+
+p.hotelTop {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  background-color: #f6c09c;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+p.hotelMiddle {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+p.hotelLink {
+    text-align: right !important;
+}
+
+/*p.hotelBottom {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}*/
+
+th.hotel {
+    text-align: center;
+}
+
+td.hotelVertical {
+    text-align: center;
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    margin: 2vh;
+    padding: 4vh;
+}
+
+td.hotelHorizontal {
+    text-align: center;
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+td.hotelHeaderTable {
+    background-color: #f6c09c;
+    padding: 1vh;
+}
+
+td.hotelRowTable {
+    background-color: #faddca;
+    padding: 1vh;
+}
+
+.hotelButton {
+    border-color: #f6c09c;
+    background-color: white;
+    font-size: 28px;
+    border-style: solid;
+    border-width: thick;
+}
+
+.imageHotel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:80%;
+}
+
+.imageHotelLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+}
