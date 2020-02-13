@@ -458,6 +458,17 @@ td.hotelRowTable {
     border-width: thick;
 }
 
+.hotelButtonMobile {
+    border-color: #f6c09c;
+    background-color: white;
+    font-size: 36px;
+    font-weight: 700;
+    border-style: solid;
+    border-width: thick;
+    margin-left: 2vh;
+    height: 5vh;
+}
+
 .imageHotel {
     display: block;
     margin-left: auto;

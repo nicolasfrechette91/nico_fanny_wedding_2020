@@ -10,6 +10,8 @@ $(document).ready(function(){
        window.location.href = $(this).attr('href');
     });*/
 
+    showHideMobile(isMobile);
+
    $('#realPlazaButton').click(function() {
      $('.medrano').hide();
      $('.realPlaza').show();
@@ -24,6 +26,22 @@ $(document).ready(function(){
      showHideMobile(isMobile);
      $(this).css('background-color', '#eb4034');
      $('#realPlazaButton').css('background-color', '');
+   });
+
+   $('#realPlazaButtonMobile').click(function() {
+     $('.medrano').hide();
+     $('.realPlaza').show();
+     showHideMobile(isMobile);
+     $(this).css('background-color', '#eb4034');
+     $('#medranoButtonMobile').css('background-color', '');
+   });
+
+   $('#medranoButtonMobile').click(function() {
+     $('.realPlaza').hide();
+     $('.medrano').show();
+     showHideMobile(isMobile);
+     $(this).css('background-color', '#eb4034');
+     $('#realPlazaButtonMobile').css('background-color', '');
    });
 });
 
