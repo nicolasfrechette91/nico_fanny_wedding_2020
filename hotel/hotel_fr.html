@@ -7,164 +7,280 @@
     <script src="../global/jquery/jquery-3.4.1.min.js"></script>
     <script src="hotel.js"></script>
 </head>
-<body>
-<p class="hotelHeader">Recommended Hotels</p>
+    <body>
+        <p class="hotelHeader">Recommended Hotels</p>
 
-<p class="hotelTop">For your stay, we have asked for the information of two possible hotels in Aguascalientes. The prices that are mentioned in this page are the current normal price.
-    However, depending on the number of rooms that will be booked, the hotel has agreed to provide some discount (this will be around 10 dollars and to be confirmed).
-    <br/><br/>
-    Please see below the information of each hotel and let us know which one will work better for you. As well, we could arrange to group some people, so people can stay in the quadruple rooms.
-</p>
+        <p class="hotelTop">Pour votre séjour, nous avons demandé de l'information à 2 hôtels ce trouvant près de l'évènement. Les prix mentionnés dans cette page sont les prix réguliers.
+            Cependant, dépendant du nombre de chambre qui seront réservées, l'hôtel à accepté d'inclure des rabais. (Ça serait environ 10$ de rabais, mais ce n'est pas guarantie pour le moment).
+            <br/><br/>
+            Veuillez consulter l'information de chaque hôtel et laissez-nous savoir lequel serait meilleur pour vous. Également, nous pouvons aider à former des groupes pour pouvoir séparer une chambre à 4 personne.
+        </p>
 
-<br>
-<table class="cityButtons">
-    <tr>
-        <th class="hotel"><button type="button" id="realPlazaButton" class="hotelButton">Hotel Real Plaza Aguascalientes</button></th>
-        <th class="hotel"><button type="button" id="medranoButton" class="hotelButton">Hotel Medrano</button></th>
-    </tr>
-</table>
-
-
-<p class="realPlaza hotelMiddle" hidden><a href="http://www.english.realplaza.com.mx/" target="_blank">Hotel Real Plaza</a></p>
-
-<div class="realPlaza hotel hotelSpacer" hidden>
-    <table>
-        <tr>
-            <td rowspan="6"><img class="imageHotelLogo" src="../global/pictures/hotel/hotel_realPlaza.png" alt="awesome couple"></td>
-            <td></td>
-            <td class="hotelHeaderTable"></td>
-            <td class="hotelHorizontal hotelHeaderTable" colspan="2">Price per room per night</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelHeaderTable">Type of Room</td>
-            <td class="hotelHorizontal hotelHeaderTable">MXN</td>
-            <td class="hotelHorizontal hotelHeaderTable">CAD</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Single</td>
-            <td class="hotelHorizontal hotelRowTable">860</td>
-            <td class="hotelHorizontal hotelRowTable">61</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Double</td>
-            <td class="hotelHorizontal hotelRowTable">860</td>
-            <td class="hotelHorizontal hotelRowTable">61</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Triple</td>
-            <td class="hotelHorizontal hotelRowTable">900</td>
-            <td class="hotelHorizontal hotelRowTable">64</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Quadruple</td>
-            <td class="hotelHorizontal hotelRowTable">940</td>
-            <td class="hotelHorizontal hotelRowTable">67</td>
-        </tr>
-    </table>
-</div>
-
-<div class="realPlaza hotel hotelSpacer" hidden>
-    <table>
-        <tr>
-            <td class="hotelHorizontal">Distance from hotel to venue</td>
-            <td class="hotelVertical">Distance from hotel to ceremony</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="hotel">
-                    <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza2.png" alt="awesome couple">
-                </div>
-            </td>
-            <td>
-                <div class="hotel">
-                    <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza3.png" alt="awesome couple">
-                </div>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="realPlaza hotel hotelSpacer" hidden>
-    <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza4.png" alt="awesome couple">
-</div>
-
-<!-- Medrano  -->
-
-<p class="medrano hotelMiddle" hidden><a href="https://www.hotelmedrano.com" target="_blank">Hotel Medrano</a></p>
-
-<div class="medrano hotel hotelSpacer" hidden>
-    <table>
-        <tr>
-            <td rowspan="6"><img class="imageHotelLogo" src="../global/pictures/hotel/hotel_medrano.png" alt="awesome couple"></td>
-            <td></td>
-            <td class="hotelHeaderTable"></td>
-            <td class="hotelHorizontal hotelHeaderTable" colspan="2">Price per room per night</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelHeaderTable">Type of Room</td>
-            <td class="hotelHorizontal hotelHeaderTable">MXN</td>
-            <td class="hotelHorizontal hotelHeaderTable">CAD</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Single</td>
-            <td class="hotelHorizontal hotelRowTable">898</td>
-            <td class="hotelHorizontal hotelRowTable">64</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Double</td>
-            <td class="hotelHorizontal hotelRowTable">898</td>
-            <td class="hotelHorizontal hotelRowTable">64</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Triple</td>
-            <td class="hotelHorizontal hotelRowTable">1048</td>
-            <td class="hotelHorizontal hotelRowTable">75</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="hotelHorizontal hotelRowTable">Quadruple</td>
-            <td class="hotelHorizontal hotelRowTable">1198</td>
-            <td class="hotelHorizontal hotelRowTable">85</td>
-        </tr>
-    </table>
-</div>
-
-<div class="hotelSpacer">
-    <table>
-        <tr>
-            <td class="medrano hotelHorizontal" hidden>Distance from hotel to venue</td>
-            <td class="medrano hotelVertical" hidden>Distance from hotel to ceremony</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="medrano hotel" hidden>
-                    <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano2.png" alt="awesome couple">
-                </div>
-            </td>
-            <td>
-                <div class="medrano hotel" hidden>
-                    <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano3.png" alt="awesome couple">
-                </div>
-            </td>
-        </tr>
-    </table>
-</div>
+        <br>
+        <table class="cityButtons">
+            <tr>
+                <th class="hotel"><button type="button" id="realPlazaButton" class="hotelButton">Hôtel Real Plaza Aguascalientes</button></th>
+                <th class="hotel"><button type="button" id="medranoButton" class="hotelButton">Hôtel Medrano</button></th>
+            </tr>
+        </table>
 
 
-<div class="medrano hotel hotelSpacer" hidden>
-    <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano4.png" alt="awesome couple">
-</div>
-<!--    <p class="airplaneBottom" hidden>Button Next Page </p>-->
+        <p class="realPlaza hotelMiddle" hidden><a href="http://www.english.realplaza.com.mx/" target="_blank">Hôtel Real Plaza</a></p>
+
+        <div class="realPlaza hotelSpacer desktop" hidden>
+            <table>
+                <tr>
+                    <td rowspan="6"><img class="imageHotelLogo" src="../global/pictures/hotel/hotel_realPlaza.png" alt="awesome couple"></td>
+                    <td></td>
+                    <td class="hotelHeaderTable"></td>
+                    <td class="hotelHorizontal hotelHeaderTable" colspan="2">Coût par chambre par nuit</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
+                    <td class="hotelHorizontal hotelHeaderTable">MXN</td>
+                    <td class="hotelHorizontal hotelHeaderTable">CAD</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Simple</td>
+                    <td class="hotelHorizontal hotelRowTable">860</td>
+                    <td class="hotelHorizontal hotelRowTable">61</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Double</td>
+                    <td class="hotelHorizontal hotelRowTable">860</td>
+                    <td class="hotelHorizontal hotelRowTable">61</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Triple</td>
+                    <td class="hotelHorizontal hotelRowTable">900</td>
+                    <td class="hotelHorizontal hotelRowTable">64</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Quadruple</td>
+                    <td class="hotelHorizontal hotelRowTable">940</td>
+                    <td class="hotelHorizontal hotelRowTable">67</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="realPlaza mobile" hidden>
+            <div>
+                <img class="imageHotelLogoMobile" src="../global/pictures/hotel/hotel_realPlaza.png" alt="awesome couple">
+            </div>
+
+            <table>
+                <tr>
+                    <td class="hotelHeaderTable"></td>
+                    <td class="hotelHorizontal hotelHeaderTable" colspan="2">Coût par chambre par nuit</td>
+                </tr>
+                <tr>
+                    <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
+                    <td class="hotelHorizontal hotelHeaderTable">MXN</td>
+                    <td class="hotelHorizontal hotelHeaderTable">CAD</td>
+                </tr>
+                <tr>
+                    <td class="hotelHorizontal hotelRowTable">Simple</td>
+                    <td class="hotelHorizontal hotelRowTable">860</td>
+                    <td class="hotelHorizontal hotelRowTable">61</td>
+                </tr>
+                <tr>
+                    <td class="hotelHorizontal hotelRowTable">Double</td>
+                    <td class="hotelHorizontal hotelRowTable">860</td>
+                    <td class="hotelHorizontal hotelRowTable">61</td>
+                </tr>
+                <tr>
+                    <td class="hotelHorizontal hotelRowTable">Triple</td>
+                    <td class="hotelHorizontal hotelRowTable">900</td>
+                    <td class="hotelHorizontal hotelRowTable">64</td>
+                </tr>
+                <tr>
+                    <td class="hotelHorizontal hotelRowTable">Quadruple</td>
+                    <td class="hotelHorizontal hotelRowTable">940</td>
+                    <td class="hotelHorizontal hotelRowTable">67</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="realPlaza hotelSpacer desktop" hidden>
+            <table>
+                <tr>
+                    <td class="hotelHorizontal">Distance de l'hôtel à la salle de réception</td>
+                    <td class="hotelVertical">Distance de l'hôtel à la cérémonie</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza2.png" alt="awesome couple">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza3.png" alt="awesome couple">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="realPlaza hotelSpacer mobile" hidden>
+            <p class="hotelMiddleMobile">Distance de l'hôtel à la salle de réception</p>
+            <div>
+                <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza2.png" alt="awesome couple">
+            </div>
+        </div>
+
+        <div class="realPlaza hotelSpacer mobile" hidden>
+            <p class="hotelMiddleMobile">Distance de l'hôtel à la cérémonie</p>
+            <div>
+                <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza3.png" alt="awesome couple">
+            </div>
+        </div>
+
+        <div class="realPlaza hotelSpacer desktop" hidden>
+            <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza4.png" alt="awesome couple">
+        </div>
+
+        <div class="realPlaza hotelSpacer mobile" hidden>
+            <img class="imageHotelMobile" src="../global/pictures/hotel/hotel_realPlaza4.png" alt="awesome couple">
+        </div>
+
+        <!-- Medrano  -->
+
+        <p class="medrano hotelMiddle" hidden><a href="https://www.hotelmedrano.com" target="_blank">Hôtel Medrano</a></p>
+
+        <div class="medrano hotelSpacer desktop" hidden>
+            <table>
+                <tr>
+                    <td rowspan="6"><img class="imageHotelLogo" src="../global/pictures/hotel/hotel_medrano.png" alt="awesome couple"></td>
+                    <td></td>
+                    <td class="hotelHeaderTable"></td>
+                    <td class="hotelHorizontal hotelHeaderTable" colspan="2">Coût par chambre par nuit</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
+                    <td class="hotelHorizontal hotelHeaderTable">MXN</td>
+                    <td class="hotelHorizontal hotelHeaderTable">CAD</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Simple</td>
+                    <td class="hotelHorizontal hotelRowTable">898</td>
+                    <td class="hotelHorizontal hotelRowTable">64</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Double</td>
+                    <td class="hotelHorizontal hotelRowTable">898</td>
+                    <td class="hotelHorizontal hotelRowTable">64</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Triple</td>
+                    <td class="hotelHorizontal hotelRowTable">1048</td>
+                    <td class="hotelHorizontal hotelRowTable">75</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="hotelHorizontal hotelRowTable">Quadruple</td>
+                    <td class="hotelHorizontal hotelRowTable">1198</td>
+                    <td class="hotelHorizontal hotelRowTable">85</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="medrano mobile" hidden>
+            <div>
+                <img class="imageHotelLogoMobile" src="../global/pictures/hotel/hotel_medrano.png" alt="awesome couple">
+            </div>
+
+            <div class="hotelSpacer">
+                <table>
+                    <tr>
+                        <td class="hotelHeaderTable"></td>
+                        <td class="hotelHorizontal hotelHeaderTable" colspan="2">Coût par chambre par nuit</td>
+                    </tr>
+                    <tr>
+                        <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
+                        <td class="hotelHorizontal hotelHeaderTable">MXN</td>
+                        <td class="hotelHorizontal hotelHeaderTable">CAD</td>
+                    </tr>
+                    <tr>
+                        <td class="hotelHorizontal hotelRowTable">Simple</td>
+                        <td class="hotelHorizontal hotelRowTable">898</td>
+                        <td class="hotelHorizontal hotelRowTable">64</td>
+                    </tr>
+                    <tr>
+                        <td class="hotelHorizontal hotelRowTable">Double</td>
+                        <td class="hotelHorizontal hotelRowTable">898</td>
+                        <td class="hotelHorizontal hotelRowTable">64</td>
+                    </tr>
+                    <tr>
+                        <td class="hotelHorizontal hotelRowTable">Triple</td>
+                        <td class="hotelHorizontal hotelRowTable">1048</td>
+                        <td class="hotelHorizontal hotelRowTable">75</td>
+                    </tr>
+                    <tr>
+                        <td class="hotelHorizontal hotelRowTable">Quadruple</td>
+                        <td class="hotelHorizontal hotelRowTable">1198</td>
+                        <td class="hotelHorizontal hotelRowTable">85</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="medrano hotelSpacer desktop" hidden>
+            <table>
+                <tr>
+                    <td class="medrano hotelHorizontal" hidden>Distance de l'hôtel à la salle de réception</td>
+                    <td class="medrano hotelVertical" hidden>Distance de l'hôtel à la cérémonie</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="medrano hotel" hidden>
+                            <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano2.png" alt="awesome couple">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="medrano hotel" hidden>
+                            <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano3.png" alt="awesome couple">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="medrano hotelSpacer mobile" hidden>
+            <p class="hotelMiddleMobile">Distance de l'hôtel à la salle de réception</p>
+            <div>
+                <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano2.png" alt="awesome couple">
+            </div>
+        </div>
+
+        <div class="medrano hotelSpacer mobile" hidden>
+            <p class="hotelMiddleMobile">Distance de l'hôtel à la cérémonie</p>
+            <div>
+                <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano3.png" alt="awesome couple">
+            </div>
+        </div>
 
 
-</body>
+        <div class="medrano hotelSpacer desktop" hidden>
+            <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano4.png" alt="awesome couple">
+        </div>
+
+        <div class="medrano hotelSpacer mobile" hidden>
+            <img class="imageHotelMobile" src="../global/pictures/hotel/hotel_medrano4.png" alt="awesome couple">
+        </div>
+
+
+        <!--    <p class="airplaneBottom" hidden>Button Next Page </p>-->
+
+
+    </body>
 </html>

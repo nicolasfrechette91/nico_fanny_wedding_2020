@@ -386,6 +386,18 @@ p.hotelMiddle {
   padding: 2vh;
 }
 
+p.hotelMiddleMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  margin: 2vh;
+  padding: 2vh;
+}
+
 p.hotelLink {
     text-align: right !important;
 }
@@ -453,9 +465,23 @@ td.hotelRowTable {
     height:80%;
 }
 
+.imageHotelMobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vh;
+}
+
 .imageHotelLogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 20vh;
+}
+
+.imageHotelLogoMobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
 }
