@@ -6,10 +6,6 @@ $(document).ready(function(){
     isMobile = true;
   }
 
-   /* $("#email").bind('click', function () {
-       window.location.href = $(this).attr('href');
-    });*/
-
     showHideMobile(isMobile);
 
    $('#realPlazaButton').click(function() {
@@ -43,6 +39,16 @@ $(document).ready(function(){
      $(this).css('background-color', '#eb4034');
      $('#realPlazaButtonMobile').css('background-color', '');
    });
+
+  var language = $('#page').text();
+
+  $(".imagePrevPage").click(function() {
+      window.location.href = "../airplane/airplane" + language + ".html";
+  });
+
+  $(".imageNextPage").click(function() {
+      window.location.href = "../home/index" + language + ".html";
+  });
 });
 
 function showHideMobile(isMobile){

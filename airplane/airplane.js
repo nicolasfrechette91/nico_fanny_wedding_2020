@@ -1,8 +1,4 @@
 $(document).ready(function(){
-   /* $("#email").bind('click', function () {
-       window.location.href = $(this).attr('href');
-    });*/
-
    $('#montrealButton').click(function() {
      $('.toronto').hide();
      $('.edmonton').hide();
@@ -29,4 +25,14 @@ $(document).ready(function(){
      $('#montrealButton').css('background-color', '');
      $('#torontoButton').css('background-color', '');
    });
+
+     var language = $('#page').text();
+
+     $(".imagePrevPage").click(function() {
+         window.location.href = "../home/index" + language + ".html";
+     });
+
+     $(".imageNextPage").click(function() {
+         window.location.href = "../hotel/hotel" + language + ".html";
+     });
 });

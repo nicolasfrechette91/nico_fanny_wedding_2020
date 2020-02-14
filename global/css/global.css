@@ -24,6 +24,38 @@ table {
     font-size: 20px;
 }
 
+table.prevNextButtons {
+    table-layout:fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10vh;
+    text-color: #f6c09c;
+}
+
+td.prevButtons {
+    text-align: left;
+    padding-left: 2vh;
+}
+
+.imagePrevPage {
+    padding-right: 1vh;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+td.nextButtons {
+    text-align: right;
+    padding-right: 2vh;
+}
+
+.imageNextPage {
+    padding-left: 1vh;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
 /*Main Exclusive css*/
 
 p.mainDesktopTop1 {
@@ -401,18 +433,6 @@ p.hotelMiddleMobile {
 p.hotelLink {
     text-align: right !important;
 }
-
-/*p.hotelBottom {
-  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  text-align: left;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}*/
 
 th.hotel {
     text-align: center;
