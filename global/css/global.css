@@ -162,6 +162,7 @@ div.mainMenuFrameMobile {
     margin-left: auto;
     margin-right: auto;
     width: 49%;
+    padding-left: 0.5%;
     height: 100%;
 }
 
@@ -193,6 +194,44 @@ p.mobileSubMenus {
 
 .mobileNavBarSection a:hover {
   color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideIndexLeft {
+    display: none;
+}
+
+.slideIndexCenter {
+    display: none;
+}
+
+.slideIndexRight {
+    display: none;
+}
+
+.slideIndexMobileLeft {
+    display: none;
+}
+
+.slideIndexMobileRight {
+    display: none;
 }
 
 /* UnderConstruction Exclusive css */
