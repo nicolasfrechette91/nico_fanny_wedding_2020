@@ -593,7 +593,6 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: right;
   padding-top: 50vh;
-  padding-bottom: 5vh;
 }
 
 .teamBachelorette-main {
@@ -776,7 +775,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 10px;
   left: 740px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -791,7 +790,8 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 120px;
   left: 560px;
-  color: #0000EE;
+  color: white;
+  z-index: 2;
   text-decoration: underline;
 }
 
@@ -806,8 +806,8 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 290px;
   left: 500px;
-  z-index: 1;
-  color: #0000EE;
+  z-index: 2;
+  color: white;
   text-decoration: underline;
 }
 
@@ -823,7 +823,7 @@ p.teamBacheloretteBottomMobile {
   top: 510px;
   left: 540px;
   z-index: 1;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -839,7 +839,7 @@ p.teamBacheloretteBottomMobile {
   top: 620px;
   left: 720px;
   z-index: 1;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -854,7 +854,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 650px;
   left: 900px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -869,7 +869,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 510px;
   left: 1015px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -884,7 +884,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 350px;
   left: 1150px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -899,7 +899,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 140px;
   left: 1100px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -914,7 +914,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 10px;
   left: 930px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -929,7 +929,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 15px;
   left: 335px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -944,7 +944,8 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 110px;
   left: 160px;
-  color: #0000EE;
+  color: white;
+  z-index: 2;
   text-decoration: underline;
 }
 
@@ -959,8 +960,8 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 300px;
   left: 90px;
-  z-index: 1;
-  color: #0000EE;
+  z-index: 2;
+  color: white;
   text-decoration: underline;
 }
 
@@ -976,7 +977,7 @@ p.teamBacheloretteBottomMobile {
   top: 500px;
   left: 140px;
   z-index: 1;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -992,7 +993,7 @@ p.teamBacheloretteBottomMobile {
   top: 620px;
   left: 320px;
   z-index: 1;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -1007,7 +1008,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 650px;
   left: 520px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -1022,7 +1023,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 510px;
   left: 620px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -1037,7 +1038,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 350px;
   left: 750px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -1052,7 +1053,7 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 130px;
   left: 700px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
 }
 
@@ -1067,6 +1068,15 @@ p.teamBacheloretteBottomMobile {
   position: absolute;
   top: 15px;
   left: 540px;
-  color: #0000EE;
+  color: white;
   text-decoration: underline;
+}
+
+table.prevNextButtonsBachelorette {
+    table-layout:fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    text-color: #f6c09c;
 }

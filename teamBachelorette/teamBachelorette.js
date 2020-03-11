@@ -12,4 +12,10 @@ $(document).ready(function(){
       } else {
         $('.mobile').hide();
       }
+
+      var language = $('#page').text();
+
+       $(".imagePrevPage").click(function() {
+           window.location.href = "../home/index" + language + ".html";
+       });
 });
