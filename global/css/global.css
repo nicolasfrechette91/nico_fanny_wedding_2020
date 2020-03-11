@@ -383,18 +383,6 @@ p.airplaneLink {
     text-align: right !important;
 }
 
-/*p.airplaneBottom {
-  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  text-align: left;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}*/
-
 th.airplane {
     text-align: center;
 }
@@ -554,4 +542,531 @@ td.hotelRowTable {
     margin-left: auto;
     margin-right: auto;
     width: 30vh;
+}
+
+/* team bachelorette Exclusive css */
+div.teamBacheloretteWheel{
+ height:45vh;
+ position: absolute;
+}
+
+p.teamBacheloretteHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+}
+
+p.teamBacheloretteTop {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 2vh;
+  text-align: left;
+}
+
+p.teamBacheloretteBottom {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-top: 80vh;
+  padding-bottom: 5vh;
+}
+
+p.teamBacheloretteBottomMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-top: 50vh;
+  padding-bottom: 5vh;
+}
+
+.teamBachelorette-main {
+  position: absolute;
+  top: 230px;
+  left: 760px;
+  z-index: 2;
+  height: 90%;
+}
+
+.teamBachelorette-main-mobile {
+  position: absolute;
+  top: 200px;
+  left: 335px;
+  z-index: 2;
+  height: 50%;
+}
+
+.teamBachelorette-centered-1 {
+  position: absolute;
+  top: 8px;
+  left: 639px;
+  transform: rotate(2deg);
+}
+
+.teamBachelorette-centered-2 {
+  position: absolute;
+  top: 17px;
+  left: 865px;
+  transform: rotate(1.8deg);
+}
+
+.teamBachelorette-centered-3 {
+  position: absolute;
+  top: 120px;
+  left: 952px;
+  transform: rotate(38.4deg);
+}
+
+.teamBachelorette-centered-4 {
+  position: absolute;
+  top: 258.5px;
+  left: 958px;
+  transform: rotate(74.5deg);
+}
+
+.teamBachelorette-centered-5 {
+  position: absolute;
+  top: 374px;
+  left: 885px;
+  transform: rotate(110.1deg);
+}
+
+.teamBachelorette-centered-6 {
+  position: absolute;
+  top: 425px;
+  left: 758px;
+  transform: rotate(146deg);
+}
+
+.teamBachelorette-centered-7 {
+  position: absolute;
+  top: 390px;
+  left: 626px;
+  transform: rotate(182deg);
+}
+
+.teamBachelorette-centered-8 {
+  position: absolute;
+  top: 285px;
+  left: 539px;
+  transform: rotate(218deg);
+}
+
+.teamBachelorette-centered-9 {
+  position: absolute;
+  top: 148px;
+  left: 530px;
+  transform: rotate(254deg);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.teamBachelorette-centered-10 {
+  position: absolute;
+  top: 32px;
+  left: 604px;
+  transform: rotate(290deg);
+  mix-blend-mode: multiply;
+}
+
+.teamBachelorette-centered-mobile-1 {
+  position: absolute;
+  top: 8px;
+  left: 239px;
+  transform: rotate(2deg);
+}
+
+.teamBachelorette-centered-mobile-2 {
+  position: absolute;
+  top: 17px;
+  left: 465px;
+  transform: rotate(1.8deg);
+}
+
+.teamBachelorette-centered-mobile-3 {
+  position: absolute;
+  top: 120px;
+  left: 552px;
+  transform: rotate(38.4deg);
+}
+
+.teamBachelorette-centered-mobile-4 {
+  position: absolute;
+  top: 258.5px;
+  left: 558px;
+  transform: rotate(74.5deg);
+}
+
+.teamBachelorette-centered-mobile-5 {
+  position: absolute;
+  top: 374px;
+  left: 485px;
+  transform: rotate(110.1deg);
+}
+
+.teamBachelorette-centered-mobile-6 {
+  position: absolute;
+  top: 425px;
+  left: 358px;
+  transform: rotate(146deg);
+}
+
+.teamBachelorette-centered-mobile-7 {
+  position: absolute;
+  top: 390px;
+  left: 226px;
+  transform: rotate(182deg);
+}
+
+.teamBachelorette-centered-mobile-8 {
+  position: absolute;
+  top: 285px;
+  left: 139px;
+  transform: rotate(218deg);
+}
+
+.teamBachelorette-centered-mobile-9 {
+  position: absolute;
+  top: 148px;
+  left: 130px;
+  transform: rotate(254deg);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.teamBachelorette-centered-mobile-10 {
+  position: absolute;
+  top: 32px;
+  left: 204px;
+  transform: rotate(290deg);
+  mix-blend-mode: multiply;
+}
+
+.imageTeamBachelorette {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:80%;
+}
+
+.teamBachelorette-text-1 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 740px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-2 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 120px;
+  left: 560px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-3 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 290px;
+  left: 500px;
+  z-index: 1;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-4 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 510px;
+  left: 540px;
+  z-index: 1;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-5 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 620px;
+  left: 720px;
+  z-index: 1;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-6 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 650px;
+  left: 900px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-7 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 510px;
+  left: 1015px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-8 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 350px;
+  left: 1150px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-9 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 140px;
+  left: 1100px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-10 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 930px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-1 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 335px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-2 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 110px;
+  left: 160px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-3 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left: 90px;
+  z-index: 1;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-4 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 500px;
+  left: 140px;
+  z-index: 1;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-5 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 620px;
+  left: 320px;
+  z-index: 1;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-6 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 650px;
+  left: 520px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-7 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 510px;
+  left: 620px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-8 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 350px;
+  left: 750px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-9 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 130px;
+  left: 700px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.teamBachelorette-text-mobile-10 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 540px;
+  color: #0000EE;
+  text-decoration: underline;
 }

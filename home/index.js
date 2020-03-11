@@ -280,7 +280,7 @@ $(document).ready(function(){
   });
 
   $("[id^='teamBride']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../teamBachelorette/teamBachelorette" + language + ".html";
   });
 
   $("[id^='bachelorette']").click(function() {
