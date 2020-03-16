@@ -616,6 +616,7 @@ p.teamBacheloretteBottomMobile {
   top: 8px;
   left: 639px;
   transform: rotate(2deg);
+  background-color: #500066;
 }
 
 .teamBachelorette-centered-2 {
@@ -623,6 +624,7 @@ p.teamBacheloretteBottomMobile {
   top: 17px;
   left: 865px;
   transform: rotate(1.8deg);
+  background-color: #5b0165;
 }
 
 .teamBachelorette-centered-3 {
@@ -630,6 +632,7 @@ p.teamBacheloretteBottomMobile {
   top: 120px;
   left: 952px;
   transform: rotate(38.4deg);
+  background-color: #660057;
 }
 
 .teamBachelorette-centered-4 {
@@ -637,6 +640,7 @@ p.teamBacheloretteBottomMobile {
   top: 258.5px;
   left: 958px;
   transform: rotate(74.5deg);
+  background-color: #660049;
 }
 
 .teamBachelorette-centered-5 {
@@ -644,6 +648,7 @@ p.teamBacheloretteBottomMobile {
   top: 374px;
   left: 885px;
   transform: rotate(110.1deg);
+  background-color: #660035;
 }
 
 .teamBachelorette-centered-6 {
@@ -651,6 +656,7 @@ p.teamBacheloretteBottomMobile {
   top: 425px;
   left: 758px;
   transform: rotate(146deg);
+  background-color: #660018;
 }
 
 .teamBachelorette-centered-7 {
@@ -658,6 +664,7 @@ p.teamBacheloretteBottomMobile {
   top: 390px;
   left: 626px;
   transform: rotate(182deg);
+  background-color: #660000;
 }
 
 .teamBachelorette-centered-8 {
@@ -665,6 +672,7 @@ p.teamBacheloretteBottomMobile {
   top: 285px;
   left: 539px;
   transform: rotate(218deg);
+  background-color: #7e0000;
 }
 
 .teamBachelorette-centered-9 {
@@ -674,6 +682,7 @@ p.teamBacheloretteBottomMobile {
   transform: rotate(254deg);
   mix-blend-mode: multiply;
   z-index: 1;
+  background-color: #a80000;
 }
 
 .teamBachelorette-centered-10 {
@@ -682,6 +691,7 @@ p.teamBacheloretteBottomMobile {
   left: 604px;
   transform: rotate(290deg);
   mix-blend-mode: multiply;
+  background-color: #ee0000;
 }
 
 .teamBachelorette-centered-mobile-1 {
@@ -689,6 +699,7 @@ p.teamBacheloretteBottomMobile {
   top: 8px;
   left: 239px;
   transform: rotate(2deg);
+  background-color: #500066;
 }
 
 .teamBachelorette-centered-mobile-2 {
@@ -696,6 +707,7 @@ p.teamBacheloretteBottomMobile {
   top: 17px;
   left: 465px;
   transform: rotate(1.8deg);
+  background-color: #5b0165;
 }
 
 .teamBachelorette-centered-mobile-3 {
@@ -703,6 +715,7 @@ p.teamBacheloretteBottomMobile {
   top: 120px;
   left: 552px;
   transform: rotate(38.4deg);
+  background-color: #660057;
 }
 
 .teamBachelorette-centered-mobile-4 {
@@ -710,6 +723,7 @@ p.teamBacheloretteBottomMobile {
   top: 258.5px;
   left: 558px;
   transform: rotate(74.5deg);
+  background-color: #660049;
 }
 
 .teamBachelorette-centered-mobile-5 {
@@ -717,6 +731,7 @@ p.teamBacheloretteBottomMobile {
   top: 374px;
   left: 485px;
   transform: rotate(110.1deg);
+  background-color: #660035;
 }
 
 .teamBachelorette-centered-mobile-6 {
@@ -724,6 +739,7 @@ p.teamBacheloretteBottomMobile {
   top: 425px;
   left: 358px;
   transform: rotate(146deg);
+  background-color: #660018;
 }
 
 .teamBachelorette-centered-mobile-7 {
@@ -731,6 +747,7 @@ p.teamBacheloretteBottomMobile {
   top: 390px;
   left: 226px;
   transform: rotate(182deg);
+  background-color: #660000;
 }
 
 .teamBachelorette-centered-mobile-8 {
@@ -738,6 +755,7 @@ p.teamBacheloretteBottomMobile {
   top: 285px;
   left: 139px;
   transform: rotate(218deg);
+  background-color: #7e0000;
 }
 
 .teamBachelorette-centered-mobile-9 {
@@ -747,6 +765,7 @@ p.teamBacheloretteBottomMobile {
   transform: rotate(254deg);
   mix-blend-mode: multiply;
   z-index: 1;
+  background-color: #a80000;
 }
 
 .teamBachelorette-centered-mobile-10 {
@@ -755,6 +774,7 @@ p.teamBacheloretteBottomMobile {
   left: 204px;
   transform: rotate(290deg);
   mix-blend-mode: multiply;
+  background-color: #ee0000;
 }
 
 .imageTeamBachelorette {
@@ -1079,4 +1099,104 @@ table.prevNextButtonsBachelorette {
     font-size: 28px;
     font-weight: 700;
     text-color: #f6c09c;
+}
+
+.teamBachelorette-card-centered {
+  height: 350px;
+  width: 400px;
+  background-color: blue;
+  top: 185px;
+  left: 670px;
+  position: absolute;
+  z-index: 4;
+}
+
+.teamBachelorette-card-centered-mobile {
+  height: 350px;
+  width: 400px;
+  background-color: blue;
+  top: 185px;
+  left: 270px;
+  position: absolute;
+  z-index: 4;
+}
+
+.imageTeamBacheloretteCard {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ height:65%;
+ top: 55px;
+ left: 90px;
+ position: absolute;
+}
+
+.imageTeamBacheloretteCardMobile {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ height:65%;
+ top: 55px;
+ left: 90px;
+ position: absolute;
+}
+
+.teamBachelorette-card-text-title {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  top: 0px;
+  left: 100px;
+  color: white;
+  margin: 5px;
+}
+
+.teamBachelorette-card-text-title-mobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  top: 0px;
+  left: 100px;
+  color: white;
+  margin: 5px;
+}
+
+.teamBachelorette-card-text-link {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left: 130px;
+  color: white;
+  margin: 5px;
+  text-decoration: underline;
+}
+
+.teamBachelorette-card-text-link-mobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left: 130px;
+  color: white;
+  margin: 5px;
+  text-decoration: underline;
 }
