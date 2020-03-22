@@ -1,0 +1,57 @@
+/* bachelorette Exclusive css */
+.imageBachelorette {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.imageBacheloretteMobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+.bacheloretteHeader {
+    font-family: 'Parisienne',cursive;
+    font-size: 56px;
+    font-style: normal;
+    font-variant: normal
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    padding-top: 30vh;
+    text-align: center;
+    color: #cc0066;
+}
+
+.bacheloretteForm {
+    display: inline-block;
+    margin-left: 35%;
+    margin-right: 10%;
+}
+
+.bacheloretteForm2 {
+    display: inline-block;
+}
+
+.bacheloretteSubmissionButton {
+    padding: 20px 60px;
+    background-color: #cc0066;
+    color: white;
+    border-radius: 16px;
+}
+
+.bacheloretteFormMobile {
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+.bacheloretteSubmissionButtonMobile {
+    padding: 20px 60px;
+    background-color: #cc0066;
+    color: white;
+    border-radius: 16px;
+}

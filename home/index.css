@@ -1,0 +1,176 @@
+/*Main Exclusive css*/
+p.mainDesktopTop1 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 25vh;
+  text-align: center;
+}
+
+p.mainDesktopTop2 {
+  font-family: 'Parisienne',cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+p.mainDesktopTop3 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+p.mainMobileTop1 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 80px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 25vh;
+  text-align: center;
+}
+
+p.mainMobileTop2 {
+  font-family: 'Parisienne',cursive;
+  font-size: 60px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+p.mainMobileTop3 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+th.main {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-width: thin;
+}
+
+td.main {
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  color: black;
+  visibility: hidden;
+}
+
+div.mainMenuFrame {
+    height:100vh;
+}
+
+div.mainMenuFrameMobile {
+    height:50vh;
+}
+
+.imageCenteredMainMenu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    height: 100%;
+}
+
+.imageCenteredMainMenuMobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 49%;
+    padding-left: 0.5%;
+    height: 100%;
+}
+
+p.mobileMenus {
+    font-size: 20px;
+}
+
+p.mobileMenus:hover {
+    background-color: #eb4034;
+}
+
+p.mobileSubMenus {
+    font-size: 18px;
+    padding-left: 8vh;
+}
+
+.mobileNavBar {
+  width: 10%;
+}
+
+.mobileNavBarSection a {
+  color: black;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  margin-bottom: 2vh;
+}
+
+.mobileNavBarSection a:hover {
+  color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideIndexLeft {
+    display: none;
+}
+
+.slideIndexCenter {
+    display: none;
+}
+
+.slideIndexRight {
+    display: none;
+}
+
+.slideIndexMobileLeft {
+    display: none;
+}
+
+.slideIndexMobileRight {
+    display: none;
+}

@@ -9,10 +9,8 @@ $(document).ready(function(){
       if(isMobile){
         // hide or show css
         $('.desktop').hide();
-        showHideCardAndAttributes("teamBachelorette-text-mobile-");
       } else {
         $('.mobile').hide();
-        showHideCardAndAttributes("teamBachelorette-text-");
       }
 
 
@@ -21,4 +19,8 @@ $(document).ready(function(){
        $(".imagePrevPage").click(function() {
            window.location.href = "../home/index" + language + ".html";
        });
+
+       /*$(".johnPepi").click(function() {
+         window.prompt("Please give us your email","example@mail.com");
+     });*/
 });
