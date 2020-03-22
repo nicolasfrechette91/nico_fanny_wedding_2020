@@ -43,7 +43,7 @@ $(document).ready(function(){
        });
 
        $("#cancelButton2").click(function() {
-         $("#myModal2").css('display', 'none');
+         $("#Modal2").css('display', 'none');
        });
 
        // Mobile Modal
@@ -70,6 +70,6 @@ $(document).ready(function(){
       });
 
       $("#cancelButton2Mobile").click(function() {
-        $("#myModal2Mobile").css('display', 'none');
+        $("#Modal2Mobile").css('display', 'none');
       });
 });
