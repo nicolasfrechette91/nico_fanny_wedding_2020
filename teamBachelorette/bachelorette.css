@@ -55,3 +55,62 @@
     color: white;
     border-radius: 16px;
 }
+
+/* UnderConstruction Exclusive css */
+
+div.plumber {
+    height:45vh;
+}
+
+.imageCenteredPlumber {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
+
+p.constructionTop {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+}
+
+p.constructionTopFrench {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 31px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+}
+
+p.constructionBottom {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+p.constructionBottomFrench {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 31px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
