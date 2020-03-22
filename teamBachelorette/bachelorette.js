@@ -13,14 +13,63 @@ $(document).ready(function(){
         $('.mobile').hide();
       }
 
-
       var language = $('#page').text();
 
        $(".imagePrevPage").click(function() {
-           window.location.href = "../home/index" + language + ".html";
+           window.location.href = "teamBachelorette" + language + ".html";
        });
 
-       /*$(".johnPepi").click(function() {
-         window.prompt("Please give us your email","example@mail.com");
-     });*/
+        // Modal logic
+       // When the user clicks the button, open the first modal
+       $("#noButton").click(function() {
+         $("#Modal").css('display', 'block');
+       });
+
+       // When the user clicks the button, open the second modal
+       $("#yesButton1").click(function() {
+         $("#Modal").css('display', 'none');
+         $("#Modal2").css('display', 'block');
+       });
+
+       // When the user clicks the button, open the second modal
+       $("#yesButton2").click(function() {
+         $("#Modal2").css('display', 'none');
+         $("#Modal3").css('display', 'block');
+       });
+
+       // Close the modal
+       $("#cancelButton1").click(function() {
+         $("#Modal").css('display', 'none');
+       });
+
+       $("#cancelButton2").click(function() {
+         $("#myModal2").css('display', 'none');
+       });
+
+       // Mobile Modal
+       // When the user clicks the button, open the first modal
+      $("#noButtonMobile").click(function() {
+        $("#ModalMobile").css('display', 'block');
+      });
+
+      // When the user clicks the button, open the second modal
+      $("#yesButton1Mobile").click(function() {
+        $("#ModalMobile").css('display', 'none');
+        $("#Modal2Mobile").css('display', 'block');
+      });
+
+      // When the user clicks the button, open the second modal
+      $("#yesButton2Mobile").click(function() {
+        $("#Modal2Mobile").css('display', 'none');
+        $("#Modal3Mobile").css('display', 'block');
+      });
+
+      // Close the modal
+      $("#cancelButton1Mobile").click(function() {
+        $("#ModalMobile").css('display', 'none');
+      });
+
+      $("#cancelButton2Mobile").click(function() {
+        $("#myModal2Mobile").css('display', 'none');
+      });
 });
