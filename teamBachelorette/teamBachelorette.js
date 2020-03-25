@@ -28,7 +28,7 @@ function showHideCardAndAttributes(name){
          var tempClass = $(this).attr('class');
          var tempClassNumber = tempClass.replace(/\D+/g, '');
 
-         var colorForCard = $("[class=teamBachelorette-centered-" + tempClassNumber + "]").css('background-color');
+         var colorForCard = $("[class=teamBachelorette-color-" + tempClassNumber + "]").css('background-color');
 
          // Hide / Show checker desktop
          if($(".teamBachelorette-card-centered").is(":visible")){
