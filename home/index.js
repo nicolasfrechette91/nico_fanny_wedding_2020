@@ -296,7 +296,7 @@ $(document).ready(function(){
   });
 
   $("[id^='godParentsHeader']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../padrinos/padrinos" + language + ".html";
   });
 
   $("[id^='picturesHeader']").click(function() {
