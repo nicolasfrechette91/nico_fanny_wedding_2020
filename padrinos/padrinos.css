@@ -1,4 +1,15 @@
 /* hotel Exclusive css */
+html {
+    background-color: #ced9df;
+}
+
+body {
+    background-color: #ced9df;
+    background-image: url(../global/pictures/background_header.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 33%;
+    margin: 0px;
+}
 
 div.hotelSpacer {
     padding-top: 5vh;
