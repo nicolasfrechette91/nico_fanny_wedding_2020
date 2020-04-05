@@ -8,38 +8,6 @@ $(document).ready(function(){
 
     showHideMobile(isMobile);
 
-   $('#realPlazaButton').click(function() {
-     $('.medrano').hide();
-     $('.realPlaza').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#medranoButton').css('background-color', '');
-   });
-
-   $('#medranoButton').click(function() {
-     $('.realPlaza').hide();
-     $('.medrano').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#realPlazaButton').css('background-color', '');
-   });
-
-   $('#realPlazaButtonMobile').click(function() {
-     $('.medrano').hide();
-     $('.realPlaza').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#medranoButtonMobile').css('background-color', '');
-   });
-
-   $('#medranoButtonMobile').click(function() {
-     $('.realPlaza').hide();
-     $('.medrano').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#realPlazaButtonMobile').css('background-color', '');
-   });
-
   var language = $('#page').text();
 
   $(".imagePrevPage").click(function() {
