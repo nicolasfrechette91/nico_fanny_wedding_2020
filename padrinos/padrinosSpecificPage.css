@@ -1,0 +1,34 @@
+/* hotel Exclusive css */
+html {
+    background-color: #ced9df;
+}
+
+body {
+    background-color: #ced9df;
+    background-image: url(../global/pictures/background_header.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 33%;
+    margin: 0px;
+}
+
+p.padrinosHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+  padding-left: 2vh;
+  color: #cc0066;
+}
+
+.nextButton {
+    vertical-align: top;
+    padding-right: 1vh;
+}
+
+.imageGroup {
+    text-align: center;
+}
