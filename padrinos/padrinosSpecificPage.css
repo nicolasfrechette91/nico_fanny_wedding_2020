@@ -32,7 +32,8 @@ body {
     height: 25vh;
 }
 
-.imagePadrinosTopBow {
+.imagePadrinosMiddleBow1 {
+    width: 100vh;
 }
 
 .topText {
@@ -83,7 +84,7 @@ p.nameTop1 {
 
  p.ampersand {
    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-   font-size: 150px;
+   font-size: 110px;
    font-style: italic;
    font-variant: normal;
    font-weight: 700;
@@ -151,16 +152,24 @@ p.description {
     border-left: 10px solid black;
 }
 
-.Question {
+.question {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
     font-size: 44px;
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .bottomTable {
+    text-align: center;
+}
+
+.bottomDescription {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 30px;
+    font-variant: normal;
     text-align: center;
 }
 
@@ -179,6 +188,116 @@ p.description {
 }
 
 /* Mobile CSS */
+
+.topBowMobile {
+    width: 100vh;
+}
+
+.leftMiiMobile {
+    width: 20vh;
+}
+
+.rightMiiMobile {
+    width: 20vh;
+}
+
+.imagePadrinosMiisMobile {
+    height: 20vh;
+}
+
+.imagePadrinosTopBowMobile {
+}
+
+.topTextMobile {
+font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+p.padrinosHeaderMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+  padding-left: 2vh;
+  color: #cc0066;
+}
+
+p.nameTop1Mobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 52px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+  text-align: center;
+  padding-left: 2vh;
+  color: #224568;
+ }
+
+ p.nameTop2Mobile {
+   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+   font-size: 52px;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 40.4px;
+   text-align: center;
+   padding-right: 2vh;
+   color: #224568;
+ }
+
+ p.ampersandMobile {
+   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+   font-size: 150px;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 26.4px;
+   text-align: center;
+   margin-bottom: 0;
+   margin-top: 0;
+ }
+
+ p.textWishMobile {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 44px;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+ }
+
+p.descriptionMobile {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 36px;
+    font-variant: normal;
+    text-align: center;
+}
+
+.questionMobile {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 44px;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.bottomDescriptionMobile {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 30px;
+    font-variant: normal;
+    text-align: center;
+}
 
 .padrinosFormMobile {
     display: inline-block;
