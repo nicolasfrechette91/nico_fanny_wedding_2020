@@ -11,6 +11,39 @@ body {
     margin: 0px;
 }
 
+.TopImageGroup {
+    padding-top: 30vh;
+    text-align: center;
+}
+
+.topBow {
+    width: 100vh;
+}
+
+.leftMii {
+    width: 30vh;
+}
+
+.rightMii {
+    width: 30vh;
+}
+
+.imagePadrinosMiis {
+    height: 25vh;
+}
+
+.imagePadrinosTopBow {
+}
+
+.topText {
+font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
 p.padrinosHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
@@ -22,6 +55,143 @@ p.padrinosHeader {
   text-align: left;
   padding-left: 2vh;
   color: #cc0066;
+}
+
+p.nameTop1 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 52px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+  text-align: center;
+  padding-left: 2vh;
+  color: #224568;
+ }
+
+ p.nameTop2 {
+   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+   font-size: 52px;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 40.4px;
+   text-align: center;
+   padding-right: 2vh;
+   color: #224568;
+ }
+
+ p.ampersand {
+   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+   font-size: 150px;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 26.4px;
+   text-align: center;
+   margin-bottom: 0;
+   margin-top: 0;
+ }
+
+ p.textWish {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 44px;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+ }
+
+ hr.dotted {
+   border-top: 2px dashed;
+ }
+
+p.description {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 36px;
+    font-variant: normal;
+    text-align: center;
+}
+
+.line-container {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background: black;
+    position: relative;
+}
+
+.line.arrow-left:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid black;
+}
+
+.line.arrow-right:after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+}
+
+.Question {
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 44px;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+.bottomTable {
+    text-align: center;
+}
+
+.padrinosForm {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.padrinosSubmissionButton {
+    padding: 20px 60px;
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    font-size: 32px;
+}
+
+/* Mobile CSS */
+
+.padrinosFormMobile {
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+.padrinosSubmissionButtonMobile {
+    padding: 20px 60px;
+    background-color: #cc0066;
+    color: white;
+    border-radius: 16px;
+    font-size: 32px;
 }
 
 .nextButton {
