@@ -335,6 +335,11 @@ p.descriptionMobile {
     padding-right: 1vh;
 }
 
-.imageGroup {
-    text-align: center;
+.prevNextButtonsPadrinos {
+    table-layout: fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f6c09c;
 }
