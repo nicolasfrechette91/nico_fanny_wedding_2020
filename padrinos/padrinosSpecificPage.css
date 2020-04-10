@@ -32,8 +32,8 @@ body {
     height: 25vh;
 }
 
-.imagePadrinosMiddleBow1 {
-    width: 100vh;
+.imagePadrinosMiddleBowMobile {
+    width: 50vh;
 }
 
 .topText {
@@ -43,6 +43,7 @@ font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
+  color: #224568;
 }
 
 p.padrinosHeader {
@@ -92,6 +93,7 @@ p.nameTop1 {
    text-align: center;
    margin-bottom: 0;
    margin-top: 0;
+   color: #224568;
  }
 
  p.textWish {
@@ -101,6 +103,7 @@ p.nameTop1 {
     font-weight: 700;
     line-height: 26.4px;
     text-align: center;
+    color: #224568;
  }
 
  hr.dotted {
@@ -112,6 +115,7 @@ p.description {
     font-size: 36px;
     font-variant: normal;
     text-align: center;
+    color: #224568;
 }
 
 .line-container {
@@ -160,6 +164,7 @@ p.description {
     line-height: 26.4px;
     text-align: center;
     margin-bottom: 0;
+    color: #224568;
 }
 
 .bottomTable {
@@ -171,6 +176,7 @@ p.description {
     font-size: 30px;
     font-variant: normal;
     text-align: center;
+    color: #224568;
 }
 
 .padrinosForm {
@@ -185,20 +191,19 @@ p.description {
     color: white;
     border-radius: 16px;
     font-size: 32px;
+    margin-bottom: 5vh;
 }
 
 /* Mobile CSS */
 
 .topBowMobile {
-    width: 100vh;
 }
 
 .leftMiiMobile {
-    width: 20vh;
+    padding: 0;
 }
 
 .rightMiiMobile {
-    width: 20vh;
 }
 
 .imagePadrinosMiisMobile {
@@ -206,15 +211,21 @@ p.description {
 }
 
 .imagePadrinosTopBowMobile {
+    height: 75%;
+}
+
+.imagePadrinosMiddleBow {
+    width: 50vh;
 }
 
 .topTextMobile {
 font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 36px;
+  font-size: 44px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 26.4px;
+  line-height: 46.4px;
+  color: #224568;
 }
 
 p.padrinosHeaderMobile {
@@ -256,7 +267,7 @@ p.nameTop1Mobile {
 
  p.ampersandMobile {
    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-   font-size: 150px;
+   font-size: 110px;
    font-style: italic;
    font-variant: normal;
    font-weight: 700;
@@ -264,6 +275,7 @@ p.nameTop1Mobile {
    text-align: center;
    margin-bottom: 0;
    margin-top: 0;
+   color: #224568;
  }
 
  p.textWishMobile {
@@ -273,13 +285,15 @@ p.nameTop1Mobile {
     font-weight: 700;
     line-height: 26.4px;
     text-align: center;
+    color: #224568;
  }
 
 p.descriptionMobile {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 36px;
+    font-size: 20px;
     font-variant: normal;
     text-align: center;
+    color: #224568;
 }
 
 .questionMobile {
@@ -287,16 +301,18 @@ p.descriptionMobile {
     font-size: 44px;
     font-variant: normal;
     font-weight: 700;
-    line-height: 26.4px;
+    line-height: 44.4px;
     text-align: center;
     margin-bottom: 0;
+    color: #224568;
 }
 
 .bottomDescriptionMobile {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 30px;
+    font-size: 36px;
     font-variant: normal;
     text-align: center;
+    color: #224568;
 }
 
 .padrinosFormMobile {
@@ -307,10 +323,11 @@ p.descriptionMobile {
 
 .padrinosSubmissionButtonMobile {
     padding: 20px 60px;
-    background-color: #cc0066;
+    background-color: black;
     color: white;
     border-radius: 16px;
     font-size: 32px;
+    margin-top: 5vh;
 }
 
 .nextButton {
