@@ -13,6 +13,34 @@ $(document).ready(function(){
   $(".imagePrevPage").click(function() {
        window.location.href = "../home/index" + language + ".html";
   });
+
+//  $(".iglesia").click(function() {
+//        window.location.href = "padrinos1" + language + ".html";
+//  });
+
+    $(".lazo").click(function() {
+        window.location.href = "padrinos2" + language + ".html";
+    });
+
+//  $(".anillos").click(function() {
+//        window.location.href = "padrinos3" + language + ".html";
+//  });
+
+    $(".arras").click(function() {
+        window.location.href = "padrinos4" + language + ".html";
+    });
+
+//    $(".biblia").click(function() {
+//        window.location.href = "padrinos5" + language + ".html";
+//    });
+
+//    $(".bouquet").click(function() {
+//        window.location.href = "padrinos6" + language + ".html";
+//    });
+
+//    $(".car").click(function() {
+//        window.location.href = "padrinos7" + language + ".html";
+//    });
 });
 
 function showHideMobile(isMobile){
