@@ -194,6 +194,10 @@ p.description {
     margin-bottom: 5vh;
 }
 
+.leftMiiLast {
+    width: 50vh;
+}
+
 /* Mobile CSS */
 
 .topBowMobile {
