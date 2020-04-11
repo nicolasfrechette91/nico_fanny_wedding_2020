@@ -34,9 +34,9 @@ $(document).ready(function(){
 //        window.location.href = "padrinos5" + language + ".html";
 //    });
 
-//    $(".bouquet").click(function() {
-//        window.location.href = "padrinos6" + language + ".html";
-//    });
+    $(".bouquet").click(function() {
+        window.location.href = "padrinos6" + language + ".html";
+    });
 
 //    $(".car").click(function() {
 //        window.location.href = "padrinos7" + language + ".html";
