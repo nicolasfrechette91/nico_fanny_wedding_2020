@@ -22,9 +22,9 @@ $(document).ready(function(){
         window.location.href = "padrinos2" + language + ".html";
     });
 
-//  $(".anillos").click(function() {
-//        window.location.href = "padrinos3" + language + ".html";
-//  });
+    $(".anillos").click(function() {
+        window.location.href = "padrinos3" + language + ".html";
+    });
 
     $(".arras").click(function() {
         window.location.href = "padrinos4" + language + ".html";
