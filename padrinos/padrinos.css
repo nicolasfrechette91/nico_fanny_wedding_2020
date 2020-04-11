@@ -24,6 +24,18 @@ p.padrinosHeader {
   color: #cc0066;
 }
 
+p.padrinosSubheader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-right: 2vh;
+  color: #cc0066;
+}
+
 .imageGroup {
     text-align: center;
 }

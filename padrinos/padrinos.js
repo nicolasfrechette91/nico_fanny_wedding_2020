@@ -30,9 +30,9 @@ $(document).ready(function(){
         window.location.href = "padrinos4" + language + ".html";
     });
 
-//    $(".biblia").click(function() {
-//        window.location.href = "padrinos5" + language + ".html";
-//    });
+    $(".biblia").click(function() {
+        window.location.href = "padrinos5" + language + ".html";
+    });
 
     $(".bouquet").click(function() {
         window.location.href = "padrinos6" + language + ".html";
