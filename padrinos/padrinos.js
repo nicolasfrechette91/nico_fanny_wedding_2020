@@ -38,9 +38,9 @@ $(document).ready(function(){
         window.location.href = "padrinos6" + language + ".html";
     });
 
-//    $(".car").click(function() {
-//        window.location.href = "padrinos7" + language + ".html";
-//    });
+    $(".car").click(function() {
+        window.location.href = "padrinos7" + language + ".html";
+    });
 });
 
 function showHideMobile(isMobile){
