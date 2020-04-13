@@ -120,6 +120,10 @@ p.mobileSubMenus {
     padding-left: 8vh;
 }
 
+p.mobileSubMenus:hover {
+    background-color: #eb4034;
+}
+
 .mobileNavBar {
   width: 10%;
 }
