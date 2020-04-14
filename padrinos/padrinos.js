@@ -14,9 +14,9 @@ $(document).ready(function(){
        window.location.href = "../home/index" + language + ".html";
   });
 
-//  $(".iglesia").click(function() {
-//        window.location.href = "padrinos1" + language + ".html";
-//  });
+    $(".iglesia").click(function() {
+        window.location.href = "padrinos1" + language + ".html";
+    });
 
     $(".lazo").click(function() {
         window.location.href = "padrinos2" + language + ".html";
