@@ -120,6 +120,12 @@ p.mobileSubMenus {
     padding-left: 8vh;
 }
 
+a.mobileMenus {
+    font-size: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 a.mobileSubMenus {
       font-size: 18px !important;
       padding-left: 0 !important;
