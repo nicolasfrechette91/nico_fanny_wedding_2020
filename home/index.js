@@ -288,7 +288,7 @@ $(document).ready(function(){
   });
 
   $("[id^='teamGroom']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../teamBachelor/teamBachelor" + language + ".html";
   });
 
   $("[id^='bachelor']").click(function() {

@@ -1,0 +1,143 @@
+/* hotel Exclusive css */
+html {
+    background-color: #ced9df;
+}
+
+body {
+    background-color: #ced9df;
+    background-image: url(../global/pictures/background_header.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 33%;
+    margin: 0px;
+}
+
+p.padrinosHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+  padding-left: 2vh;
+  color: #cc0066;
+}
+
+p.padrinosSubheader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-right: 2vh;
+  color: #cc0066;
+}
+
+.imageGroup {
+    text-align: center;
+}
+
+.imagePadrinosMiis {
+    height: 20vh;
+}
+
+.imagePadrinosMiisLeft {
+    padding-right: 30vh;
+}
+
+.imagePadrinosMiisRight {
+    padding-left: 30vh;
+}
+
+.imagePadrinosLastMii {
+    padding-bottom: 1vh;
+    padding-right: 50vh;
+}
+
+.imagePadrinosIglesia {
+    height: 10vh;
+    padding-bottom: 13vh;
+}
+
+.imagePadrinosLazo {
+    height: 10vh;
+    padding-bottom: 11vh;
+}
+
+.imagePadrinosAnillos {
+    height: 7vh;
+    padding-bottom: 12vh;
+}
+
+.imagePadrinosArras {
+    height: 7vh;
+    padding-bottom: 13vh;
+}
+
+.imagePadrinosBiblia {
+    height: 5vh;
+    padding-bottom: 12vh;
+}
+
+.imagePadrinosBouquet {
+    height: 11vh;
+    padding-bottom: 12vh;
+}
+
+.imagePadrinosCar {
+    height: 25vh;
+}
+
+.imagePadrinosMiisMobile {
+    height: 15vh;
+}
+
+.imagePadrinosMiisLeftMobile {
+    padding-right: 20vh;
+}
+
+.imagePadrinosMiisRightMobile {
+    padding-left: 20vh;
+}
+
+.imagePadrinosLastMiiMobile {
+    padding-bottom: 1vh;
+    padding-right: 5vh;
+}
+
+.imagePadrinosIglesiaMobile {
+    height: 8vh;
+    padding-bottom: 10vh;
+}
+
+.imagePadrinosLazoMobile {
+    height: 8vh;
+    padding-bottom: 8vh;
+}
+
+.imagePadrinosAnillosMobile {
+    height: 7vh;
+    padding-bottom: 9vh;
+}
+
+.imagePadrinosArrasMobile {
+    height: 7vh;
+    padding-bottom: 10vh;
+}
+
+.imagePadrinosBibliaMobile {
+    height: 5vh;
+    padding-bottom: 10vh;
+}
+
+.imagePadrinosBouquetMobile {
+    height: 11vh;
+    padding-bottom: 10vh;
+}
+
+.imagePadrinosCarMobile {
+    height: 18vh;
+}
