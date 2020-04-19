@@ -180,64 +180,64 @@ p.teamBacheloretteBottomMobile {
 
 .teamBachelorette-centered-mobile-1 {
   position: absolute;
-  top: 8px;
-  left: 239px;
+  top: 0px;
+  left: 169px;
   transform: rotate(2deg);
 }
 
 .teamBachelorette-centered-mobile-2 {
   position: absolute;
-  top: 17px;
-  left: 465px;
+  top: 9px;
+  left: 390px;
   transform: rotate(1.8deg);
 }
 
 .teamBachelorette-centered-mobile-3 {
   position: absolute;
-  top: 120px;
-  left: 552px;
+  top: 112px;
+  left: 480px;
   transform: rotate(38.4deg);
 }
 
 .teamBachelorette-centered-mobile-4 {
   position: absolute;
-  top: 258.5px;
-  left: 558px;
+  top: 248.5px;
+  left: 488px;
   transform: rotate(74.5deg);
 }
 
 .teamBachelorette-centered-mobile-5 {
   position: absolute;
-  top: 374px;
-  left: 485px;
+  top: 364px;
+  left: 415px;
   transform: rotate(110.1deg);
 }
 
 .teamBachelorette-centered-mobile-6 {
   position: absolute;
-  top: 425px;
-  left: 358px;
+  top: 415px;
+  left: 288px;
   transform: rotate(146deg);
 }
 
 .teamBachelorette-centered-mobile-7 {
   position: absolute;
-  top: 390px;
-  left: 226px;
+  top: 380px;
+  left: 156px;
   transform: rotate(182deg);
 }
 
 .teamBachelorette-centered-mobile-8 {
   position: absolute;
-  top: 285px;
-  left: 139px;
+  top: 275px;
+  left: 69px;
   transform: rotate(218deg);
 }
 
 .teamBachelorette-centered-mobile-9 {
   position: absolute;
-  top: 148px;
-  left: 130px;
+  top: 138px;
+  left: 60px;
   transform: rotate(254deg);
   mix-blend-mode: multiply;
   z-index: 1;
@@ -245,8 +245,8 @@ p.teamBacheloretteBottomMobile {
 
 .teamBachelorette-centered-mobile-10 {
   position: absolute;
-  top: 32px;
-  left: 204px;
+  top: 22px;
+  left: 134px;
   transform: rotate(290deg);
   mix-blend-mode: multiply;
 }
