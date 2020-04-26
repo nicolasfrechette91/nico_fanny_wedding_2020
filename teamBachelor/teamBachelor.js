@@ -14,9 +14,45 @@ $(document).ready(function(){
        window.location.href = "../home/index" + language + ".html";
   });
 
-    $(".iglesia").click(function() {
-        window.location.href = "padrinos1" + language + ".html";
+    $(".imageTableSelectionOriginal").click(function() {
+        showHideSelectedCharacter('noSelection');
     });
+
+   /* $(".luigi.imageTableSelection").click(function() {
+        showHideSelectedCharacter('luigi');
+    });
+
+    $(".mario.imageTableSelection").click(function() {
+        showHideSelectedCharacter('mario');
+    });
+
+    $(".link.imageTableSelection").click(function() {
+        showHideSelectedCharacter('link');
+    });
+
+    $(".falcon.imageTableSelection").click(function() {
+        showHideSelectedCharacter('falcon');
+    });
+
+    $(".ness.imageTableSelection").click(function() {
+        showHideSelectedCharacter('ness');
+    });
+
+    $(".yoshi.imageTableSelection").click(function() {
+        showHideSelectedCharacter('yoshi');
+    });
+
+    $(".kirby.imageTableSelection").click(function() {
+        showHideSelectedCharacter('kirby');
+    });
+
+    $(".fox.imageTableSelection").click(function() {
+        showHideSelectedCharacter('fox');
+    });
+
+    $(".pikachu.imageTableSelection").click(function() {
+        showHideSelectedCharacter('pikachu');
+    });*/
 });
 
 function showHideMobile(isMobile){
@@ -25,5 +61,21 @@ function showHideMobile(isMobile){
         $('.desktop').hide();
       } else {
         $('.mobile').hide();
+    }
+}
+
+function showHideSelectedCharacter(classname){
+    if($("div." + classname).is(":visible")) {
+        $("div." + classname).hide();
+        $(".selected").removeClass("selected");
+        $("div.noSelection").show();
+        $("div.noSelection").addClass("selected");
+
+    } else {
+        $(".selected").hide();
+        $(".selected").removeClass("selected");
+        $("div." + classname).show();
+        $("div." + classname).addClass("selected");
+        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
     }
 }

@@ -70,6 +70,11 @@ span.teamGroomHeaderImage {
     height: 10vh;
 }
 
+.imageBackMobile {
+    height: 5vh;
+    padding-right: 5vh;
+}
+
 .image1Player {
     padding-top: 5vh;
     padding-left: 20vh;
