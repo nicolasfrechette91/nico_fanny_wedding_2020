@@ -80,6 +80,11 @@ span.teamGroomHeaderImage {
     padding-left: 20vh;
 }
 
+.image1PlayerMobile {
+    padding-top: 2vh;
+    padding-left: 1vh;
+}
+
 .imageTableSelection {
     width: 233px;
     border-color: #52342C;
@@ -125,8 +130,26 @@ p.teamGroomBestTimeDescription {
   white-space: nowrap;
 }
 
+p.teamGroomBestTimeDescriptionMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: left;
+  padding-left: 350px;
+  color: white;
+  margin: 0;
+  padding-bottom: 5vh;
+}
+
 .teamGroomBestTimeText {
     padding-left: 5vh;
+}
+
+.teamGroomBestTimeTextMobile {
+    padding-left: 0vh;
 }
 
 .bestTime {
