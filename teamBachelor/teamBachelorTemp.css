@@ -1,0 +1,172 @@
+/* team Bachelor Exclusive css */
+html {
+    background-image: url(../global/pictures/teamBachelor/WillYouBe.jpg) !important;
+    background-size: 100% 100%;
+}
+
+div.teamGroomHeader {
+  padding-top: 30vh;
+}
+
+.desktop {
+    padding-top: 30vh;
+}
+
+.padrinosSubmissionButton {
+    padding: 20px 60px;
+    background-color: black;
+    color: #D3A919;
+    border-radius: 16px;
+    font-size: 32px;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+
+
+p.teamGroomHeaderText {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #D3A919;
+  margin: 0;
+  padding-bottom: 5vh;
+}
+
+span.teamGroomHeaderText {
+    padding-top: 2vh;
+}
+
+span.teamGroomHeaderImage {
+    float: right;
+    text-align: right;
+    padding-right: 5vh;
+}
+
+.teamBachelorTable {
+    width: 0;
+    font-size: 0px;
+    border-spacing: 0px;
+}
+
+.teamBachelorTableRow {
+
+}
+
+.teamBachelorTableCell {
+    padding: 0;
+    width: 238px;
+}
+
+.teamBachelorTableCellFirst {
+    padding-left: 10%;
+    width: 238px;
+}
+
+.teamBachelorTableCellLast {
+    padding-right: 2%;
+    width: 238px;
+}
+
+.imageBack {
+    height: 10vh;
+}
+
+.imageBackMobile {
+    height: 5vh;
+    padding-right: 5vh;
+}
+
+.image1Player {
+    padding-top: 5vh;
+    padding-left: 20vh;
+}
+
+.image1PlayerMobile {
+    padding-top: 2vh;
+    padding-left: 1vh;
+}
+
+.imageTableSelection {
+    width: 233px;
+    border-color: #52342C;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.imageTableSelectionOriginal {
+    width: 233px;
+    height: 200px;
+    border-color: #52342C;
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.teamGroomBestTimeRow {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  padding-left: 2vh;
+  color: white;
+  margin: 0;
+  padding-bottom: 5vh;
+  white-space: nowrap;
+}
+
+p.teamGroomBestTimeDescription {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  padding-left: 550px;
+  color: white;
+  margin: 0;
+  padding-bottom: 5vh;
+  white-space: nowrap;
+}
+
+p.teamGroomBestTimeDescriptionMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: left;
+  padding-left: 350px;
+  color: white;
+  margin: 0;
+  padding-bottom: 5vh;
+}
+
+.teamGroomBestTimeText {
+    padding-left: 5vh;
+}
+
+.teamGroomBestTimeTextMobile {
+    padding-left: 0vh;
+}
+
+.bestTime {
+    color: white;
+    float: right;
+    padding-right: 50vh;
+    padding-top: 30vh;
+    font-size: 48px;
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    }
+}
+

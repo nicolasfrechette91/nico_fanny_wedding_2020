@@ -185,15 +185,6 @@ p.description {
     margin-right: 10%;
 }
 
-.padrinosSubmissionButton {
-    padding: 20px 60px;
-    background-color: black;
-    color: white;
-    border-radius: 16px;
-    font-size: 32px;
-    margin-bottom: 5vh;
-}
-
 .leftMiiLast {
     width: 50vh;
 }
@@ -323,15 +314,6 @@ p.descriptionMobile {
     display: inline-block;
     margin-left: 30%;
     margin-right: 10%;
-}
-
-.padrinosSubmissionButtonMobile {
-    padding: 20px 60px;
-    background-color: black;
-    color: white;
-    border-radius: 16px;
-    font-size: 32px;
-    margin-top: 5vh;
 }
 
 .nextButton {
