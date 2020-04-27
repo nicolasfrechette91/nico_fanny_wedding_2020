@@ -14,6 +14,10 @@ $(document).ready(function(){
        window.location.href = "../home/index" + language + ".html";
   });
 
+  $(".imageBackMobile").click(function() {
+       window.location.href = "../home/index" + language + ".html";
+  });
+
     $(".imageTableSelectionOriginal").click(function() {
         showHideSelectedCharacter('noSelection');
     });

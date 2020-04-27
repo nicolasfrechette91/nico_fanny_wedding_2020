@@ -1,104 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Invit&eacute;s d'Honneur</title>
-    <link rel="stylesheet" href="../global/css/global.css">
-    <link rel="stylesheet" href="teamBachelor.css">
-    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-    <script src="../global/jquery/jquery-3.4.1.min.js"></script>
-    <script src="teamBachelor.js"></script>
-</head>
+    <head>
+        <title>&Eacute;quipe Mari&eacute;</title>
+        <link rel="stylesheet" href="../global/css/global.css">
+        <link rel="stylesheet" href="teamBachelor.css">
+        <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+        <script src="../global/jquery/jquery-3.4.1.min.js"></script>
+        <script src="teamBachelor.js"></script>
+    </head>
     <body>
-        <p class="padrinosHeader">D&eacute;couvrez les Invit&eacute;s d'Honneur</p>
-        <p class="padrinosSubheader">*Cliquez sur les images pour en voir plus</p>
+        <div class="teamGroomHeader desktop">
+            <p class="teamGroomHeaderText"><span class="teamGroomHeaderText">&Eacute;quipe Mari&eacute;</span> <span class="teamGroomHeaderImage"><img class="imageBack" src="../global/pictures/teamBachelor/back.png" alt="awesome couple"></span></p>
+        </div>
+
+        <div class="teamGroomHeader mobile">
+            <p class="teamGroomHeaderText"><span class="teamGroomHeaderText">&Eacute;quipe Mari&eacute;</span> <span class="teamGroomHeaderImage"><img class="imageBackMobile" src="../global/pictures/teamBachelor/back.png" alt="awesome couple"></span></p>
+        </div>
 
         <div class="desktop">
-            <div class="imageGroup">
-                <img class="imagePadrinosMiis" src="../global/pictures/padrinos/nico.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis" src="../global/pictures/padrinos/fanny.jpg" alt="awesome couple">
+            <table class="teamBachelorTable">
+                <tr class="teamBachelorTableRow">
+                    <td class="teamBachelorTableCellFirst"><img class="imageTableSelection luigi" src="../global/pictures/teamBachelor/luigiHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection mario" src="../global/pictures/teamBachelor/marioHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelectionOriginal" src="../global/pictures/teamBachelor/dk.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection link" src="../global/pictures/teamBachelor/linkHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelectionOriginal" src="../global/pictures/teamBachelor/samus.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCellLast"><img class="imageTableSelection falcon" src="../global/pictures/teamBachelor/falconHidden.jpg" alt="awesome couple"></td>
+                </tr>
+                <tr class="teamBachelorTableRow">
+                    <td class="teamBachelorTableCellFirst"><img class="imageTableSelection ness" src="../global/pictures/teamBachelor/nessHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection yoshi" src="../global/pictures/teamBachelor/yoshiHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection kirby" src="../global/pictures/teamBachelor/kirbyHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection fox" src="../global/pictures/teamBachelor/foxHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection pikachu" src="../global/pictures/teamBachelor/pikachuHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCellLast"><img class="imageTableSelectionOriginal" src="../global/pictures/teamBachelor/jigglypuff.jpg" alt="awesome couple"></td>
+                </tr>
+            </table>
+
+            <div class="noSelection selected">
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/1player.jpg" alt="awesome couple"></span></p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosIglesia iglesia" src="../global/pictures/padrinos/iglesia.png" alt="awesome couple">
-                <img class="imagePadrinosMiis iglesia" src="../global/pictures/padrinos/luis.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis imagePadrinosMiisLeft iglesia" src="../global/pictures/padrinos/yessy.jpg" alt="awesome couple">
+            <div class="luigi" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/luigiSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2003-2008</span></p>
+                <p class="teamGroomBestTimeDescription">Le secondaire au complet ;)</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosMiis imagePadrinosMiisRight lazo" src="../global/pictures/padrinos/lety.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis lazo" src="../global/pictures/padrinos/oscar.jpg" alt="awesome couple">
-                <img class="imagePadrinosLazo lazo" src="../global/pictures/padrinos/lazo.png" alt="awesome couple">
+            <div class="mario" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/marioSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2008-2010</span></p>
+                <p class="teamGroomBestTimeDescription">Cégep: salon étudiant / Ton chalet!</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosAnillos anillos" src="../global/pictures/padrinos/anillos.png" alt="awesome couple">
-                <img class="imagePadrinosMiis anillos" src="../global/pictures/padrinos/david.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis imagePadrinosMiisLeft anillos" src="../global/pictures/padrinos/lore.jpg" alt="awesome couple">
+            <div class="link" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/linkSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2007</span></p>
+                <p class="teamGroomBestTimeDescription">Tout l'été chez vous !</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosMiis imagePadrinosMiisRight arras" src="../global/pictures/padrinos/ede.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis arras" src="../global/pictures/padrinos/manuel.jpg" alt="awesome couple">
-                <img class="imagePadrinosArras arras" src="../global/pictures/padrinos/arras.png" alt="awesome couple">
+            <div class="falcon" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/falconSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2008</span></p>
+                <p class="teamGroomBestTimeDescription">Tout l'été chez vous !</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosBiblia biblia" src="../global/pictures/padrinos/biblia.png" alt="awesome couple">
-                <img class="imagePadrinosMiis biblia" src="../global/pictures/padrinos/aaron.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis imagePadrinosMiisLeft biblia" src="../global/pictures/padrinos/paulina.jpg" alt="awesome couple">
+            <div class="ness" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/nessSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2008-2010</span></p>
+                <p class="teamGroomBestTimeDescription">Cégep: salon étudiant  :)</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosMiis imagePadrinosMiisRight bouquet" src="../global/pictures/padrinos/melo.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiis bouquet" src="../global/pictures/padrinos/lili.jpg" alt="awesome couple">
-                <img class="imagePadrinosBouquet bouquet" src="../global/pictures/padrinos/bouquet.png" alt="awesome couple">
+            <div class="yoshi" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/yoshiSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2013-2017</span></p>
+                <p class="teamGroomBestTimeDescription">Toutes les party / être colocs :D</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosCar car" src="../global/pictures/padrinos/car.png" alt="awesome couple">
-                <img class="imagePadrinosMiis imagePadrinosLastMii car" src="../global/pictures/padrinos/armando.jpg" alt="awesome couple">
+            <div class="kirby" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/kirbySelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2015-2016</span></p>
+                <p class="teamGroomBestTimeDescription">Vivre ensemble !</p>
+            </div>
+            <div class="fox" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/foxSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2007-2008</span></p>
+                <p class="teamGroomBestTimeDescription">Smash tout le temps !</p>
+            </div>
+            <div class="pikachu" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1Player" src="../global/pictures/teamBachelor/pikachuSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeText">Meilleur Temps : 2014-2015</span></p>
+                <p class="teamGroomBestTimeDescription">Vivre ensemble !</p>
             </div>
         </div>
 
         <div class="mobile">
-            <div class="imageGroup">
-                <img class="imagePadrinosMiisMobile" src="../global/pictures/padrinos/nico.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile" src="../global/pictures/padrinos/fanny.jpg" alt="awesome couple">
+            <table class="teamBachelorTable">
+                <tr class="teamBachelorTableRow">
+                    <td class="teamBachelorTableCellFirst"><img class="imageTableSelection luigi" src="../global/pictures/teamBachelor/luigiHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection mario" src="../global/pictures/teamBachelor/marioHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCellLast"><img class="imageTableSelectionOriginal" src="../global/pictures/teamBachelor/dk.jpg" alt="awesome couple"></td>
+                </tr>
+                <tr class="teamBachelorTableRow">
+                    <td class="teamBachelorTableCellFirst"><img class="imageTableSelection link" src="../global/pictures/teamBachelor/linkHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelectionOriginal" src="../global/pictures/teamBachelor/samus.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCellLast"><img class="imageTableSelection falcon" src="../global/pictures/teamBachelor/falconHidden.jpg" alt="awesome couple"></td>
+                </tr>
+                <tr class="teamBachelorTableRow">
+                    <td class="teamBachelorTableCellFirst"><img class="imageTableSelection ness" src="../global/pictures/teamBachelor/nessHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection yoshi" src="../global/pictures/teamBachelor/yoshiHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCellLast"><img class="imageTableSelection kirby" src="../global/pictures/teamBachelor/kirbyHidden.jpg" alt="awesome couple"></td>
+                </tr>
+                <tr class="teamBachelorTableRow">
+                    <td class="teamBachelorTableCellFirst"><img class="imageTableSelection fox" src="../global/pictures/teamBachelor/foxHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCell"><img class="imageTableSelection pikachu" src="../global/pictures/teamBachelor/pikachuHidden.jpg" alt="awesome couple"></td>
+                    <td class="teamBachelorTableCellLast"><img class="imageTableSelectionOriginal" src="../global/pictures/teamBachelor/jigglypuff.jpg" alt="awesome couple"></td>
+                </tr>
+            </table>
+
+            <div class="noSelection selected">
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/1player.jpg" alt="awesome couple"></span></p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosIglesiaMobile iglesia" src="../global/pictures/padrinos/iglesia.png" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile iglesia" src="../global/pictures/padrinos/luis.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile imagePadrinosMiisLeftMobile iglesia" src="../global/pictures/padrinos/yessy.jpg" alt="awesome couple">
+            <div class="luigi" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/luigiSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2003-2008</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Le secondaire au complet ;)</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosMiisMobile imagePadrinosMiisRightMobile lazo" src="../global/pictures/padrinos/lety.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile lazo" src="../global/pictures/padrinos/oscar.jpg" alt="awesome couple">
-                <img class="imagePadrinosLazoMobile lazo" src="../global/pictures/padrinos/lazo.png" alt="awesome couple">
+            <div class="mario" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/marioSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2008-2010</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Cégep: salon étudiant / Ton chalet!</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosAnillosMobile anillos" src="../global/pictures/padrinos/anillos.png" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile anillos" src="../global/pictures/padrinos/david.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile imagePadrinosMiisLeftMobile anillos" src="../global/pictures/padrinos/lore.jpg" alt="awesome couple">
+            <div class="link" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/linkSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2007</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Tout l'été chez vous !</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosMiisMobile imagePadrinosMiisRightMobile arras" src="../global/pictures/padrinos/ede.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile arras" src="../global/pictures/padrinos/manuel.jpg" alt="awesome couple">
-                <img class="imagePadrinosArrasMobile arras" src="../global/pictures/padrinos/arras.png" alt="awesome couple">
+            <div class="falcon" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/falconSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2008</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Tout l'été chez vous !</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosBibliaMobile biblia" src="../global/pictures/padrinos/biblia.png" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile biblia" src="../global/pictures/padrinos/aaron.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile imagePadrinosMiisLeftMobile biblia" src="../global/pictures/padrinos/paulina.jpg" alt="awesome couple">
+            <div class="ness" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/nessSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2008-2010</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Cégep: salon étudiant  :)</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosMiisMobile imagePadrinosMiisRightMobile bouquet" src="../global/pictures/padrinos/melo.jpg" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile bouquet" src="../global/pictures/padrinos/lili.jpg" alt="awesome couple">
-                <img class="imagePadrinosBouquetMobile bouquet" src="../global/pictures/padrinos/bouquet.png" alt="awesome couple">
+            <div class="yoshi" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/yoshiSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2013-2017</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Toutes les party / être colocs :D</p>
             </div>
-            <div class="imageGroup">
-                <img class="imagePadrinosCarMobile car" src="../global/pictures/padrinos/car.png" alt="awesome couple">
-                <img class="imagePadrinosMiisMobile imagePadrinosLastMiiMobile car" src="../global/pictures/padrinos/armando.jpg" alt="awesome couple">
+            <div class="kirby" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/kirbySelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2015-2016</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Vivre ensemble !</p>
+            </div>
+            <div class="fox" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/foxSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2007-2008</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Smash tout le temps !</p>
+            </div>
+            <div class="pikachu" hidden>
+                <p class="teamGroomBestTimeRow"><span><img class="image1PlayerMobile" src="../global/pictures/teamBachelor/pikachuSelected.jpg" alt="awesome couple"></span> <span class="teamGroomBestTimeTextMobile">Meilleur Temps : 2014-2015</span></p>
+                <p class="teamGroomBestTimeDescriptionMobile">Vivre ensemble !</p>
             </div>
         </div>
-
-        <table class="prevNextButtons">
-            <tr>
-                <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/padrinos/PrevPage.png" alt="awesome couple"><a href="../home/index_fr.html">Menu Principal</a></td>
-            </tr>
-        </table>
 
         <p id="page" hidden>_fr</p>
     </body>

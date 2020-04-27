@@ -12,6 +12,10 @@ div.teamGroomHeader {
     padding-top: 30vh;
 }
 
+.mobile {
+    padding-top: 30vh;
+}
+
 .padrinosSubmissionButton {
     padding: 20px 60px;
     background-color: black;
@@ -29,7 +33,7 @@ p.teamGroomHeaderText {
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 26.4px;
+  line-height: 70.4px;
   color: #D3A919;
   margin: 0;
   padding-bottom: 5vh;
