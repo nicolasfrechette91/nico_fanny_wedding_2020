@@ -425,6 +425,7 @@ p.teamBacheloretteBottomMobile {
   left: 335px;
   color: white;
   text-decoration: underline;
+  z-index: 3;
 }
 
 .teamBachelorette-text-mobile-2 {
