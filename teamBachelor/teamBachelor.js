@@ -22,6 +22,8 @@ $(document).ready(function(){
         showHideSelectedCharacter('noSelection');
     });
 
+    $(".teamBachelorTableCellFirst").css("padding-left", "10%");
+
    /* $(".luigi.imageTableSelection").click(function() {
         showHideSelectedCharacter('luigi');
     });
