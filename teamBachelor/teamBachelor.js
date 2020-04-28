@@ -36,10 +36,10 @@ $(document).ready(function(){
     $(".link.imageTableSelection").click(function() {
         showHideSelectedCharacter('link');
     });
-
+*/
     $(".falcon.imageTableSelection").click(function() {
         showHideSelectedCharacter('falcon');
-    });*/
+    });
 
     $(".ness.imageTableSelection").click(function() {
         showHideSelectedCharacter('ness');
