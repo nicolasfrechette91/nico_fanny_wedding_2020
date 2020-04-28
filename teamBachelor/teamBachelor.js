@@ -39,13 +39,13 @@ $(document).ready(function(){
 
     $(".falcon.imageTableSelection").click(function() {
         showHideSelectedCharacter('falcon');
-    });
+    });*/
 
     $(".ness.imageTableSelection").click(function() {
         showHideSelectedCharacter('ness');
     });
 
-    $(".yoshi.imageTableSelection").click(function() {
+   /* $(".yoshi.imageTableSelection").click(function() {
         showHideSelectedCharacter('yoshi');
     });
 
