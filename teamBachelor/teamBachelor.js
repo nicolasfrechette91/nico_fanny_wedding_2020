@@ -45,10 +45,10 @@ $(document).ready(function(){
         showHideSelectedCharacter('ness');
     });
 
-   /* $(".yoshi.imageTableSelection").click(function() {
+    $(".yoshi.imageTableSelection").click(function() {
         showHideSelectedCharacter('yoshi');
     });
-
+/*
     $(".kirby.imageTableSelection").click(function() {
         showHideSelectedCharacter('kirby');
     });
