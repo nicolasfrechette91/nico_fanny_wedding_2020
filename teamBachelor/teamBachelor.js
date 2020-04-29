@@ -28,11 +28,11 @@ $(document).ready(function(){
    /* $(".luigi.imageTableSelection").click(function() {
         showHideSelectedCharacter('luigi');
     });
-
+*/
     $(".mario.imageTableSelection").click(function() {
         showHideSelectedCharacter('mario');
     });
-
+/*
     $(".link.imageTableSelection").click(function() {
         showHideSelectedCharacter('link');
     });
@@ -52,11 +52,11 @@ $(document).ready(function(){
     $(".kirby.imageTableSelection").click(function() {
         showHideSelectedCharacter('kirby');
     });
-
+*/
     $(".fox.imageTableSelection").click(function() {
         showHideSelectedCharacter('fox');
     });
-
+/*
     $(".pikachu.imageTableSelection").click(function() {
         showHideSelectedCharacter('pikachu');
     });*/
