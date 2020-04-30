@@ -32,11 +32,11 @@ $(document).ready(function(){
     $(".mario.imageTableSelection").click(function() {
         showHideSelectedCharacter('mario');
     });
-/*
+
     $(".link.imageTableSelection").click(function() {
         showHideSelectedCharacter('link');
     });
-*/
+
     $(".falcon.imageTableSelection").click(function() {
         showHideSelectedCharacter('falcon');
     });
@@ -48,11 +48,11 @@ $(document).ready(function(){
     $(".yoshi.imageTableSelection").click(function() {
         showHideSelectedCharacter('yoshi');
     });
-/*
+
     $(".kirby.imageTableSelection").click(function() {
         showHideSelectedCharacter('kirby');
     });
-*/
+
     $(".fox.imageTableSelection").click(function() {
         showHideSelectedCharacter('fox');
     });
