@@ -56,10 +56,10 @@ $(document).ready(function(){
     $(".fox.imageTableSelection").click(function() {
         showHideSelectedCharacter('fox');
     });
-/*
+
     $(".pikachu.imageTableSelection").click(function() {
         showHideSelectedCharacter('pikachu');
-    });*/
+    });
 });
 
 function showHideMobile(isMobile){
