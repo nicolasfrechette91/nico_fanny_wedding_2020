@@ -248,7 +248,7 @@ $(document).ready(function(){
 
   //Page redirection
   $("[id^='meetCouple']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../meetCouple/meetCouple" + language + ".html";
   });
 
   $("[id^='cheesy']").click(function() {
