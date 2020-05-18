@@ -36,29 +36,30 @@ $(document).ready(function(){
             position: 'absolute',
             cursor: 'default',
             margin: '0px',
-            padding: '30vh 0',
+            padding: '27vh 0',
             width: '-=28vh',
             height: '-=28vh',
             top: origPos.top,
             left: origPos.left
-        }).animate({top: properties.top, left: properties.left, deg: -360}, {
+        }).animate({top: properties.top - 10, left: properties.left, deg: -360}, {
             duration: 2000 , step: function(now) {
                el.css({
                    transform: 'rotate(' + now + 'deg)'
                });
             }
-        }).animate({top: properties.top, left: properties.left}, 100,
+        }).animate({top: properties.top - 10, left: properties.left}, 100,
         function() {
             if(isFanny){
-                $('.fannyAboutNico').show();
-                $('.fannyAboutFanny').show();
+                $('.fannyAboutNico').show(1000);
+                $('.fannyAboutFanny').show(2000);
             } else {
-              $('.nicoAboutFanny').show();
-              $('.nicoAboutNico').show();
+              $('.nicoAboutFanny').show(1000);
+              $('.nicoAboutNico').show(2000);
             }
             $('.mainImagesContainer').css({'padding-bottom': '0'});
             $('.imageLeftContainer').css({'width': '0'});
             $('.imageRightContainer').css({'width': '0'});
+            $(".returnTable").show();
         });
     }
 
@@ -72,16 +73,16 @@ $(document).ready(function(){
             'z-index': '-1',
             position: 'absolute',
             cursor: 'pointer',
-            top: origPos.top,
+            top: origPos.top + 20,
             left: origPos.left,
             deg: 360,
         }).animate({top: properties.top, left: properties.left, deg: 360}, {
-            duration: 2000, step: function(now) {
+            duration: 1000, step: function(now) {
                 el.css({
                     transform: 'rotate(' + now + 'deg)'
                 });
             }
-        }).animate({'z-index': '0', width: '+=28vh', height: '+=28vh', margin: '0 15vh', padding: '0',}, 250,
+        }).animate({'z-index': '0', width: '+=28vh', height: '+=28vh', margin: '0 15vh', padding: '0'}, 250,
         function() {
           $(".imageMainLeft").show();
           $(".imageMainRight").show();
@@ -95,6 +96,8 @@ $(document).ready(function(){
           $(".returnTable").hide();
           $(".meetCoupleHeader").show();
           $('.mainImagesContainer').css({'padding-bottom': '40vh'});
+          $('.imageMainRight').css({'top': ''});
+          $('.imageMainLeft').css({'top': ''});
         });
     }
 
@@ -106,7 +109,6 @@ $(document).ready(function(){
             $(".meetCoupleHeader").hide();
             $(".meetCoupleHeaderNico").show();
             $(".prevNextButtons").hide();
-            $(".returnTable").show();
             $(this).removeClass("imageMainRight");
             $(this).addClass("tempImageMainRight");
 
@@ -131,7 +133,6 @@ $(document).ready(function(){
             $(".meetCoupleHeader").hide();
             $(".meetCoupleHeaderFanny").show();
             $(".prevNextButtons").hide();
-            $(".returnTable").show();
             $(this).removeClass("imageMainLeft");
             $(this).addClass("tempImageMainLeft");
 
@@ -169,7 +170,7 @@ $(document).ready(function(){
         $('.imageRightContainer').css({'width': '50%'});
 
 
-        //var heightAdjustment = $(window).height() * 1 / 100;
+        //var heightAdjustment = $(window).height() * 3.5 / 100;
         var props = {'top' : topPosition, 'left' : leftPosition};
         if ($(".tempImageMainLeft")[0]){
           undoSpecialSlide($('.tempImageMainLeft'), props);

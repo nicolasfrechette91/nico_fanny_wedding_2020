@@ -23,6 +23,7 @@ p.meetCoupleHeaderNico {
   text-align: left;
   padding-left: 15vh;
   color: #C00000;
+  padding-bottom: 5vh;
 }
 
 p.meetCoupleHeaderFanny {
@@ -36,6 +37,7 @@ p.meetCoupleHeaderFanny {
   text-align: left;
   padding-left: 15vh;
   color: #800080;
+  padding-bottom: 5vh;
 }
 
 p.meetCoupleBottom {
