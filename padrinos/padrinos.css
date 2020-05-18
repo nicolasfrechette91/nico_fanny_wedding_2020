@@ -1,14 +1,6 @@
-/* hotel Exclusive css */
+/* padrinos Exclusive css */
 html {
-    background-color: #ced9df;
-}
-
-body {
-    background-color: #ced9df;
-    background-image: url(../global/pictures/background_header.png) !important;
-    background-repeat: no-repeat;
-    background-size: 100% 33%;
-    margin: 0px;
+    background-color: #ced9df !important;
 }
 
 p.padrinosHeader {
@@ -18,7 +10,7 @@ p.padrinosHeader {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  padding-top: 30vh;
+  padding-top: 25vh;
   text-align: left;
   padding-left: 2vh;
   color: #cc0066;

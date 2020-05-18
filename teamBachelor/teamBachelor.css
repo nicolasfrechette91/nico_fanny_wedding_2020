@@ -10,7 +10,7 @@ html {
 body {
     background-image: url(../global/pictures/background_header.png) !important;
     background-repeat: no-repeat;
-    background-size: 100% 33%;
+    background-size: 100% 33vh;
     margin: 0px;
 }
 
@@ -150,19 +150,5 @@ p.teamGroomBestTimeDescriptionMobile {
 
 .teamGroomBestTimeTextMobile {
     padding-left: 0vh;
-}
-
-.bestTime {
-    color: white;
-    float: right;
-    padding-right: 50vh;
-    padding-top: 30vh;
-    font-size: 48px;
-    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    }
 }
 
