@@ -1,7 +1,7 @@
 /* meet couple Exclusive css */
 p.meetCoupleHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 44px;
+  font-size: 56px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -14,7 +14,7 @@ p.meetCoupleHeader {
 
 p.meetCoupleHeaderNico {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 44px;
+  font-size: 56px;
   font-style: italic;
   font-variant: normal;
   font-weight: 700;
@@ -28,7 +28,7 @@ p.meetCoupleHeaderNico {
 
 p.meetCoupleHeaderFanny {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 44px;
+  font-size: 56px;
   font-style: italic;
   font-variant: normal;
   font-weight: 700;
@@ -60,12 +60,19 @@ p.meetCoupleBottomMobile {
   font-weight: 700;
   line-height: 26.4px;
   text-align: right;
-  padding-top: 15vh;
+  padding-top: 25vh;
+  padding-right: 5vh;
 }
 
 .mainImagesContainer {
     text-align: center;
     padding-bottom: 40vh;
+}
+
+.mainImagesContainerMobile {
+    text-align: center;
+    padding-bottom: 2vh;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .imageMainLeft, .tempImageMainLeft {
@@ -86,11 +93,27 @@ p.meetCoupleBottomMobile {
     position: relative;
  }
 
+ .imageMainLeftMobile, .tempImageMainLeftMobile {
+     height: 20vh;
+     width: 20vh;
+     margin-left: 2vh;
+     margin-right: 5vh;
+     cursor: pointer;
+     position: relative;
+ }
+
+ .imageMainRightMobile, .tempImageMainRightMobile {
+     height: 20vh;
+     width: 20vh;
+     margin-right: 5vh;
+     cursor: pointer;
+     position: relative;
+  }
+
  .imageLeftContainer {
      float: left;
      text-align: left;
      width: 50%;
-
 }
 
 .imageRightContainer {
@@ -100,8 +123,8 @@ p.meetCoupleBottomMobile {
 }
 
 .imageDescriptionRight {
-    width: 30vh;
-    height: 30vh;
+    width: 25vh;
+    height: 25vh;
     float: right;
     padding-right: 2vh;
     margin-left: 20px;
@@ -110,10 +133,9 @@ p.meetCoupleBottomMobile {
 }
 
 .imageDescriptionLeft {
-    width: 30vh;
-    height: 30vh;
+    width: 25vh;
+    height: 25vh;
     float: left;
-    padding-left: 2vh;
     margin-right: 20px;
     margin-bottom: 2vh;
     margin-top: 1vh;
@@ -127,7 +149,8 @@ p.meetCoupleBottomMobile {
   font-weight: 700;
   line-height: 40.4px;
   text-align: left;
-  padding-left: 5vh;
+  padding-left: 2vh;
+  padding-right: 1vh;
   color: white;
 }
 
@@ -140,7 +163,6 @@ p.meetCoupleBottomMobile {
   line-height: 40.4px;
   text-align: left;
   padding-top: 1vh;
-  padding-right: 5vh;
   color: white;
   margin-left: 2vh;
 }
@@ -149,6 +171,9 @@ p.meetCoupleBottomMobile {
     background-color: #000000;
     border-color: #C00000;
     border-style: solid;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 2vh;
 }
 
 .nicoAboutFanny {
@@ -156,6 +181,8 @@ p.meetCoupleBottomMobile {
     border-color: #000000;
     border-style: solid;
     margin-bottom: 2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .fannyAboutNico {
@@ -163,12 +190,17 @@ p.meetCoupleBottomMobile {
     border-color: #F600B6;
     border-style: solid;
     margin-bottom: 2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .fannyAboutFanny {
     background-color: #F600B6;
     border-color: #800080;
     border-style: solid;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 2vh;
 }
 
 td.returnButtons {
