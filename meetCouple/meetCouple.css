@@ -147,18 +147,28 @@ p.meetCoupleBottomMobile {
 
 .nicoAboutNico {
     background-color: #000000;
+    border-color: #C00000;
+    border-style: solid;
 }
 
 .nicoAboutFanny {
     background-color: #C00000;
+    border-color: #000000;
+    border-style: solid;
+    margin-bottom: 2vh;
 }
 
 .fannyAboutNico {
     background-color: #800080;
+    border-color: #F600B6;
+    border-style: solid;
+    margin-bottom: 2vh;
 }
 
 .fannyAboutFanny {
     background-color: #F600B6;
+    border-color: #800080;
+    border-style: solid;
 }
 
 td.returnButtons {
