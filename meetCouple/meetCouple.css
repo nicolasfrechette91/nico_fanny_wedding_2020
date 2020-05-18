@@ -1,5 +1,5 @@
-/* airplane Exclusive css */
-p.airplaneHeader {
+/* meet couple Exclusive css */
+p.meetCoupleHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
   font-style: normal;
@@ -9,52 +9,173 @@ p.airplaneHeader {
   padding-top: 30vh;
   text-align: left;
   padding-left: 2vh;
+  color: #F600B6;
 }
 
-p.airplaneTop {
+p.meetCoupleHeaderNico {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 28px;
-  font-style: normal;
+  font-size: 44px;
+  font-style: italic;
   font-variant: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 26.4px;
+  padding-top: 30vh;
   text-align: left;
-  background-color: #f6c09c;
-  margin: 2vh;
-  padding: 2vh;
+  padding-left: 15vh;
+  color: #C00000;
 }
 
-p.airplaneMiddle {
+p.meetCoupleHeaderFanny {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 28px;
+  font-size: 44px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 30vh;
+  text-align: left;
+  padding-left: 15vh;
+  color: #800080;
+}
+
+p.meetCoupleBottom {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  text-align: left;
-  margin: 2vh;
-  padding: 2vh;
+  text-align: right;
+  float: right;
+  padding-right: 20vh;
 }
 
-p.airplaneLink {
-    text-align: right !important;
+p.meetCoupleBottomMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: right;
+  padding-top: 15vh;
 }
 
-th.airplane {
+.mainImagesContainer {
     text-align: center;
+    padding-bottom: 40vh;
 }
 
-.airplaneButton {
-    border-color: #f6c09c;
-    background-color: white;
-    font-size: 28px;
-    border-style: solid;
-    border-width: thick;
+.imageMainLeft, .tempImageMainLeft {
+    height: 40vh;
+    width: 40vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    cursor: pointer;
+    position: relative;
 }
 
-.imageAirplane {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height:80%;
+.imageMainRight, .tempImageMainRight {
+    height: 40vh;
+    width: 40vh;
+    margin-right: 15vh;
+    margin-left: 15vh;
+    cursor: pointer;
+    position: relative;
+ }
+
+ .imageLeftContainer {
+     float: left;
+     text-align: left;
+     width: 50%;
+
+}
+
+.imageRightContainer {
+     float: left;
+     text-align: right;
+     width: 50%;
+}
+
+.imageDescriptionRight {
+    width: 30vh;
+    height: 30vh;
+    float: right;
+    padding-right: 2vh;
+    margin-left: 20px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.imageDescriptionLeft {
+    width: 30vh;
+    height: 30vh;
+    float: left;
+    padding-left: 2vh;
+    margin-right: 20px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+.descriptionRight {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+  text-align: left;
+  padding-left: 5vh;
+  color: white;
+}
+
+.descriptionLeft {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+  text-align: left;
+  padding-top: 1vh;
+  padding-right: 5vh;
+  color: white;
+  margin-left: 2vh;
+}
+
+.nicoAboutNico {
+    background-color: #000000;
+}
+
+.nicoAboutFanny {
+    background-color: #C00000;
+}
+
+.fannyAboutNico {
+    background-color: #800080;
+}
+
+.fannyAboutFanny {
+    background-color: #F600B6;
+}
+
+td.returnButtons {
+    text-align: left;
+    padding-left: 2vh;
+}
+
+.imageReturnPage {
+    padding-right: 1vh;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.return {
+    color: #551a8b;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.returnTable {
+    margin-top: 0 !important;
 }
