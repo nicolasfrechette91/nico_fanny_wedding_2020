@@ -4,6 +4,7 @@ html{
   background-image: url("../pictures/background_header.png");
   background-repeat: no-repeat;
   background-size: 100% 33vh;
+  cursor: default;
 }
 
 html, body {

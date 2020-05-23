@@ -133,3 +133,7 @@ p.padrinosSubheader {
 .imagePadrinosCarMobile {
     height: 18vh;
 }
+
+.iglesia, .lazo, .anillos, .arras, .biblia, .bouquet, .car {
+    cursor: pointer;
+}

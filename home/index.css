@@ -74,6 +74,7 @@ th.main {
   color: white;
   text-align: center;
   border-width: thin;
+  cursor: pointer;
 }
 
 td.main {
@@ -82,6 +83,7 @@ td.main {
   background-color: white;
   color: black;
   visibility: hidden;
+  cursor: pointer;
 }
 
 div.mainMenuFrame {
