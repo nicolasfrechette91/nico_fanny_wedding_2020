@@ -38,6 +38,7 @@ table.prevNextButtons {
 td.prevButtons {
     text-align: left;
     padding-left: 2vh;
+    font-size: 36px;
 }
 
 .imagePrevPage {
