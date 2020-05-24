@@ -15,7 +15,6 @@ $(document).ready(function(){
         showHideCardAndAttributes("teamBachelorette-text-");
       }
 
-
       var language = $('#page').text();
 
        $(".imagePrevPage").click(function() {
