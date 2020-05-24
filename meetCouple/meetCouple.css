@@ -177,6 +177,7 @@ p.meetCoupleBottomMobile {
   padding-left: 2vh;
   padding-right: 1vh;
   color: white;
+  font-size: 12px;
 }
 
 .descriptionLeftMobile {
@@ -189,6 +190,7 @@ p.meetCoupleBottomMobile {
   padding-top: 1vh;
   color: white;
   margin-left: 2vh;
+  font-size: 12px;
 }
 
 .nicoAboutNico, .nicoAboutNicoMobile {
