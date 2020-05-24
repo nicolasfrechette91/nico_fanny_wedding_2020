@@ -13,6 +13,7 @@ p.teamBacheloretteHeader {
   line-height: 26.4px;
   padding-top: 25vh;
   text-align: left;
+  padding-left: 2vh;
 }
 
 p.teamBacheloretteTop {
@@ -24,6 +25,7 @@ p.teamBacheloretteTop {
   line-height: 26.4px;
   padding-top: 2vh;
   text-align: left;
+  padding-left: 2vh;
 }
 
 p.teamBacheloretteBottom {
@@ -47,12 +49,14 @@ p.teamBacheloretteBottomMobile {
   font-weight: 700;
   line-height: 26.4px;
   text-align: right;
-  padding-top: 55vh;
+  padding-top: 1vh;
+  padding-right: 3vh;
+  padding-left: 5vh;
 }
 
 .teamBachelorette-main {
   position: absolute;
-  top: 350px;
+  top: 345px;
   left: 660px;
   z-index: 2;
   height: 90%;
@@ -60,8 +64,8 @@ p.teamBacheloretteBottomMobile {
 
 .teamBachelorette-main-mobile {
   position: absolute;
-  top: 200px;
-  left: 335px;
+  top: 270px;
+  left: 360px;
   z-index: 2;
   height: 50%;
 }
@@ -183,7 +187,8 @@ p.teamBacheloretteBottomMobile {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height:80%;
+    height: 300px;
+    width: 225px;
 }
 
 .teamBachelorette-text-1 {
@@ -375,8 +380,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 110px;
-  left: 160px;
+  top: 150px;
+  left: 120px;
   color: white;
   z-index: 2;
   text-decoration: underline;
@@ -391,8 +396,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 300px;
-  left: 90px;
+  top: 350px;
+  left: 50px;
   z-index: 2;
   color: white;
   text-decoration: underline;
@@ -407,8 +412,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 500px;
-  left: 140px;
+  top: 630px;
+  left: 120px;
   z-index: 1;
   color: white;
   text-decoration: underline;
@@ -423,8 +428,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 620px;
-  left: 320px;
+  top: 750px;
+  left: 340px;
   z-index: 1;
   color: white;
   text-decoration: underline;
@@ -439,8 +444,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 650px;
-  left: 520px;
+  top: 770px;
+  left: 570px;
   color: white;
   text-decoration: underline;
 }
@@ -454,8 +459,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 510px;
-  left: 620px;
+  top: 590px;
+  left: 720px;
   color: white;
   text-decoration: underline;
 }
@@ -469,8 +474,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 350px;
-  left: 750px;
+  top: 390px;
+  left: 840px;
   color: white;
   text-decoration: underline;
 }
@@ -484,8 +489,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 130px;
-  left: 700px;
+  top: 150px;
+  left: 770px;
   color: white;
   text-decoration: underline;
 }
@@ -499,8 +504,8 @@ p.teamBacheloretteBottomMobile {
   line-height: 26.4px;
   text-align: center;
   position: absolute;
-  top: 15px;
-  left: 540px;
+  top: 10px;
+  left: 580px;
   color: white;
   text-decoration: underline;
 }
@@ -512,17 +517,7 @@ table.prevNextButtonsBachelorette {
     font-size: 28px;
     font-weight: 700;
     color: #f6c09c;
-    padding-top: 1000px;
-}
-
-table.prevNextButtonsBacheloretteMobile {
-    table-layout:fixed;
-    width: 100%;
-    font-family: 'Berkshire Swash',cursive;
-    font-size: 28px;
-    font-weight: 700;
-    color: #f6c09c;
-    padding-top: 400px;
+    padding-top: 980px;
 }
 
 .teamBachelorette-card-centered {
@@ -539,8 +534,8 @@ table.prevNextButtonsBacheloretteMobile {
   height: 350px;
   width: 400px;
   background-color: blue;
-  top: 185px;
-  left: 270px;
+  top: 255px;
+  left: 290px;
   position: absolute;
   z-index: 4;
 }
@@ -634,5 +629,16 @@ table.prevNextButtonsBacheloretteMobile {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /*width:75%;*/
+}
+
+.circleContainerMobile {
+    position: absolute;
+    padding-left: 2vw;
+}
+
+.imageCircleMobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
 }
