@@ -86,11 +86,11 @@ $(document).ready(function(){
             }).animate({top: properties.top, left: properties.left}, 100,
             function() {
                 if(isFanny){
-                    $('.fannyAboutNico').show(1000);
-                    $('.fannyAboutFanny').show(2000);
+                    $('.fannyAboutNicoMobile').show(1000);
+                    $('.fannyAboutFannyMobile').show(2000);
                 } else {
-                  $('.nicoAboutFanny').show(1000);
-                  $('.nicoAboutNico').show(2000);
+                  $('.nicoAboutFannyMobile').show(1000);
+                  $('.nicoAboutNicoMobile').show(2000);
                 }
                 $('.mainImagesContainer').css({'padding-bottom': '0'});
                 $('.imageLeftContainer').css({'width': '0'});
@@ -302,10 +302,10 @@ $(document).ready(function(){
         $(".meetCoupleHeaderNico").hide();
         $(".meetCoupleHeaderFanny").hide();
         $(".returnTable").hide();
-        $('.fannyAboutNico').hide();
-        $('.fannyAboutFanny').hide();
-        $('.nicoAboutFanny').hide();
-        $('.nicoAboutNico').hide();
+        $('.fannyAboutNicoMobile').hide();
+        $('.fannyAboutFannyMobile').hide();
+        $('.nicoAboutFannyMobile').hide();
+        $('.nicoAboutNicoMobile').hide();
 
         $('.imageLeftContainer').css({'width': '50%'});
         $('.imageRightContainer').css({'width': '50%'});

@@ -167,7 +167,31 @@ p.meetCoupleBottomMobile {
   margin-left: 2vh;
 }
 
-.nicoAboutNico {
+.descriptionRightMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+  text-align: left;
+  padding-left: 2vh;
+  padding-right: 1vh;
+  color: white;
+}
+
+.descriptionLeftMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+  text-align: left;
+  padding-top: 1vh;
+  color: white;
+  margin-left: 2vh;
+}
+
+.nicoAboutNico, .nicoAboutNicoMobile {
     background-color: #000000;
     border-color: #C00000;
     border-style: solid;
@@ -176,7 +200,7 @@ p.meetCoupleBottomMobile {
     margin-bottom: 2vh;
 }
 
-.nicoAboutFanny {
+.nicoAboutFanny, .nicoAboutFannyMobile {
     background-color: #C00000;
     border-color: #000000;
     border-style: solid;
@@ -185,7 +209,7 @@ p.meetCoupleBottomMobile {
     margin-right: 1vh;
 }
 
-.fannyAboutNico {
+.fannyAboutNico, .fannyAboutNicoMobile {
     background-color: #800080;
     border-color: #F600B6;
     border-style: solid;
@@ -194,7 +218,7 @@ p.meetCoupleBottomMobile {
     margin-right: 1vh;
 }
 
-.fannyAboutFanny {
+.fannyAboutFanny, .fannyAboutFannyMobile {
     background-color: #F600B6;
     border-color: #800080;
     border-style: solid;
