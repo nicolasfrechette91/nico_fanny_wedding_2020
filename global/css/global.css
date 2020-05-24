@@ -50,6 +50,7 @@ td.prevButtons {
 td.nextButtons {
     text-align: right;
     padding-right: 2vh;
+    font-size: 36px;
 }
 
 .imageNextPage {
