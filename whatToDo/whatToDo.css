@@ -29,6 +29,10 @@ p.whatToDoTop {
   padding: 2vh;
 }
 
+.foodSubMenu {
+    display: none;
+}
+
 p.hotelMiddle {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
@@ -57,7 +61,7 @@ p.hotelLink {
     text-align: right !important;
 }
 
-th.hotel {
+th.whatToDo {
     text-align: center;
 }
 
@@ -93,7 +97,7 @@ td.hotelRowTable {
     padding: 1vh;
 }
 
-.hotelButton {
+.whatToDoButton {
     border-color: #f6c09c;
     background-color: white;
     font-size: 28px;
@@ -102,7 +106,7 @@ td.hotelRowTable {
     cursor: pointer;
 }
 
-.hotelButtonMobile {
+.whatToDoButtonMobile {
     border-color: #f6c09c;
     background-color: white;
     font-size: 36px;

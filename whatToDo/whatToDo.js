@@ -8,37 +8,21 @@ $(document).ready(function(){
 
     showHideMobile(isMobile);
 
-   $('#realPlazaButton').click(function() {
-     $('.medrano').hide();
-     $('.realPlaza').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#medranoButton').css('background-color', '');
-   });
 
-   $('#medranoButton').click(function() {
-     $('.realPlaza').hide();
-     $('.medrano').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#realPlazaButton').css('background-color', '');
-   });
+  $("[id$='Button']").click(function() {
+    var fullID = $(this).attr('id');
+    var currentButtonName = fullID.split('Button')[0];
 
-   $('#realPlazaButtonMobile').click(function() {
-     $('.medrano').hide();
-     $('.realPlaza').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#medranoButtonMobile').css('background-color', '');
-   });
-
-   $('#medranoButtonMobile').click(function() {
-     $('.realPlaza').hide();
-     $('.medrano').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#realPlazaButtonMobile').css('background-color', '');
-   });
+    $('.showHide').hide();
+    if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
+        unselectEveryButtons();
+    } else {
+        unselectEveryButtons();
+        $('.' + currentButtonName + 'SubMenu').show();
+        $('.' + currentButtonName).show();
+        $(this).css('background-color', '#eb4034');
+    }
+  });
 
   var language = $('#page').text();
 
@@ -58,4 +42,14 @@ function showHideMobile(isMobile){
       } else {
         $('.mobile').hide();
     }
+}
+
+function unselectEveryButtons(){
+    $('#foodButton').css('background-color', '');
+    $('#museumButton').css('background-color', '');
+    $('#shoppingButton').css('background-color', '');
+    $('#historyButton').css('background-color', '');
+    $('#outdoorButton').css('background-color', '');
+    $('#nightlifeButton').css('background-color', '');
+    $("[class$='SubMenu'").hide();
 }
