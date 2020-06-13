@@ -10,34 +10,54 @@ $(document).ready(function(){
 
    $('#realPlazaButton').click(function() {
      $('.medrano').hide();
-     $('.realPlaza').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#medranoButton').css('background-color', '');
+     if ($('#realPlazaButton').css('background-color') === 'rgb(235, 64, 52)') {
+         $('.realPlaza').hide();
+         $('#realPlazaButton').css('background-color', '');
+     } else {
+         $('.realPlaza').show();
+         showHideMobile(isMobile);
+         $(this).css('background-color', '#eb4034');
+         $('#medranoButton').css('background-color', '');
+     }
    });
 
    $('#medranoButton').click(function() {
      $('.realPlaza').hide();
-     $('.medrano').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#realPlazaButton').css('background-color', '');
+     if ($('#medranoButton').css('background-color') === 'rgb(235, 64, 52)') {
+         $('.medrano').hide();
+         $('#medranoButton').css('background-color', '');
+     } else {
+         $('.medrano').show();
+         showHideMobile(isMobile);
+         $(this).css('background-color', '#eb4034');
+         $('#realPlazaButton').css('background-color', '');
+     }
    });
 
    $('#realPlazaButtonMobile').click(function() {
      $('.medrano').hide();
-     $('.realPlaza').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#medranoButtonMobile').css('background-color', '');
+     if ($('#realPlazaButtonMobile').css('background-color') === 'rgb(235, 64, 52)') {
+         $('.realPlaza').hide();
+         $('#realPlazaButtonMobile').css('background-color', '');
+     } else {
+         $('.realPlaza').show();
+         showHideMobile(isMobile);
+         $(this).css('background-color', '#eb4034');
+         $('#medranoButtonMobile').css('background-color', '');
+     }
    });
 
    $('#medranoButtonMobile').click(function() {
      $('.realPlaza').hide();
-     $('.medrano').show();
-     showHideMobile(isMobile);
-     $(this).css('background-color', '#eb4034');
-     $('#realPlazaButtonMobile').css('background-color', '');
+     if ($('#medranoButtonMobile').css('background-color') === 'rgb(235, 64, 52)') {
+         $('.medrano').hide();
+         $('#medranoButtonMobile').css('background-color', '');
+     } else {
+         $('.medrano').show();
+         showHideMobile(isMobile);
+         $(this).css('background-color', '#eb4034');
+         $('#realPlazaButtonMobile').css('background-color', '');
+     }
    });
 
   var language = $('#page').text();
