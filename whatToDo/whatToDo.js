@@ -24,6 +24,21 @@ $(document).ready(function(){
     }
   });
 
+  $("[id$='SubMenu']").click(function() {
+    var fullID = $(this).attr('id');
+    var currentButtonName = fullID.split('SubMenu')[0];
+
+    $('.showHide').hide();
+    if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
+        $(this).css('background-color', '');
+        $('.' + currentButtonName).hide();
+    } else {
+        $("[id$='SubMenu'").css('background-color', '');
+        $('.' + currentButtonName).show();
+        $(this).css('background-color', '#eb4034');
+    }
+  });
+
   var language = $('#page').text();
 
   $(".imagePrevPage").click(function() {
