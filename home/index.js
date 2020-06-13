@@ -272,7 +272,7 @@ $(document).ready(function(){
   });
 
   $("[id^='whatToDo']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../whatToDo/whatToDo" + language + ".html";
   });
 
   $("[id^='gifts']").click(function() {
