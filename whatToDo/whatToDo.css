@@ -4,7 +4,7 @@ div.hotelSpacer {
     padding-top: 5vh;
 }
 
-p.hotelHeader {
+p.whatToDoHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
   font-style: normal;
@@ -99,6 +99,7 @@ td.hotelRowTable {
     font-size: 28px;
     border-style: solid;
     border-width: thick;
+    cursor: pointer;
 }
 
 .hotelButtonMobile {

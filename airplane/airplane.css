@@ -50,6 +50,7 @@ th.airplane {
     font-size: 28px;
     border-style: solid;
     border-width: thick;
+    cursor: pointer;
 }
 
 .imageAirplane {
