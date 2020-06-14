@@ -14,6 +14,7 @@ $(document).ready(function(){
     var currentButtonName = fullID.split('Button')[0];
 
     $('.showHide').hide();
+    $("[id$='SubMenu'").css('background-color', '');
     if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
         unselectEveryButtons();
     } else {

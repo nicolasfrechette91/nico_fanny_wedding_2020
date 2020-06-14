@@ -1,6 +1,6 @@
 /* whatToDo Exclusive css */
 
-div.hotelSpacer {
+div.whatToDoSpacer {
     padding-top: 5vh;
 }
 
@@ -33,7 +33,7 @@ p.whatToDoTop {
     display: none;
 }
 
-p.hotelMiddle {
+p.whatToDoMiddle {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -45,7 +45,7 @@ p.hotelMiddle {
   padding: 2vh;
 }
 
-p.hotelMiddleMobile {
+p.whatToDoMiddleMobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -57,16 +57,7 @@ p.hotelMiddleMobile {
   padding: 2vh;
 }
 
-p.hotelLink {
-    text-align: right !important;
-}
-
-th.whatToDo {
-    text-align: center;
-}
-
-td.hotelVertical {
-    text-align: center;
+p.whatToDoLink {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
     font-size: 28px;
     font-style: normal;
@@ -74,27 +65,12 @@ td.hotelVertical {
     font-weight: 700;
     line-height: 26.4px;
     margin: 2vh;
-    padding: 4vh;
+    padding-right: 10vh;
+    text-align: right !important;
 }
 
-td.hotelHorizontal {
+th.whatToDo {
     text-align: center;
-    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 28px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-}
-
-td.hotelHeaderTable {
-    background-color: #f6c09c;
-    padding: 1vh;
-}
-
-td.hotelRowTable {
-    background-color: #faddca;
-    padding: 1vh;
 }
 
 .whatToDoButton {
@@ -117,30 +93,16 @@ td.hotelRowTable {
     height: 5vh;
 }
 
-.imageHotel {
+.imageWhatToDo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height:80%;
+    width: 65%;
 }
 
-.imageHotelMobile {
+.imageWhatToDoMobile {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 45vh;
-}
-
-.imageHotelLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 20vh;
-}
-
-.imageHotelLogoMobile {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30vh;
 }
