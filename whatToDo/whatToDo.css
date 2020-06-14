@@ -42,7 +42,7 @@ p.whatToDoMiddle {
   line-height: 26.4px;
   text-align: left;
   margin: 2vh;
-  padding: 2vh;
+  padding-top: 2vh;
 }
 
 p.whatToDoMiddleMobile {
@@ -65,8 +65,17 @@ p.whatToDoLink {
     font-weight: 700;
     line-height: 26.4px;
     margin: 2vh;
-    padding-right: 10vh;
+    padding-right: 2vh;
     text-align: right !important;
+}
+
+@media screen and (max-width: 600px) {
+    .whatToDoLink {
+       font-size: 12px !important;
+    }
+    .whatToDoMiddle {
+       font-size: 12px !important;
+    }
 }
 
 th.whatToDo {
@@ -97,7 +106,7 @@ th.whatToDo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 75%;
 }
 
 .imageWhatToDoMobile {
