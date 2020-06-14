@@ -59,7 +59,7 @@ p.whatToDoMiddleMobile {
 
 p.whatToDoLink {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 28px;
+    font-size: 12px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -69,14 +69,14 @@ p.whatToDoLink {
     text-align: right !important;
 }
 
-@media screen and (max-width: 600px) {
-    .whatToDoLink {
-       font-size: 12px !important;
+    @media screen and (min-width: 1000px) {
+        .whatToDoLink {
+           font-size: 28px !important;
+        }
+        .whatToDoMiddle {
+           font-size: 28px !important;
+        }
     }
-    .whatToDoMiddle {
-       font-size: 12px !important;
-    }
-}
 
 th.whatToDo {
     text-align: center;
