@@ -43,3 +43,13 @@ div.contact {
     margin-right: auto;
     height:80%;
 }
+
+table.prevNextButtons {
+    table-layout: fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0;
+    color: #f6c09c;
+}
