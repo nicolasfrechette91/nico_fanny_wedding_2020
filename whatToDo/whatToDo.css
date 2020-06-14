@@ -35,7 +35,7 @@ p.whatToDoTop {
 
 p.whatToDoMiddle {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 28px;
+  font-size: 12px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -45,21 +45,9 @@ p.whatToDoMiddle {
   padding-top: 2vh;
 }
 
-p.whatToDoMiddleMobile {
-  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  text-align: center;
-  margin: 2vh;
-  padding: 2vh;
-}
-
 p.whatToDoLink {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -69,14 +57,14 @@ p.whatToDoLink {
     text-align: right !important;
 }
 
-    @media screen and (min-width: 1000px) {
-        .whatToDoLink {
-           font-size: 28px !important;
-        }
-        .whatToDoMiddle {
-           font-size: 28px !important;
-        }
+@media screen and (min-width: 1000px) {
+    .whatToDoLink {
+       font-size: 32px !important;
     }
+    .whatToDoMiddle {
+       font-size: 32px !important;
+    }
+}
 
 th.whatToDo {
     text-align: center;
@@ -91,27 +79,9 @@ th.whatToDo {
     cursor: pointer;
 }
 
-.whatToDoButtonMobile {
-    border-color: #f6c09c;
-    background-color: white;
-    font-size: 36px;
-    font-weight: 700;
-    border-style: solid;
-    border-width: thick;
-    margin-left: 2vh;
-    height: 5vh;
-}
-
 .imageWhatToDo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-}
-
-.imageWhatToDoMobile {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45vh;
 }
