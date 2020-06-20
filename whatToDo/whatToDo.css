@@ -90,17 +90,18 @@ th.whatToDo {
     margin-right: auto;
     margin-left: 1%;
     padding-right: 10%;
-    float: left;
-    padding-left: 3%;
-    padding-top: 1%;
+    padding-left: 6%;
 }
 
 .divMuseum {
     background: #F6C09C;
     width: 75%;
     margin-left: 12.5%;
-    margin-right: 12.5%;
+    margin-right: 9.5%;
     height: 350px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
 }
 
 .description {
@@ -111,6 +112,20 @@ th.whatToDo {
   font-weight: 700;
   line-height: 36.4px;
   text-align: left;
-  padding-top: 1%;
   padding-right: 3%;
+  padding-left: 3%;
+  margin: 1%;
+}
+
+.descriptionTr {
+    padding-top: 1%;
+}
+
+.imageTd {
+    width: 35%;
+}
+
+.descriptionTd {
+    background: white;
+    margin-top: 1%;
 }
