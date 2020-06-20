@@ -93,12 +93,19 @@ th.whatToDo {
     padding-left: 6%;
 }
 
-.divMuseum {
+.imageMuseumRightWhatToDo {
+    display: block;
+    margin-right: auto;
+    margin-right: 1%;
+    padding-left: 10%;
+    padding-right: 6%;
+}
+
+.divMuseum{
     background: #F6C09C;
     width: 75%;
     margin-left: 12.5%;
     margin-right: 9.5%;
-    height: 350px;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 3%;
@@ -110,7 +117,7 @@ th.whatToDo {
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 36.4px;
+  line-height: 40.4px;
   text-align: left;
   padding-right: 3%;
   padding-left: 3%;
@@ -123,6 +130,10 @@ th.whatToDo {
 
 .imageTd {
     width: 35%;
+}
+
+.imageTdHalf {
+    width: 50%;
 }
 
 .descriptionTd {
