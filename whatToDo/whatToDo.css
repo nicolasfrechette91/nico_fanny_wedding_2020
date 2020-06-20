@@ -85,3 +85,32 @@ th.whatToDo {
     margin-right: auto;
     width: 75%;
 }
+.imageMuseumLeftWhatToDo {
+    display: block;
+    margin-right: auto;
+    margin-left: 1%;
+    padding-right: 10%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+.divMuseum {
+    background: #F6C09C;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    height: 350px;
+}
+
+.description {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 36.4px;
+  text-align: left;
+  padding-top: 1%;
+  padding-right: 3%;
+}
