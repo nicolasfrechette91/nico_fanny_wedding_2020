@@ -85,7 +85,7 @@ th.whatToDo {
     margin-right: auto;
     width: 75%;
 }
-.imageMuseumLeftWhatToDo {
+.imageDescriptionLeftWhatToDo {
     display: block;
     margin-right: auto;
     margin-left: 1%;
@@ -93,15 +93,33 @@ th.whatToDo {
     padding-left: 6%;
 }
 
-.imageMuseumRightWhatToDo {
+.imageDescriptionRightWhatToDo {
     display: block;
-    margin-right: auto;
-    margin-right: 1%;
-    padding-left: 10%;
+    margin-left: auto;
+    margin-left: 1%;
+    padding-left: 18%;
     padding-right: 6%;
 }
 
-.divMuseum{
+.hugeImageDescriptionLeftWhatToDo{
+    display: block;
+    margin-right: auto;
+    margin-left: 1%;
+    padding-right: 10%;
+    padding-left: 6%;
+    width: 75%
+}
+
+.hugeImageDescriptionRightWhatToDo{
+    display: block;
+    margin-right: auto;
+    margin-right: 1%;
+    padding-right: 6%;
+    padding-left: 25%;
+    width: 75%
+}
+
+.divDescription{
     background: #F6C09C;
     width: 75%;
     margin-left: 12.5%;
@@ -139,4 +157,8 @@ th.whatToDo {
 .descriptionTd {
     background: white;
     margin-top: 1%;
+}
+
+.tableRight {
+    padding-left: 3.5%;
 }
