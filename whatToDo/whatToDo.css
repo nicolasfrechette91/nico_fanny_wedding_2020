@@ -119,6 +119,23 @@ th.whatToDo {
     width: 75%
 }
 
+.imageDualDescriptionLeftWhatToDo {
+    display: block;
+    margin-right: auto;
+    margin-left: 1%;
+    padding-right: 10%;
+    padding-left: 17%;
+}
+
+.hugeImageDualDescriptionLeftWhatToDo{
+    display: block;
+    margin-right: auto;
+    margin-left: 1%;
+    padding-right: 10%;
+    padding-left: 17%;
+    width: 75%
+}
+
 .divDescription{
     background: #F6C09C;
     width: 75%;
@@ -144,6 +161,10 @@ th.whatToDo {
 
 .descriptionTr {
     padding-top: 1%;
+}
+
+.imageDualTd {
+    width: 20%;
 }
 
 .imageTd {
