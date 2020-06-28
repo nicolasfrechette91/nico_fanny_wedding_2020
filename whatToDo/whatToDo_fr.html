@@ -10,284 +10,554 @@
     <script src="whatToDo.js"></script>
 </head>
     <body>
-        <p class="hotelHeader">H&ocirc;tels Recommend&eacute;s</p>
+    <p class="whatToDoHeader">What To Do</p>
 
-        <p class="hotelTop">Pour votre s&eacute;jour, nous avons demand&eacute; de l'information &agrave; 2 h&ocirc;tels ce trouvant pr&egrave;s de l'&eacute;v&egrave;nement. Les prix mentionn&eacute;s dans cette page sont les prix r&eacute;guliers.
-            Cependant, d&eacute;pendant du nombre de chambre qui seront r&eacute;serv&eacute;es, l'h&ocirc;tel &agrave; accept&eacute; d'inclure des rabais. (&Ccedil;a serait environ 10$ de rabais, mais ce n'est pas guarantie pour le moment).
-            <br/><br/>
-            Veuillez consulter l'information de chaque h&ocirc;tel et laissez-nous savoir lequel serait meilleur pour vous. &Eacute;galement, nous pouvons aider &agrave; former des groupes pour pouvoir s&eacute;parer une chambre &agrave; 4 personne.
-        </p>
+    <p class="whatToDoTop">Aguascalientes is located in the center of Mexico hence, there are no beaches, no resorts around.
+        However, depending on your type of interests, this city will have tons of attractions for you.
+    </p>
 
-        <br>
-        <table class="cityButtons desktop">
-            <tr>
-                <th class="hotel"><button type="button" id="realPlazaButton" class="hotelButton">H&ocirc;tel Real Plaza Aguascalientes</button></th>
-                <th class="hotel"><button type="button" id="medranoButton" class="hotelButton">H&ocirc;tel Medrano</button></th>
+    <br>
+
+    <table>
+        <tr>
+            <th class="whatToDo"><button type="button" id="foodButton" class="whatToDoButton">Food</button></th>
+            <th class="whatToDo"><button type="button" id="museumButton" class="whatToDoButton">Museum</button></th>
+            <th class="whatToDo"><button type="button" id="shoppingButton" class="whatToDoButton">Shopping</button></th>
+            <th class="whatToDo"><button type="button" id="historyButton" class="whatToDoButton">History</button></th>
+            <th class="whatToDo"><button type="button" id="outdoorButton" class="whatToDoButton">Outdoor</button></th>
+            <th class="whatToDo"><button type="button" id="nightlifeButton" class="whatToDoButton">Nightlife</button></th>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="foodSubMenu">
+        <tr>
+            <th class="whatToDo"><button type="button" id="foodMeatSubMenu" class="whatToDoButton">Meat</button></th>
+            <th class="whatToDo"><button type="button" id="foodSeafoodSubMenu" class="whatToDoButton">Seafood</button></th>
+            <th class="whatToDo"><button type="button" id="foodTypicalSubMenu" class="whatToDoButton">Typical</button></th>
+            <th class="whatToDo"><button type="button" id="foodDesertSubMenu" class="whatToDoButton">Desert</button></th>
+        </tr>
+    </table>
+
+    <!-- foodMeat  -->
+
+    <p class="foodMeat whatToDoMiddle showHide" hidden>Carnitas Mora (pork)</p>
+    <div class="foodMeat showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/carnitas_mora.jpg" alt="awesome couple">
+    </div>
+    <p class="foodMeat whatToDoLink showHide" hidden><a href="https://tinyurl.com/ydx5zsvy" target="_blank">Calle 57 305, Col del Trabajo, 20180</a></p>
+
+    <p class="foodMeat whatToDoMiddle showHide" hidden>Carnitas La Especial (pork)</p>
+    <div class="foodMeat showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/la_especial.png" alt="awesome couple">
+    </div>
+    <p class="foodMeat whatToDoLink showHide" hidden><a href="https://tinyurl.com/yc3qp8ly" target="_blank">General Guadalupe Victoria 119, Zona Centro, 20000</a></p>
+
+    <p class="foodMeat whatToDoMiddle showHide" hidden>Lechon Pascualito (baby pork)</p>
+    <div class="foodMeat showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/lechon_pascualito.png" alt="awesome couple">
+    </div>
+    <p class="foodMeat whatToDoLink showHide" hidden><a href="https://tinyurl.com/y9brvcy5" target="_blank">Dr Jesús Díaz de León 101, Zona Centro, 20000</a></p>
+
+    <p class="foodMeat whatToDoMiddle showHide" hidden>Las Antorchas (beef)</p>
+    <div class="foodMeat showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/las_antorchas.png" alt="awesome couple">
+    </div>
+    <p class="foodMeat whatToDoLink showHide" hidden><a href="https://tinyurl.com/ycvs2788" target="_blank">Av. Francisco I. Madero 240, Zona Centro, 20000</a></p>
+
+    <p class="foodMeat whatToDoMiddle showHide" hidden>Las Costillas de Sancho (beef)</p>
+    <div class="foodMeat showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/las_costillas_de_sancho.png" alt="awesome couple">
+    </div>
+    <p class="foodMeat whatToDoLink showHide" hidden><a href="https://tinyurl.com/ycb3nabq" target="_blank">Paseo De La Feria s/n, Desarrollo Especial Zona de la Feria, 20070</a></p>
+
+    <p class="foodMeat whatToDoMiddle showHide" hidden>Mercado Juarez (lamb)</p>
+    <div class="foodMeat showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/mercado_juarez.png" alt="awesome couple">
+    </div>
+    <p class="foodMeat whatToDoLink showHide" hidden><a href="https://tinyurl.com/ybu5ygyx" target="_blank">General Guadalupe Victoria s/n, Zona Centro, 20050</a></p>
+
+    <!-- foodSeafood  -->
+
+    <p class="foodSeafood whatToDoMiddle showHide" hidden>La Palapa de Charly</p>
+    <div class="foodSeafood showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/la_palapa_de_charly.png" alt="awesome couple">
+    </div>
+    <p class="foodSeafood whatToDoLink showHide" hidden><a href="https://tinyurl.com/ydf2ltks" target="_blank">Av Aguascalientes Sur 3901, Desarrollo Especial Villa Asunción, 20235</a></p>
+
+    <p class="foodSeafood whatToDoMiddle showHide" hidden>Costa Dorada</p>
+    <div class="foodSeafood showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/costa_dorada.png" alt="awesome couple">
+    </div>
+    <p class="foodSeafood whatToDoLink showHide" hidden><a href="https://tinyurl.com/yaklgk36" target="_blank">Paseo de los Chicahuales 111 Jesús María, 20900</a></p>
+
+    <!-- foodTypical  -->
+
+    <p class="foodTypical whatToDoMiddle showHide" hidden>La Estacion</p>
+    <div class="foodTypical showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/la_estacion.png" alt="awesome couple">
+    </div>
+    <p class="foodTypical whatToDoLink showHide" hidden><a href="https://tinyurl.com/ya6pynvw" target="_blank">28 de Agosto No.210, Barrio de la Estación, 20259</a></p>
+
+    <p class="foodTypical whatToDoMiddle showHide" hidden>Cenaduria San Antonio</p>
+    <div class="foodTypical showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/cenaduria_san_antonio.png" alt="awesome couple">
+    </div>
+    <p class="foodTypical whatToDoLink showHide" hidden><a href="https://tinyurl.com/y86xhtkg" target="_blank">Av. José Ma. Chávez 607, Obraje, 20230</a></p>
+
+    <p class="foodTypical whatToDoMiddle showHide" hidden>La Oaxaquita</p>
+    <div class="foodTypical showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/la_oaxaquita.png" alt="awesome couple">
+    </div>
+    <p class="foodTypical whatToDoLink showHide" hidden><a href="https://tinyurl.com/yazecxtd" target="_blank">Av. Las Americas 1738, Valle Dorado, 20235</a></p>
+
+    <p class="foodTypical whatToDoMiddle showHide" hidden>Los Originales Menudos Toña</p>
+    <div class="foodTypical showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/menudos_toña.png" alt="awesome couple">
+    </div>
+    <p class="foodTypical whatToDoLink showHide" hidden><a href="https://tinyurl.com/y9plpkk8" target="_blank">Granaditas 103, Héroes, 20190</a></p>
+
+    <p class="foodTypical whatToDoMiddle showHide" hidden>Las Planchitas</p>
+    <div class="foodTypical showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/las_planchitas.png" alt="awesome couple">
+    </div>
+    <p class="foodTypical whatToDoLink showHide" hidden><a href="https://tinyurl.com/y7djposc" target="_blank">General Miguel Barragán 441, Zona Centro, 20000</a></p>
+
+    <p class="foodTypical whatToDoMiddle showHide" hidden>Meson del taco</p>
+    <div class="foodTypical showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/meson_del_taco.png" alt="awesome couple">
+    </div>
+    <p class="foodTypical whatToDoLink showHide" hidden><a href="https://tinyurl.com/y9vwvwur" target="_blank">Av. Aguascalientes Pte. 508, Colinas del Río, 20010</a></p>
+
+    <!-- foodDesert  -->
+
+    <p class="foodDesert whatToDoMiddle showHide" hidden>La Colonial</p>
+    <div class="foodDesert showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/la_colonial.png" alt="awesome couple">
+    </div>
+    <p class="foodDesert whatToDoLink showHide" hidden><a href="https://tinyurl.com/ya5ux7ko" target="_blank">Av. Aguascalientes Pte. 308, Barrio de San Marcos, 20070</a></p>
+
+    <p class="foodDesert whatToDoMiddle showHide" hidden>La Flor de Aguascalientes</p>
+    <div class="foodDesert showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/la_flor_de_aguascalientes.png" alt="awesome couple">
+    </div>
+    <p class="foodDesert whatToDoLink showHide" hidden><a href="https://tinyurl.com/y74zc3vl" target="_blank">Av. Las Americas #805, Santa Elena, 20230</a></p>
+
+    <p class="foodDesert whatToDoMiddle showHide" hidden>Café del codo</p>
+    <div class="foodDesert showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/cafe_del_codo.png" alt="awesome couple">
+    </div>
+    <p class="foodDesert whatToDoLink showHide" hidden><a href="https://tinyurl.com/yapet4ug" target="_blank">Calle del Codo s/n, Centro, 20000</a></p>
+
+    <p class="foodDesert whatToDoMiddle showHide" hidden>Caffeto's</p>
+    <div class="foodDesert showHide" hidden>
+        <img class="imageWhatToDo" src="../global/pictures/whatToDo/caffetos.png" alt="awesome couple">
+    </div>
+    <p class="foodDesert whatToDoLink showHide" hidden><a href="https://tinyurl.com/ycmsot67" target="_blank">Manuel M. Ponce 130, Barrio de San Marcos, 20070</a></p>
+
+    <!-- Museum  -->
+
+    <p class="museum whatToDoMiddle showHide" hidden>Jose Guadalupe Posada Museum</p>
+    <div class="museum showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTd"><img class="imageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/posada.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">Posada was an artist and caricaturist whose art was often combined with socio-political criticism. He is probably best known for his calacas and calaveras, the skeletons whose dark humor delighted the public. In his museum, you can see its more than three thousand exhibits
+                        <br><br>
+                        The museum is next to the Encino Church. You can attend engraving classes or enjoy a cultural event on Sunday at midday.
+                    </p>
+                </td>
             </tr>
         </table>
+    </div>
+    <p class="museum whatToDoLink showHide" hidden><a href="https://tinyurl.com/y8375s2b" target="_blank">Lado norte Jardín del Encino s/n, Barrio Del Encino, 20240</a></p>
 
-        <table class="cityButtons mobile">
-            <tr>
-                <th class="hotel"><button type="button" id="realPlazaButtonMobile" class="hotelButtonMobile">H&ocirc;tel Real Plaza Aguascalientes</button></th>
-                <th class="hotel"><button type="button" id="medranoButtonMobile" class="hotelButtonMobile">H&ocirc;tel Medrano</button></th>
+    <p class="museum whatToDoMiddle showHide" hidden>Museo Nacional de la Muerte</p>
+    <div class="museum showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">The museum shown hundreds of death-related artifacts.
+                        It also includes the direction of depicting the historic role of death’s iconography and the funereal arts within Mexican culture,
+                        both contemporary and ancient. The Museum’s curators conveyed the wide range of Mexican society’s relationship towards death and Santa Muerte himself,
+                        ranging from the popular portrayal of a people who are always joking and laughing about mortality,
+                        to the nitty gritty — sometimes quite graphic — reality of death most corporeal from the pre-hispanic era to pop culture.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="imageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/muerte.jpg" alt="awesome couple"></td>
             </tr>
         </table>
+    </div>
+    <p class="museum whatToDoLink showHide" hidden><a href="https://tinyurl.com/yavv5u4h" target="_blank">Rivero y Gutiérrez x, José María Morelos y Pavón, Zona Centro, 20000</a></p>
 
+    <p class="museum whatToDoMiddle showHide" hidden>Ferrocarrilero Aguascalientes</p>
+    <div class="museum showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTd"><img class="imageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/Ferrocarrilero.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">The museum is housed in the old loading depot built at the end of the nineteenth century and used to weigh and distribute a wide range of goods transported on the railway.
+                        <br><br>
+                        Today the museum has a collection of more than ten thousand pieces related to railway infrastructure, including machinery, tools, equipment and documents.
+                        The goal is to tell the story and display the history of the national railway system and its economic, political, social and cultural impact on the development of Aguascalientes in the early twentieth century.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="museum whatToDoLink showHide" hidden><a href="https://tinyurl.com/y7zwuscy" target="_blank">Plaza de las Tres Centurias, 28 de Agosto S/N, Barrio de la Estación, 20259</a></p>
 
-        <p class="realPlaza hotelMiddle" hidden><a href="http://www.english.realplaza.com.mx/" target="_blank">H&ocirc;tel Real Plaza</a></p>
+    <p class="museum whatToDoMiddle showHide" hidden>Museo del Juguete Tradicional</p>
+    <div class="museum showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">The collection displays some amazingly innovative traditional toys, made from a range of unusual materials.
+                        The exhibition consists of pieces from all over Mexico.
+                    </p>
+                </td>
+                <td class="imageTdHalf"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/toy_museum.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="museum whatToDoLink showHide" hidden><a href="https://tinyurl.com/yan8qrfj" target="_blank">Nieto 224, Zona Centro, 20000 Aguascalientes, Ags., Mexico</a></p>
 
-        <div class="realPlaza hotelSpacer desktop" hidden>
-            <table>
-                <tr>
-                    <td rowspan="6"><img class="imageHotelLogo" src="../global/pictures/hotel/hotel_realPlaza.png" alt="awesome couple"></td>
-                    <td></td>
-                    <td class="hotelHeaderTable"></td>
-                    <td class="hotelHorizontal hotelHeaderTable" colspan="2">Co&ucirc;t par chambre par nuit</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
-                    <td class="hotelHorizontal hotelHeaderTable">MXN</td>
-                    <td class="hotelHorizontal hotelHeaderTable">CAD</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Simple</td>
-                    <td class="hotelHorizontal hotelRowTable">860</td>
-                    <td class="hotelHorizontal hotelRowTable">61</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Double</td>
-                    <td class="hotelHorizontal hotelRowTable">860</td>
-                    <td class="hotelHorizontal hotelRowTable">61</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Triple</td>
-                    <td class="hotelHorizontal hotelRowTable">900</td>
-                    <td class="hotelHorizontal hotelRowTable">64</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Quadruple</td>
-                    <td class="hotelHorizontal hotelRowTable">940</td>
-                    <td class="hotelHorizontal hotelRowTable">67</td>
-                </tr>
-            </table>
-        </div>
+    <!-- Shopping  -->
 
-        <div class="realPlaza mobile" hidden>
-            <div>
-                <img class="imageHotelLogoMobile" src="../global/pictures/hotel/hotel_realPlaza.png" alt="awesome couple">
-            </div>
+    <p class="shopping whatToDoMiddle showHide" hidden>Plaza vestir</p>
+    <div class="shopping showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/plaza_vestir.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">Mall filled with regional handcrafted textiles, eateries & clothing stores.
+                        <br><br>
+                        Main place to see the textile products made in Aguascalientes.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="shopping whatToDoLink showHide" hidden><a href="https://tinyurl.com/y8zvo77y" target="_blank">Blvd. José María Chávez 1940, Cd Industrial, 20290</a></p>
 
-            <table>
-                <tr>
-                    <td class="hotelHeaderTable"></td>
-                    <td class="hotelHorizontal hotelHeaderTable" colspan="2">Co&ucirc;t par chambre par nuit</td>
-                </tr>
-                <tr>
-                    <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
-                    <td class="hotelHorizontal hotelHeaderTable">MXN</td>
-                    <td class="hotelHorizontal hotelHeaderTable">CAD</td>
-                </tr>
-                <tr>
-                    <td class="hotelHorizontal hotelRowTable">Simple</td>
-                    <td class="hotelHorizontal hotelRowTable">860</td>
-                    <td class="hotelHorizontal hotelRowTable">61</td>
-                </tr>
-                <tr>
-                    <td class="hotelHorizontal hotelRowTable">Double</td>
-                    <td class="hotelHorizontal hotelRowTable">860</td>
-                    <td class="hotelHorizontal hotelRowTable">61</td>
-                </tr>
-                <tr>
-                    <td class="hotelHorizontal hotelRowTable">Triple</td>
-                    <td class="hotelHorizontal hotelRowTable">900</td>
-                    <td class="hotelHorizontal hotelRowTable">64</td>
-                </tr>
-                <tr>
-                    <td class="hotelHorizontal hotelRowTable">Quadruple</td>
-                    <td class="hotelHorizontal hotelRowTable">940</td>
-                    <td class="hotelHorizontal hotelRowTable">67</td>
-                </tr>
-            </table>
-        </div>
+    <p class="shopping whatToDoMiddle showHide" hidden>Calle Nieto</p>
+    <div class="shopping showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">Street filled with typical regional textiles.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/calle_nieto.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="shopping whatToDoLink showHide" hidden><a href="https://tinyurl.com/yabr9luk" target="_blank">20000, Nieto 233 B, Zona Centro, 20000</a></p>
 
-        <div class="realPlaza hotelSpacer desktop" hidden>
-            <table>
-                <tr>
-                    <td class="hotelHorizontal">Distance de l'h&ocirc;tel &agrave; la salle de r&eacute;ception</td>
-                    <td class="hotelVertical">Distance de l'h&ocirc;tel &agrave; la c&eacute;r&eacute;monie</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>
-                            <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza2.png" alt="awesome couple">
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza3.png" alt="awesome couple">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <p class="shopping whatToDoMiddle showHide" hidden>Plaza Altaria</p>
+    <div class="shopping showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="imageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/altaria.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">Spacious, upmarket indoor shopping center with international retailers, a food court & a cinema.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="shopping whatToDoLink showHide" hidden><a href="https://tinyurl.com/y8gnlj27" target="_blank">Blvd. A Zacatecas 849, Trojes de Alonso, 20116</a></p>
 
-        <div class="realPlaza hotelSpacer mobile" hidden>
-            <p class="hotelMiddleMobile">Distance de l'h&ocirc;tel &agrave; la salle de r&eacute;ception</p>
-            <div>
-                <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza2.png" alt="awesome couple">
-            </div>
-        </div>
+    <p class="shopping whatToDoMiddle showHide" hidden>Villasuncion</p>
+    <div class="shopping showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">An outdoor mall that provides a wide variety of brands, products and services of the highest quality as well as spaces for fun,
+                        leisure and entertainment.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/villasuncion.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="shopping whatToDoLink showHide" hidden><a href="https://tinyurl.com/ybcculgq" target="_blank">Blvd. José María Chávez s/n, Centro Comercial Villa Asunción, 20280</a></p>
 
-        <div class="realPlaza hotelSpacer mobile" hidden>
-            <p class="hotelMiddleMobile">Distance de l'h&ocirc;tel &agrave; la c&eacute;r&eacute;monie</p>
-            <div>
-                <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza3.png" alt="awesome couple">
-            </div>
-        </div>
+    <!-- History  -->
 
-        <div class="realPlaza hotelSpacer desktop" hidden>
-            <img class="imageHotel" src="../global/pictures/hotel/hotel_realPlaza4.png" alt="awesome couple">
-        </div>
+    <p class="history whatToDoMiddle showHide" hidden>Regional Museum of History</p>
+    <div class="history showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageDualTd"><img class="imageDualDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/museo_historia.jpg" alt="awesome couple"></td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/museo_historia_2.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">The museum tells the story of Aguascalientes and its people in the seven exhibition rooms where the past is recreated in an attempt to show how it was lived at the time.
+                        <br><br>
+                        The museum has a wide range of displays, including a fossil collection, pieces related to pre-Hispanic groups and their religious beliefs, and to the Chichimeca wars fought in the region.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="history whatToDoLink showHide" hidden><a href="https://tinyurl.com/ycme93y3" target="_blank">Venustiano Carranza 118, Zona Centro, 20000</a></p>
 
-        <div class="realPlaza hotelSpacer mobile" hidden>
-            <img class="imageHotelMobile" src="../global/pictures/hotel/hotel_realPlaza4.png" alt="awesome couple">
-        </div>
+    <p class="history whatToDoMiddle showHide" hidden>Centro Cultural los Arquitos</p>
+    <div class="history showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">Los Arquitos is a hub of cultural activity in Aguascalientes and holds exhibitions, workshops, talks and concerts.
+                        <br><br>
+                        The Cultural Center was opened on November 12, 1994 at the site of the first public baths, which distributed water from Ojocaliente to fill the thirteen bathtubs and the sinks for washing clothes.
+                    </p>
+                </td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/arquitos_2.jpg" alt="awesome couple"></td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/arquitos.png" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="history whatToDoLink showHide" hidden><a href="https://tinyurl.com/ya8sf7xs" target="_blank">Alameda S/N, Barrio de la Purísima, 20000</a></p>
 
-        <!-- Medrano  -->
+    <p class="history whatToDoMiddle showHide" hidden>El Caracol</p>
+    <div class="history showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTd"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/el_caracol.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">El Caracol recreates different geological eras. As well, it counts with a water supply system that once conveyed water to the city of Aguascalientes.
+                        The water deposit has been preserved as well as a section of the subterranean channels which can be explored at a depth of twenty-three feet.
+                        <br><br>
+                        Other attractions include life-size figures of fauna from previous eras, ninety-million-year-old fossils, and the opportunity to discover local legends.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="history whatToDoLink showHide" hidden><a href="https://tinyurl.com/ybbhl9wr" target="_blank">Cáncer 546, Desarrollo Especial Parque Ecológico el Cedazo</a></p>
 
-        <p class="medrano hotelMiddle" hidden><a href="https://www.hotelmedrano.com" target="_blank">H&ocirc;tel Medrano</a></p>
+    <!-- Outdoor  -->
 
-        <div class="medrano hotelSpacer desktop" hidden>
-            <table>
-                <tr>
-                    <td rowspan="6"><img class="imageHotelLogo" src="../global/pictures/hotel/hotel_medrano.png" alt="awesome couple"></td>
-                    <td></td>
-                    <td class="hotelHeaderTable"></td>
-                    <td class="hotelHorizontal hotelHeaderTable" colspan="2">Co&ucirc;t par chambre par nuit</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
-                    <td class="hotelHorizontal hotelHeaderTable">MXN</td>
-                    <td class="hotelHorizontal hotelHeaderTable">CAD</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Simple</td>
-                    <td class="hotelHorizontal hotelRowTable">898</td>
-                    <td class="hotelHorizontal hotelRowTable">64</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Double</td>
-                    <td class="hotelHorizontal hotelRowTable">898</td>
-                    <td class="hotelHorizontal hotelRowTable">64</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Triple</td>
-                    <td class="hotelHorizontal hotelRowTable">1048</td>
-                    <td class="hotelHorizontal hotelRowTable">75</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="hotelHorizontal hotelRowTable">Quadruple</td>
-                    <td class="hotelHorizontal hotelRowTable">1198</td>
-                    <td class="hotelHorizontal hotelRowTable">85</td>
-                </tr>
-            </table>
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Jardin de San Marcos</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageDualTd"><img class="hugeImageDualDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/san_marcos.jpg" alt="awesome couple"></td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/san_marcos_2.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">Since 1831, the gardens have been a center of social life and recreation.
+                        They are adorned with wrought-iron benches, a fountain below the gazebo, sculptures representing local customs and traditions and four entrances facing each of the cardinal points.
+                        <br><br>
+                        Every year the area is home to the San Marcos National Fair.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/y97fnm9b" target="_blank">Jesús F. Contreras, Barrio de San Marcos, 20070</a></p>
 
-        <div class="medrano mobile" hidden>
-            <div>
-                <img class="imageHotelLogoMobile" src="../global/pictures/hotel/hotel_medrano.png" alt="awesome couple">
-            </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Andador J. Pani</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">Located in the traditional neighborhood of San Marcos, this pedestrianized streets is one of the liveliest areas of the San Marcos Fair in April.
+                        <br><br>
+                        With its traditional outdoor restaurants, known as <i>merenderos</i>, its Casino and cock-fighting arena, the walkway is a unique experience for all who stroll along its cobblestone route.
+                        <br><br>
+                        Locals and visitors come here all year round for a great atmosphere and fun.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/andador_j_pani.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/ybot4gko" target="_blank">José F. Elizondo 105, Desarrollo Especial Zona de la Feria</a></p>
 
-            <div class="hotelSpacer">
-                <table>
-                    <tr>
-                        <td class="hotelHeaderTable"></td>
-                        <td class="hotelHorizontal hotelHeaderTable" colspan="2">Co&ucirc;t par chambre par nuit</td>
-                    </tr>
-                    <tr>
-                        <td class="hotelHorizontal hotelHeaderTable">Type de Chambre</td>
-                        <td class="hotelHorizontal hotelHeaderTable">MXN</td>
-                        <td class="hotelHorizontal hotelHeaderTable">CAD</td>
-                    </tr>
-                    <tr>
-                        <td class="hotelHorizontal hotelRowTable">Simple</td>
-                        <td class="hotelHorizontal hotelRowTable">898</td>
-                        <td class="hotelHorizontal hotelRowTable">64</td>
-                    </tr>
-                    <tr>
-                        <td class="hotelHorizontal hotelRowTable">Double</td>
-                        <td class="hotelHorizontal hotelRowTable">898</td>
-                        <td class="hotelHorizontal hotelRowTable">64</td>
-                    </tr>
-                    <tr>
-                        <td class="hotelHorizontal hotelRowTable">Triple</td>
-                        <td class="hotelHorizontal hotelRowTable">1048</td>
-                        <td class="hotelHorizontal hotelRowTable">75</td>
-                    </tr>
-                    <tr>
-                        <td class="hotelHorizontal hotelRowTable">Quadruple</td>
-                        <td class="hotelHorizontal hotelRowTable">1198</td>
-                        <td class="hotelHorizontal hotelRowTable">85</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Isla San Marcos</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/isla_san_marcos.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">Isla San Marcos sits on 109 acres and is one of the main venues for the San Marcos National Fair.
+                        <br><br>
+                        Principal attractions include the large artificial lake with fountains in the middle; the largest mechanical clock in Latin America, measuring nearly 89 feet in diameter;
+                        a zip line; the Catrina Monument in honor of José Guadalupe Posada, and the countless green areas.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/y97fnm9b" target="_blank">Jesús F. Contreras, Barrio de San Marcos, 20070</a></p>
 
-        <div class="medrano hotelSpacer desktop" hidden>
-            <table>
-                <tr>
-                    <td class="medrano hotelHorizontal" hidden>Distance de l'h&ocirc;tel &agrave; la salle de r&eacute;ception</td>
-                    <td class="medrano hotelVertical" hidden>Distance de l'h&ocirc;tel &agrave; la c&eacute;r&eacute;monie</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="medrano hotel" hidden>
-                            <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano2.png" alt="awesome couple">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="medrano hotel" hidden>
-                            <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano3.png" alt="awesome couple">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Plaza Patria</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">La Plaza Patria is at the center of the city’s life and has witnessed historic changes in Aguascalientes. In the center of the plaza is the Exedra, a monument erected in 1808 in honor of King Charles IV of Spain.
+                        <br><br>
+                        In this area, you can find the town hall, the cathedral, the first theatre, and a new renovated are that counts with regional art.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/plaza_patria.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/y9w7385x" target="_blank">Zona Centro, 20000</a></p>
 
-        <div class="medrano hotelSpacer mobile" hidden>
-            <p class="hotelMiddleMobile">Distance de l'h&ocirc;tel &agrave; la salle de r&eacute;ception</p>
-            <div>
-                <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano2.png" alt="awesome couple">
-            </div>
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Tres Centurias</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/tres_centurias.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">In these gardens you can find a technological show as well a renewed architecture based on the railroad.
+                        <br><br>
+                        This area also has a park and a recreational area as well as a culture and arts center, a conference center and a museum.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/yd7y722w" target="_blank">Av. Ferrocarril, Desarrollo Especial Talleres F.F.C.C., 20270</a></p>
 
-        <div class="medrano hotelSpacer mobile" hidden>
-            <p class="hotelMiddleMobile">Distance de l'h&ocirc;tel &agrave; la c&eacute;r&eacute;monie</p>
-            <div>
-                <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano3.png" alt="awesome couple">
-            </div>
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Cristo Roto</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">A 25 m of height sculture representing th issues that the mucipality went through. This sculpture invites to not forget the weak and opressed.
+                        <br><br>
+                        In this area, it is possible to take boat rides, horseback riding, traditional shopping, and hiking.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/cristo_roto.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/y7m7rw9o" target="_blank">Juan Domínguez 511, San José de Gracia</a></p>
 
+    <p class="outdoor whatToDoMiddle showHide" hidden>Boca de Tunel</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/boca_de_tunel.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">A circuit including 13 suspended bridges (the longest of which is 345-feet long at a height of 50 feet) and two zip lines that cross the ravine to the Potrerillos Dam, you’ll never find yourself short on thrills or gorgeous natural settings.
+                        <br><br>
+                        After you’ve flown across the 140-meter-long zip line through a canyon, you can hire a local guide to take you down to the bottom of the dam while listening to the songs of the mockingbirds.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/ydaul6c4" target="_blank">Calle Nueva Boca de Tunel</a></p>
 
-        <div class="medrano hotelSpacer desktop" hidden>
-            <img class="imageHotel" src="../global/pictures/hotel/hotel_medrano4.png" alt="awesome couple">
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>Temazcal Spa</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">Excellent massage and temazcal (heat sweat lodge) services, as well as hydro massage, accommodation and snack bar.
+                        <br><br>
+                        Revitalization is the goal, and with its natural ambience and wonderful aromas this is the ideal space to relieve stress and just relax.
+                    </p>
+                </td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/temazcal_2.jpg" alt="awesome couple"></td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/temazcal.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/ydc6w37n" target="_blank">Malecón Nte, López Mateos, 20802 Calvillo</a></p>
 
-        <div class="medrano hotelSpacer mobile" hidden>
-            <img class="imageHotelMobile" src="../global/pictures/hotel/hotel_medrano4.png" alt="awesome couple">
-        </div>
+    <p class="outdoor whatToDoMiddle showHide" hidden>El Ocote</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/ocote.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">Archaeological site is a sample of the first settlements that occurred in the region.
+                        Here you can find some cave paintings and also find places where you can camp or carry out activities such as mountain biking,
+                        abseiling, fishing in the Tolimique dam, mountaineering and horseback riding.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/yd6esqer" target="_blank">Segunda Privada Encino, El Ocote</a></p>
 
-        <table class="prevNextButtons">
+    <p class="outdoor whatToDoMiddle showHide" hidden>Malpaso</p>
+    <div class="outdoor showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">Located in the Sierra del Laurel, Malpaso Canyon is a major attraction, comprising a series of 160-foot elevations,
+                        from where you can see a wide variety of birds and contemplate a pretty landscape full of cacti and wild bushes.
+                    </p>
+                </td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/presa_malpaso.jpg" alt="awesome couple"></td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/cascada_los_huenchos.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="outdoor whatToDoLink showHide" hidden><a href="https://tinyurl.com/y8lcp4us" target="_blank">Presa de Malpaso, Independencia, 20802 Calvillo</a></p>
+
+    <!-- Nightlife  -->
+
+    <p class="nightlife whatToDoMiddle showHide" hidden>Merendero San Pancho</p>
+    <div class="nightlife showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageDualTd"><img class="hugeImageDualDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/san_pancho_2.jpg" alt="awesome couple"></td>
+                <td class="imageDualTd"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/san_pancho.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">A special place in between a restaurant and a bar. This place offers ongoing food and snacks as soon as you order drinks.
+                        <br><br>
+                        This is the most popular merendero in Aguascalientes.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="nightlife whatToDoLink showHide" hidden><a href="https://tinyurl.com/ydx2wbfn" target="_blank">Av. Las Americas 102, Las Américas, 20230</a></p>
+
+    <p class="nightlife whatToDoMiddle showHide" hidden>Calle Carranza</p>
+    <div class="nightlife showHide divDescription" hidden>
+        <table class="tableRight">
+            <tr class="descriptionTr">
+                <td class="descriptionTd">
+                    <p class="description">In the center of the city, this street shelters some of the most visited bars and clubs in the city.
+                        <br><br>
+                        All the bars and clubs are located in old houses and keep some of the infrastructure in them.
+                    </p>
+                </td>
+                <td class="imageTd"><img class="hugeImageDescriptionRightWhatToDo" src="../global/pictures/whatToDo/carranza.jpg" alt="awesome couple"></td>
+            </tr>
+        </table>
+    </div>
+    <p class="nightlife whatToDoLink showHide" hidden><a href="https://tinyurl.com/y8q5bsrn" target="_blank">Venustiano Carranza, Zona Centro</a></p>
+
+    <p class="nightlife whatToDoMiddle showHide" hidden>Calle Colosio</p>
+    <div class="nightlife showHide divDescription" hidden>
+        <table>
+            <tr class="descriptionTr">
+                <td class="imageTdHalf"><img class="hugeImageDescriptionLeftWhatToDo" src="../global/pictures/whatToDo/colosio.jpg" alt="awesome couple"></td>
+                <td class="descriptionTd">
+                    <p class="description">In the north of the city, this street shelters some of the most upscale bars and clubs in the city.
+                        <br><br>
+                        All the bars and clubs are located have different environments and are next to each other.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="nightlife whatToDoLink showHide" hidden><a href="https://tinyurl.com/y92cqvuz" target="_blank">Blvd. Luis Donaldo Colosio Murrieta, Jardines de la Concepción I</a></p>
+
+    <table class="prevNextButtons">
             <tr>
                 <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../hotel/hotel_fr.html">H&ocirc;tels</a></td>
                 <td class="nextButtons"><a href="../home/index_fr.html">Menu Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
