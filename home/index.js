@@ -256,7 +256,7 @@ $(document).ready(function(){
   });
 
   $("[id^='ceremony']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../ceremony/ceremony" + language + ".html";
   });
 
  $("[id^='party']").click(function() {
