@@ -34,6 +34,26 @@ p.mainDesktopTop3 {
   text-align: center;
 }
 
+p.mainDesktopTop4 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
+}
+
+.obsoletedDate {
+    color: red;
+    text-decoration: line-through;
+}
+
+.newerDate {
+    color: black;
+}
+
 p.mainMobileTop1 {
   font-family: 'Berkshire Swash',cursive;
   font-size: 80px;
@@ -61,12 +81,23 @@ p.mainMobileTop2 {
 
 p.mainMobileTop3 {
   font-family: 'Berkshire Swash',cursive;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
   text-align: center;
+}
+
+p.mainMobileTop4 {
+  font-family: 'Berkshire Swash',cursive;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
 }
 
 th.main {
