@@ -260,7 +260,7 @@ $(document).ready(function(){
   });
 
  $("[id^='party']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../party/party" + language + ".html";
   });
 
   $("[id^='airplane']").click(function() {
