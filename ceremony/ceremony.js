@@ -44,7 +44,7 @@ $(document).ready(function(){
      });
 
      $(".imageNextPage").click(function() {
-         window.location.href = "../hotel/hotel" + language + ".html";
+         window.location.href = "../party/party" + language + ".html";
      });
 });
 
