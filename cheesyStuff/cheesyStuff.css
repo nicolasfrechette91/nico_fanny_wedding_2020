@@ -1,5 +1,5 @@
 /* cheesy Stuff Exclusive css */
-p.ceremonyHeader {
+p.cheesyStuffHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
   font-style: normal;
@@ -11,7 +11,7 @@ p.ceremonyHeader {
   padding-left: 2vh;
 }
 
-p.ceremonyTop {
+p.cheesyStuffTop {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -24,7 +24,7 @@ p.ceremonyTop {
   padding: 2vh;
 }
 
-p.ceremonyMiddleToronto1 {
+p.cheesyStuffMiddleToronto1 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -39,7 +39,7 @@ p.ceremonyMiddleToronto1 {
   min-width: 250px;
 }
 
-p.ceremonyMiddleToronto2 {
+p.cheesyStuffMiddleToronto2 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -54,7 +54,7 @@ p.ceremonyMiddleToronto2 {
   min-width: 400px;
 }
 
-p.ceremonyMiddleToronto3 {
+p.cheesyStuffMiddleToronto3 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -69,7 +69,7 @@ p.ceremonyMiddleToronto3 {
   min-width: 250px;
 }
 
-p.ceremonyMiddleToronto1Spanish {
+p.cheesyStuffMiddleToronto1Spanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -84,7 +84,7 @@ p.ceremonyMiddleToronto1Spanish {
   min-width: 200px;
 }
 
-p.ceremonyMiddleToronto2Spanish {
+p.cheesyStuffMiddleToronto2Spanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -99,7 +99,7 @@ p.ceremonyMiddleToronto2Spanish {
   min-width: 400px;
 }
 
-p.ceremonyMiddleToronto3Spanish {
+p.cheesyStuffMiddleToronto3Spanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -114,7 +114,7 @@ p.ceremonyMiddleToronto3Spanish {
   min-width: 250px;
 }
 
-p.ceremonyMiddleToronto1Mobile {
+p.cheesyStuffMiddleToronto1Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -129,7 +129,7 @@ p.ceremonyMiddleToronto1Mobile {
   z-index: 1;
 }
 
-p.ceremonyMiddleToronto2Mobile {
+p.cheesyStuffMiddleToronto2Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -144,7 +144,7 @@ p.ceremonyMiddleToronto2Mobile {
   min-width: 350px;
 }
 
-p.ceremonyMiddleToronto3Mobile {
+p.cheesyStuffMiddleToronto3Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -159,7 +159,7 @@ p.ceremonyMiddleToronto3Mobile {
   min-width: 225px;
 }
 
-p.ceremonyMiddleToronto1MobileSpanish {
+p.cheesyStuffMiddleToronto1MobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 20px;
   font-style: normal;
@@ -174,7 +174,7 @@ p.ceremonyMiddleToronto1MobileSpanish {
   min-width: 150px;
 }
 
-p.ceremonyMiddleToronto2MobileSpanish {
+p.cheesyStuffMiddleToronto2MobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 20px;
   font-style: normal;
@@ -189,7 +189,7 @@ p.ceremonyMiddleToronto2MobileSpanish {
   min-width: 350px;
 }
 
-p.ceremonyMiddleToronto3MobileSpanish {
+p.cheesyStuffMiddleToronto3MobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 20px;
   font-style: normal;
@@ -204,7 +204,7 @@ p.ceremonyMiddleToronto3MobileSpanish {
   min-width: 225px;
 }
 
-p.ceremonyMiddleMexico {
+p.cheesyStuffMiddleMexico {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -219,7 +219,7 @@ p.ceremonyMiddleMexico {
   z-index: 1;
 }
 
-p.ceremonyMiddleMexicoMobile {
+p.cheesyStuffMiddleMexicoMobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -234,7 +234,7 @@ p.ceremonyMiddleMexicoMobile {
   z-index: 1;
 }
 
-p.ceremonyMiddleMexicoSpanish {
+p.cheesyStuffMiddleMexicoSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -249,7 +249,7 @@ p.ceremonyMiddleMexicoSpanish {
   z-index: 1;
 }
 
-p.ceremonyMiddleMexicoMobileSpanish {
+p.cheesyStuffMiddleMexicoMobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -264,11 +264,11 @@ p.ceremonyMiddleMexicoMobileSpanish {
   z-index: 1;
 }
 
-th.ceremony {
+th.cheesyStuff {
     text-align: center;
 }
 
-.ceremonyButton {
+.cheesyStuffButton {
     border-color: #f6c09c;
     background-color: white;
     font-size: 28px;
@@ -277,12 +277,12 @@ th.ceremony {
     cursor: pointer;
 }
 
-div.ceremonyImageContainer{
+div.cheesyStuffImageContainer{
  height:45vh;
  position: absolute;
 }
 
-.imageCeremony {
+.imageCheesyStuff {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -315,7 +315,7 @@ div.ceremonyImageContainer{
     max-height: 600px;
 }
 
-table.prevNextButtonsDefault {
+table.prevNextButtons {
     table-layout:fixed;
     width: 100%;
     font-family: 'Berkshire Swash',cursive;
@@ -325,58 +325,48 @@ table.prevNextButtonsDefault {
     padding-top: 300px;
 }
 
-table.prevNextButtonsCeremony {
-    table-layout:fixed;
-    width: 100%;
-    font-family: 'Berkshire Swash',cursive;
-    font-size: 28px;
-    font-weight: 700;
-    color: #f6c09c;
-    padding-top: 600px;
-}
-
 @media screen and (min-width: 1700px) {
     .imageContainer {
         position: absolute;
         left: 500px;
     }
 
-    p.ceremonyMiddleToronto1 {
+    p.cheesyStuffMiddleToronto1 {
       top: 230px;
       left: 840px;
     }
 
-    p.ceremonyMiddleToronto2 {
+    p.cheesyStuffMiddleToronto2 {
       top: 290px;
       left: 760px;
     }
 
-    p.ceremonyMiddleToronto3 {
+    p.cheesyStuffMiddleToronto3 {
       top: 360px;
       left: 835px;
     }
 
-    p.ceremonyMiddleToronto1Spanish {
+    p.cheesyStuffMiddleToronto1Spanish {
       top: 190px;
       left: 860px;
     }
 
-    p.ceremonyMiddleToronto2Spanish {
+    p.cheesyStuffMiddleToronto2Spanish {
       top: 290px;
       left: 760px;
     }
 
-    p.ceremonyMiddleToronto3Spanish {
+    p.cheesyStuffMiddleToronto3Spanish {
       top: 365px;
       left: 835px;
     }
 
-    p.ceremonyMiddleMexico {
+    p.cheesyStuffMiddleMexico {
       top: 300px;
       left: 885px;
     }
 
-    p.ceremonyMiddleMexicoSpanish {
+    p.cheesyStuffMiddleMexicoSpanish {
       top: 300px;
       left: 825px;
     }

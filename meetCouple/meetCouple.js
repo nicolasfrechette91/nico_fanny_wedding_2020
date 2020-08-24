@@ -20,7 +20,7 @@ $(document).ready(function(){
      });
 
      $(".imageNextPage").click(function() {
-         window.location.href = "../hotel/hotel" + language + ".html";
+         window.location.href = "../cheesyStuff/cheesyStuff" + language + ".html";
      });
 
      var topPosition = 0;

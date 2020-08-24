@@ -14,12 +14,10 @@ $(document).ready(function(){
      if ($('#torontoButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.toronto').hide();
         $('#torontoButton').css('background-color', '');
-        $('.default').show();
      } else {
         $('.toronto').show();
         $(this).css('background-color', '#eb4034');
         $('#mexicoButton').css('background-color', '');
-        $('.default').hide();
      }
    });
 
@@ -28,23 +26,21 @@ $(document).ready(function(){
      if ($('#mexicoButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.mexico').hide();
         $('#mexicoButton').css('background-color', '');
-        $('.default').show();
      } else {
          $('.mexico').show();
          $(this).css('background-color', '#eb4034');
          $('#torontoButton').css('background-color', '');
-         $('.default').hide();
      }
    });
 
      var language = $('#page').text();
 
      $(".imagePrevPage").click(function() {
-         window.location.href = "../home/index" + language + ".html";
+         window.location.href = "../meetCouple/meetCouple" + language + ".html";
      });
 
      $(".imageNextPage").click(function() {
-         window.location.href = "../party/party" + language + ".html";
+         window.location.href = "../home/index" + language + ".html";
      });
 });
 
