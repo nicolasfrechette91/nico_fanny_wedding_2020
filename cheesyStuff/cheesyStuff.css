@@ -11,20 +11,7 @@ p.cheesyStuffHeader {
   padding-left: 2vh;
 }
 
-p.cheesyStuffTop {
-  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
-  text-align: left;
-  background-color: #f6c09c;
-  margin: 2vh;
-  padding: 2vh;
-}
-
-p.cheesyStuffMiddleToronto1 {
+p.cheesyStuffMiddleTimeline1 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -39,7 +26,7 @@ p.cheesyStuffMiddleToronto1 {
   min-width: 250px;
 }
 
-p.cheesyStuffMiddleToronto2 {
+p.cheesyStuffMiddleTimeline2 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -54,7 +41,7 @@ p.cheesyStuffMiddleToronto2 {
   min-width: 400px;
 }
 
-p.cheesyStuffMiddleToronto3 {
+p.cheesyStuffMiddleTimeline3 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
@@ -69,7 +56,7 @@ p.cheesyStuffMiddleToronto3 {
   min-width: 250px;
 }
 
-p.cheesyStuffMiddleToronto1Spanish {
+p.cheesyStuffMiddleTimeline1Spanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -84,7 +71,7 @@ p.cheesyStuffMiddleToronto1Spanish {
   min-width: 200px;
 }
 
-p.cheesyStuffMiddleToronto2Spanish {
+p.cheesyStuffMiddleTimeline2Spanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -99,7 +86,7 @@ p.cheesyStuffMiddleToronto2Spanish {
   min-width: 400px;
 }
 
-p.cheesyStuffMiddleToronto3Spanish {
+p.cheesyStuffMiddleTimeline3Spanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -114,7 +101,7 @@ p.cheesyStuffMiddleToronto3Spanish {
   min-width: 250px;
 }
 
-p.cheesyStuffMiddleToronto1Mobile {
+p.cheesyStuffMiddleTimeline1Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -129,7 +116,7 @@ p.cheesyStuffMiddleToronto1Mobile {
   z-index: 1;
 }
 
-p.cheesyStuffMiddleToronto2Mobile {
+p.cheesyStuffMiddleTimeline2Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -144,7 +131,7 @@ p.cheesyStuffMiddleToronto2Mobile {
   min-width: 350px;
 }
 
-p.cheesyStuffMiddleToronto3Mobile {
+p.cheesyStuffMiddleTimeline3Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -159,7 +146,7 @@ p.cheesyStuffMiddleToronto3Mobile {
   min-width: 225px;
 }
 
-p.cheesyStuffMiddleToronto1MobileSpanish {
+p.cheesyStuffMiddleTimeline1MobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 20px;
   font-style: normal;
@@ -174,7 +161,7 @@ p.cheesyStuffMiddleToronto1MobileSpanish {
   min-width: 150px;
 }
 
-p.cheesyStuffMiddleToronto2MobileSpanish {
+p.cheesyStuffMiddleTimeline2MobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 20px;
   font-style: normal;
@@ -189,7 +176,7 @@ p.cheesyStuffMiddleToronto2MobileSpanish {
   min-width: 350px;
 }
 
-p.cheesyStuffMiddleToronto3MobileSpanish {
+p.cheesyStuffMiddleTimeline3MobileSpanish {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 20px;
   font-style: normal;
@@ -331,32 +318,32 @@ table.prevNextButtons {
         left: 500px;
     }
 
-    p.cheesyStuffMiddleToronto1 {
+    p.cheesyStuffMiddleTimeline1 {
       top: 230px;
       left: 840px;
     }
 
-    p.cheesyStuffMiddleToronto2 {
+    p.cheesyStuffMiddleTimeline2 {
       top: 290px;
       left: 760px;
     }
 
-    p.cheesyStuffMiddleToronto3 {
+    p.cheesyStuffMiddleTimeline3 {
       top: 360px;
       left: 835px;
     }
 
-    p.cheesyStuffMiddleToronto1Spanish {
+    p.cheesyStuffMiddleTimeline1Spanish {
       top: 190px;
       left: 860px;
     }
 
-    p.cheesyStuffMiddleToronto2Spanish {
+    p.cheesyStuffMiddleTimeline2Spanish {
       top: 290px;
       left: 760px;
     }
 
-    p.cheesyStuffMiddleToronto3Spanish {
+    p.cheesyStuffMiddleTimeline3Spanish {
       top: 365px;
       left: 835px;
     }

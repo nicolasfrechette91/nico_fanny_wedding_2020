@@ -9,27 +9,45 @@ $(document).ready(function(){
 
     showHideMobile(isMobile);
 
-   $('#torontoButton').click(function() {
+   $('#timelineButton').click(function() {
      $('.mexico').hide();
-     if ($('#torontoButton').css('background-color') === 'rgb(235, 64, 52)') {
-        $('.toronto').hide();
-        $('#torontoButton').css('background-color', '');
+     $('.world').hide();
+     if ($('#timelineButton').css('background-color') === 'rgb(235, 64, 52)') {
+        $('.timeline').hide();
+        $('#timelineButton').css('background-color', '');
      } else {
-        $('.toronto').show();
+        $('.timeline').show();
         $(this).css('background-color', '#eb4034');
         $('#mexicoButton').css('background-color', '');
+        $('#worldButton').css('background-color', '');
      }
    });
 
    $('#mexicoButton').click(function() {
-     $('.toronto').hide();
+     $('.timeline').hide();
+     $('.world').hide();
      if ($('#mexicoButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.mexico').hide();
         $('#mexicoButton').css('background-color', '');
      } else {
          $('.mexico').show();
          $(this).css('background-color', '#eb4034');
-         $('#torontoButton').css('background-color', '');
+         $('#timelineButton').css('background-color', '');
+         $('#worldButton').css('background-color', '');
+     }
+   });
+
+   $('#worldButton').click(function() {
+     $('.timeline').hide();
+     $('.mexico').hide();
+     if ($('#worldButton').css('background-color') === 'rgb(235, 64, 52)') {
+        $('.world').hide();
+        $('#worldButton').css('background-color', '');
+     } else {
+         $('.world').show();
+         $(this).css('background-color', '#eb4034');
+         $('#timelineButton').css('background-color', '');
+         $('#mexicoButton').css('background-color', '');
      }
    });
 
