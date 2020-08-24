@@ -252,7 +252,7 @@ $(document).ready(function(){
   });
 
   $("[id^='cheesy']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../cheesyStuff/cheesyStuff" + language + ".html";
   });
 
   $("[id^='ceremony']").click(function() {
