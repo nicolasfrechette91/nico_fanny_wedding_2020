@@ -10,7 +10,7 @@ $(document).ready(function(){
     showHideMobile(isMobile);
 
    $('#timelineButton').click(function() {
-     $('.mexico').hide();
+     $('.recipe').hide();
      $('.world').hide();
      if ($('#timelineButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.timeline').hide();
@@ -18,19 +18,19 @@ $(document).ready(function(){
      } else {
         $('.timeline').show();
         $(this).css('background-color', '#eb4034');
-        $('#mexicoButton').css('background-color', '');
+        $('#recipeButton').css('background-color', '');
         $('#worldButton').css('background-color', '');
      }
    });
 
-   $('#mexicoButton').click(function() {
+   $('#recipeButton').click(function() {
      $('.timeline').hide();
      $('.world').hide();
-     if ($('#mexicoButton').css('background-color') === 'rgb(235, 64, 52)') {
-        $('.mexico').hide();
-        $('#mexicoButton').css('background-color', '');
+     if ($('#recipeButton').css('background-color') === 'rgb(235, 64, 52)') {
+        $('.recipe').hide();
+        $('#recipeButton').css('background-color', '');
      } else {
-         $('.mexico').show();
+         $('.recipe').show();
          $(this).css('background-color', '#eb4034');
          $('#timelineButton').css('background-color', '');
          $('#worldButton').css('background-color', '');
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
    $('#worldButton').click(function() {
      $('.timeline').hide();
-     $('.mexico').hide();
+     $('.recipe').hide();
      if ($('#worldButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.world').hide();
         $('#worldButton').css('background-color', '');
@@ -47,9 +47,46 @@ $(document).ready(function(){
          $('.world').show();
          $(this).css('background-color', '#eb4034');
          $('#timelineButton').css('background-color', '');
-         $('#mexicoButton').css('background-color', '');
+         $('#recipeButton').css('background-color', '');
      }
    });
+
+   jQuery.fn.simpleAccordion = function(options) {
+     options = $.extend({
+       start: 0,
+       activeClass: "active",
+       itemClass: "item"
+     }, options || {});
+
+     function updateView(activeItem) {
+       var otherItems = activeItem.siblings();
+       otherItems
+         .removeClass(options.activeClass)
+         .children('dd').slideUp();
+
+       activeItem
+         .addClass(options.activeClass)
+         .children('dd').slideDown();
+
+     }
+
+     return this.each(function() {
+       var $this = $(this);
+
+       var itemSelector = "." + options.itemClass;
+       var items = $(itemSelector, $this);
+       updateView(items.eq(options.start));
+
+       $this.on('click', itemSelector + '>dt', function() {
+         var activeItem = $(this).closest(itemSelector);
+         if (activeItem.hasClass(options.activeClass)) return;
+         updateView(activeItem);
+       });
+
+     });
+   };
+
+   $("dl.stappen").simpleAccordion();
 
      var language = $('#page').text();
 
