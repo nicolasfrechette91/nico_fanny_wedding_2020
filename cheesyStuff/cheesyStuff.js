@@ -13,10 +13,12 @@ $(document).ready(function(){
      $('.recipe').hide();
      $('.world').hide();
      if ($('#timelineButton').css('background-color') === 'rgb(235, 64, 52)') {
-        $('.timeline').hide();
+        $('.prevNextButtons').css('padding-top', '300px');
+        $('.timelineContainer').hide();
         $('#timelineButton').css('background-color', '');
      } else {
-        $('.timeline').show();
+        $('.prevNextButtons').css('padding-top', '0px');
+        $('.timelineContainer').show();
         $(this).css('background-color', '#eb4034');
         $('#recipeButton').css('background-color', '');
         $('#worldButton').css('background-color', '');
@@ -24,7 +26,8 @@ $(document).ready(function(){
    });
 
    $('#recipeButton').click(function() {
-     $('.timeline').hide();
+     $('.prevNextButtons').css('padding-top', '300px');
+     $('.timelineContainer').hide();
      $('.world').hide();
      if ($('#recipeButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.recipe').hide();
@@ -38,7 +41,8 @@ $(document).ready(function(){
    });
 
    $('#worldButton').click(function() {
-     $('.timeline').hide();
+     $('.prevNextButtons').css('padding-top', '300px');
+     $('.timelineContainer').hide();
      $('.recipe').hide();
      if ($('#worldButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.world').hide();
@@ -51,42 +55,20 @@ $(document).ready(function(){
      }
    });
 
-   jQuery.fn.simpleAccordion = function(options) {
-     options = $.extend({
-       start: 0,
-       activeClass: "active",
-       itemClass: "item"
-     }, options || {});
-
-     function updateView(activeItem) {
-       var otherItems = activeItem.siblings();
-       otherItems
-         .removeClass(options.activeClass)
-         .children('dd').slideUp();
-
-       activeItem
-         .addClass(options.activeClass)
-         .children('dd').slideDown();
-
-     }
-
-     return this.each(function() {
-       var $this = $(this);
-
-       var itemSelector = "." + options.itemClass;
-       var items = $(itemSelector, $this);
-       updateView(items.eq(options.start));
-
-       $this.on('click', itemSelector + '>dt', function() {
-         var activeItem = $(this).closest(itemSelector);
-         if (activeItem.hasClass(options.activeClass)) return;
-         updateView(activeItem);
-       });
-
+     $(".accordionContainer").click(function() {
+        $('#accordion .accordionContainer').not(this).removeClass('isOpen');
+        $(this).addClass('isOpen');
+        $('.isOpen').find( "p" ).toggle(800); // Temporary
+        var id = $(this).attr("id");
+        $('.isOpenSub.' + id).find( "p" ).hide(400);
+        $('.' + id).toggle(800);
      });
-   };
 
-   $("dl.stappen").simpleAccordion();
+     $(".accordionSubContainer").click(function() {
+        $('#accordion .accordionSubContainer').not(this).removeClass('isOpenSub');
+        $(this).addClass('isOpenSub');
+        $('.isOpenSub').find( "p" ).toggle(800);
+     });
 
      var language = $('#page').text();
 

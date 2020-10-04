@@ -73,68 +73,124 @@ table.prevNextButtons {
 
 }
 
-
-dl.stappen {
-  display: block;
-  margin: 50px 0 0;
+.yearSelectorLeft {
+    box-sizing: border-box;
+    padding-left: 95%;
+    margin-top: 6px;
 }
 
-dl.stappen .item {
-  padding-left: 45px;
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  box-sizing: border-box;
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-dl.stappen .item:before {
-  background: black;
-  width: 3px;
-  bottom: -10px;
+/* Container around content */
+.container {
+  box-sizing: border-box;
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  box-sizing: border-box;
+  content: '';
   position: absolute;
-  content: "";
-  left: 8px;
-  top: 8px;
+  width: 25px;
+  height: 25px;
+  right: -15px;
+  background-color: white;
+  border: 4px solid #800080;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-dl.stappen .item:last-of-type:before {
-  display: none;
-}
-
-dl.stappen .item dt {
-  font-weight: 500;
-  font-size: 21px;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  cursor: pointer;
+/* Container around content */
+.containerSubMenu {
+  box-sizing: border-box;
+  padding: 10px 40px;
   position: relative;
+  width: 50%;
 }
 
-dl.stappen .item dt:first-of-type {
-  margin-top: 0;
-}
-
-dl.stappen .item dt .round {
+/* The circles on the timeline */
+.containerSubMenu::after {
+  box-sizing: border-box;
+  content: '';
   position: absolute;
-  left: -45px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  background: #eee;
-  border: 3px solid black;
-  border-radius: 10px;
-  z-index: 100;
+  width: 20px;
+  height: 20px;
+  right: -17px;
+  left: -12px !important;
+  background-color: white;
+  border: 4px solid #FF61FF;
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-dl.stappen .item dd {
-  font-size: 17px;
-  line-height: 26px;
+/* Place the container to the left */
+.left.accordionContainer {
+  box-sizing: border-box;
+  left: 5px;
+  border: solid #7D1516;
+  border-width: 0px 5px 0px 0px;
+  z-index: 3;
+}
+
+/* Place the container to the right */
+.right {
+  box-sizing: border-box;
+  left: 50%;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.right {
+  box-sizing: border-box;
+  border: solid #7D1516;
+  border-width: 0px 0px 0px 5px;
+  z-index: 3;
+}
+
+.right.containerSubMenu {
+  box-sizing: border-box;
+  border: solid red;
+  border-width: 0px 0px 0px 5px;
+  z-index: 3;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  box-sizing: border-box;
+  left: -15px;
+}
+
+/* The actual content */
+.content {
+  box-sizing: border-box;
+  padding: 0px 30px;
+  padding-bottom: 10px;
+  background-color: white;
   position: relative;
-  margin-left: 40px;
+  border-radius: 6px;
 }
 
-dl.stappen .item dd p {
-  margin-bottom: 15px;
+/* The actual  of the subMenus */
+.contentSubMenu {
+  box-sizing: border-box;
+  padding: 0px 30px;
+  padding-bottom: 10px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
 }
 
-dl.stappen .item dd p:last-child {
-  margin-bottom: 0;
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
 }
