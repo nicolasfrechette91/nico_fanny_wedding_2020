@@ -62,24 +62,24 @@ $(document).ready(function(){
             var id = $(this).attr("id");
             $('.isOpenSub.' + id).find( "p" ).hide(400);
             $('.isOpenSub.' + id).removeClass('isOpenSub');
-            $('.' + id).toggle(800);
+            $('.' + id).slideToggle(800);
             $(this).removeClass('isOpen');
         } else {
             $(this).addClass('isOpen');
             $(this).find( "p" ).toggle(800); // Temporary
             var id = $(this).attr("id");
             $('.isOpenSub.' + id).find( "p" ).hide(400);
-            $('.' + id).toggle(800);
+            $('.' + id).slideToggle(800);
         }
      });
 
      $(".accordionSubContainer").click(function() {
         if($(this).hasClass('isOpenSub')){
-            $('.isOpenSub').find( "p" ).toggle(800);
+            $(this).find( "p" ).toggle(800);
             $(this).removeClass('isOpenSub');
         } else {
             $(this).addClass('isOpenSub');
-            $('.isOpenSub').find( "p" ).toggle(800);
+            $(this).find( "p" ).toggle(800);
         }
      });
 
