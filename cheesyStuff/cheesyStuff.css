@@ -89,6 +89,12 @@ h2 {
     margin-top: 6px;
 }
 
+.longMonthSelectorLeft {
+    box-sizing: border-box;
+    padding-left: 85%;
+    margin-top: 6px;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   box-sizing: border-box;
@@ -110,6 +116,7 @@ h2 {
   box-sizing: border-box;
   content: '+';
   padding-left: 8px;
+  color: #F600B6;
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 22px;
   font-weight: 700;
@@ -129,6 +136,7 @@ h2 {
   box-sizing: border-box;
   content: '-';
   padding-left: 10px;
+  color: #F600B6;
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 22px;
   font-weight: 700;
@@ -156,6 +164,7 @@ h2 {
   box-sizing: border-box;
   content: '+';
   padding-left: 7px;
+  color: #F600B6;
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 18px;
   font-size: 18px;
@@ -164,7 +173,7 @@ h2 {
   width: 30px;
   right: -18px;
   background-color: white;
-  border: 4px solid #FF61FF;
+  border: 4px solid #A200A2;
   top: 18px;
   border-radius: 50%;
   z-index: 1;
@@ -176,6 +185,7 @@ h2 {
   box-sizing: border-box;
   content: '-';
   padding-left: 8px;
+  color: #F600B6;
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 18px;
   font-size: 18px;
@@ -184,7 +194,7 @@ h2 {
   width: 30px;
   right: -18px;
   background-color: white;
-  border: 4px solid #FF61FF;
+  border: 4px solid #A200A2;
   top: 18px;
   border-radius: 50%;
   z-index: 1;
@@ -203,7 +213,7 @@ h2 {
 .left.containerSubMenu {
   box-sizing: border-box;
   left: 5px;
-  border: solid red;
+  border: solid #A81C1C;
   border-width: 0px 5px 0px 0px;
   z-index: 3;
 }
@@ -225,7 +235,7 @@ h2 {
 
 .right.containerSubMenu {
   box-sizing: border-box;
-  border: solid red;
+  border: solid #A81C1C;
   border-width: 0px 0px 0px 5px;
   z-index: 3;
 }

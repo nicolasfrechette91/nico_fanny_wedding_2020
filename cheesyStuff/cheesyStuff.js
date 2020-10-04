@@ -58,7 +58,6 @@ $(document).ready(function(){
      $(".accordionContainer").click(function() {
         //$('#accordion .accordionContainer').not(this).removeClass('isOpen');
         if($(this).hasClass('isOpen')){
-            $(this).find( "p" ).toggle(800); // Temporary
             var id = $(this).attr("id");
             $('.isOpenSub.' + id).find( "p" ).hide(400);
             $('.isOpenSub.' + id).removeClass('isOpenSub');
@@ -66,7 +65,6 @@ $(document).ready(function(){
             $(this).removeClass('isOpen');
         } else {
             $(this).addClass('isOpen');
-            $(this).find( "p" ).toggle(800); // Temporary
             var id = $(this).attr("id");
             $('.isOpenSub.' + id).find( "p" ).hide(400);
             $('.' + id).slideToggle(800);
