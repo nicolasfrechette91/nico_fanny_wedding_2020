@@ -73,6 +73,10 @@ table.prevNextButtons {
 
 }
 
+h2 {
+    cursor: pointer;
+}
+
 .yearSelectorLeft {
     box-sizing: border-box;
     padding-left: 95%;
@@ -95,19 +99,42 @@ table.prevNextButtons {
   width: 50%;
 }
 
-/* The circles on the timeline */
+/* The circles on the timeline plus */
 .container::after {
   box-sizing: border-box;
-  content: '';
+  content: '+';
+  padding-left: 8px;
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 22px;
+  font-weight: 700;
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -15px;
+  width: 35px;
+  right: -20px;
   background-color: white;
   border: 4px solid #800080;
-  top: 20px;
+  top: 12px;
   border-radius: 50%;
   z-index: 1;
+  cursor: pointer;
+}
+
+/* The circles on the timeline minus */
+.container.isOpen::after {
+  box-sizing: border-box;
+  content: '-';
+  padding-left: 10px;
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  width: 35px;
+  right: -20px;
+  background-color: white;
+  border: 4px solid #800080;
+  top: 12px;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 /* Container around content */
@@ -118,20 +145,46 @@ table.prevNextButtons {
   width: 50%;
 }
 
-/* The circles on the timeline */
+/* The small circles on the timeline plus */
 .containerSubMenu::after {
   box-sizing: border-box;
-  content: '';
+  content: '+';
+  padding-left: 7px;
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 18px;
+  font-size: 18px;
+  font-weight: 700;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -17px;
-  left: -12px !important;
+  width: 30px;
+  right: -18px;
+  left: -17px !important;
   background-color: white;
   border: 4px solid #FF61FF;
-  top: 25px;
+  top: 18px;
   border-radius: 50%;
   z-index: 1;
+  cursor: pointer;
+}
+
+/* The small circles on the timeline minus */
+.containerSubMenu.isOpenSub::after {
+  box-sizing: border-box;
+  content: '-';
+  padding-left: 8px;
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  width: 30px;
+  right: -18px;
+  left: -17px !important;
+  background-color: white;
+  border: 4px solid #FF61FF;
+  top: 18px;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 /* Place the container to the left */
@@ -168,7 +221,7 @@ table.prevNextButtons {
 /* Fix the circle for containers on the right side */
 .right::after {
   box-sizing: border-box;
-  left: -15px;
+  left: -19px;
 }
 
 /* The actual content */

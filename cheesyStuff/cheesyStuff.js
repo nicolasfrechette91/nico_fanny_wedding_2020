@@ -56,18 +56,31 @@ $(document).ready(function(){
    });
 
      $(".accordionContainer").click(function() {
-        $('#accordion .accordionContainer').not(this).removeClass('isOpen');
-        $(this).addClass('isOpen');
-        $('.isOpen').find( "p" ).toggle(800); // Temporary
-        var id = $(this).attr("id");
-        $('.isOpenSub.' + id).find( "p" ).hide(400);
-        $('.' + id).toggle(800);
+        //$('#accordion .accordionContainer').not(this).removeClass('isOpen');
+        if($(this).hasClass('isOpen')){
+            $(this).find( "p" ).toggle(800); // Temporary
+            var id = $(this).attr("id");
+            $('.isOpenSub.' + id).find( "p" ).hide(400);
+            $('.isOpenSub.' + id).removeClass('isOpenSub');
+            $('.' + id).toggle(800);
+            $(this).removeClass('isOpen');
+        } else {
+            $(this).addClass('isOpen');
+            $(this).find( "p" ).toggle(800); // Temporary
+            var id = $(this).attr("id");
+            $('.isOpenSub.' + id).find( "p" ).hide(400);
+            $('.' + id).toggle(800);
+        }
      });
 
      $(".accordionSubContainer").click(function() {
-        $('#accordion .accordionSubContainer').not(this).removeClass('isOpenSub');
-        $(this).addClass('isOpenSub');
-        $('.isOpenSub').find( "p" ).toggle(800);
+        if($(this).hasClass('isOpenSub')){
+            $('.isOpenSub').find( "p" ).toggle(800);
+            $(this).removeClass('isOpenSub');
+        } else {
+            $(this).addClass('isOpenSub');
+            $('.isOpenSub').find( "p" ).toggle(800);
+        }
      });
 
      var language = $('#page').text();
