@@ -56,7 +56,6 @@ $(document).ready(function(){
    });
 
      $(".accordionContainer").click(function() {
-        //$('#accordion .accordionContainer').not(this).removeClass('isOpen');
         if($(this).hasClass('isOpen')){
             var id = $(this).attr("id");
             $('.isOpenSub.' + id).find( "div.imageContainer" ).hide(400);
@@ -73,11 +72,11 @@ $(document).ready(function(){
 
      $(".accordionSubContainer").click(function() {
         if($(this).hasClass('isOpenSub')){
-            $(this).find( "div.imageContainer" ).toggle(800);
+            $(this).find( "div.imageContainer" ).slideToggle(800);
             $(this).removeClass('isOpenSub');
         } else {
             $(this).addClass('isOpenSub');
-            $(this).find( "div.imageContainer" ).toggle(800);
+            $(this).find( "div.imageContainer" ).slideToggle(800);
         }
      });
 
