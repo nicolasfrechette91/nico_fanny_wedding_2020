@@ -59,25 +59,25 @@ $(document).ready(function(){
         //$('#accordion .accordionContainer').not(this).removeClass('isOpen');
         if($(this).hasClass('isOpen')){
             var id = $(this).attr("id");
-            $('.isOpenSub.' + id).find( "p" ).hide(400);
+            $('.isOpenSub.' + id).find( "div.imageContainer" ).hide(400);
             $('.isOpenSub.' + id).removeClass('isOpenSub');
             $('.' + id).slideToggle(800);
             $(this).removeClass('isOpen');
         } else {
             $(this).addClass('isOpen');
             var id = $(this).attr("id");
-            $('.isOpenSub.' + id).find( "p" ).hide(400);
+            $('.isOpenSub.' + id).find( "div.imageContainer" ).hide(400);
             $('.' + id).slideToggle(800);
         }
      });
 
      $(".accordionSubContainer").click(function() {
         if($(this).hasClass('isOpenSub')){
-            $(this).find( "p" ).toggle(800);
+            $(this).find( "div.imageContainer" ).toggle(800);
             $(this).removeClass('isOpenSub');
         } else {
             $(this).addClass('isOpenSub');
-            $(this).find( "p" ).toggle(800);
+            $(this).find( "div.imageContainer" ).toggle(800);
         }
      });
 

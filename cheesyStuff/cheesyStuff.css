@@ -34,29 +34,31 @@ th.cheesyStuff {
     cursor: pointer;
 }
 
-div.cheesyStuffImageContainer{
- height:45vh;
- position: absolute;
-}
-
-.imageCheesyStuff {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-}
-
-.imageContainer {
-    position: absolute;
-    left: 250px;
-}
-
 .imageFrame {
     display: block;
-    margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
-    max-height: 600px;
+    margin-left: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.dateDescription {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  border: black solid;
+}
+
+.emptyColumn {
+    width: 50%;
+}
+
+.emptyMiddleColumn {
+    width: 50px;
 }
 
 table.prevNextButtons {
@@ -75,6 +77,12 @@ table.prevNextButtons {
 
 h2 {
     cursor: pointer;
+    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
 }
 
 .yearSelectorLeft {
