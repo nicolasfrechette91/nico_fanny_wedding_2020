@@ -38,8 +38,8 @@ th.cheesyStuff {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .dateDescription {
@@ -58,7 +58,7 @@ th.cheesyStuff {
 }
 
 .emptyMiddleColumn {
-    width: 50px;
+    width: 40px;
 }
 
 table.prevNextButtons {
@@ -93,13 +93,13 @@ h2 {
 
 .monthSelectorLeft {
     box-sizing: border-box;
-    padding-left: 95%;
+    padding-left: 90%;
     margin-top: 6px;
 }
 
 .longMonthSelectorLeft {
     box-sizing: border-box;
-    padding-left: 85%;
+    padding-left: 80%;
     margin-top: 6px;
 }
 
@@ -280,5 +280,9 @@ h2 {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1700px) {
+    .imageFrame{
+        max-width: 200px;
+        max-height: 200px;
+    }
 }
