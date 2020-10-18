@@ -1,91 +1,840 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cheesy Stuff</title>
-        <link rel="icon" type="image/png" href="../global/pictures/favicon.png"/>
-        <link rel="stylesheet" href="../global/css/global.css">
-        <link rel="stylesheet" href="cheesyStuff.css">
-        <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-        <script src="../global/jquery/jquery-3.5.1.min.js"></script>
-        <script src="cheesyStuff.js"></script>
-    </head>
-    <body>
-    <p class="ceremonyHeader">C&eacute;r&eacute;monie</p>
+<head>
+    <title>Cheesy Stuff</title>
+    <link rel="icon" type="image/png" href="../global/pictures/favicon.png"/>
+    <link rel="stylesheet" href="../global/css/global.css">
+    <link rel="stylesheet" href="cheesyStuff.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <script src="../global/jquery/jquery-3.5.1.min.js"></script>
+    <script src="cheesyStuff.js"></script>
+</head>
+<body>
+<p class="cheesyStuffHeader">Cheesy Stuff</p>
 
-    <p class="ceremonyTop">En raison du COVID-19, nous avons &eacute;t&eacute; oblig&eacute;s de reporter la c&eacute;r&eacute;monie initiale jusqu'en 2021.
-        Cependant, nous avons pris la d&eacute;cision en tant que couple de r&eacute;aliser notre projet de mariage en 2020.
-        Pour cela, nous avons pr&eacute;vu une petite c&eacute;r&eacute;monie civile &agrave; Toronto en 2020, suivie de la c&eacute;r&eacute;monie religieuse et de la fête en 2021.
-    </p>
+<table>
+    <tr>
+        <th class="cheesyStuff"><button type="button" id="timelineButton" class="cheesyStuffButton">Chronologie</button></th>
+        <th class="cheesyStuff"><button type="button" id="recipeButton" class="cheesyStuffButton">Recettes</button></th>
+        <th class="cheesyStuff"><button type="button" id="worldButton" class="cheesyStuffButton">Monde</button></th>
+    </tr>
+</table>
 
-    <br>
-    <table>
-        <tr>
-            <th class="ceremony"><button type="button" id="torontoButton" class="ceremonyButton">Toronto 2020</button></th>
-            <th class="ceremony"><button type="button" id="mexicoButton" class="ceremonyButton">Mexico 2021</button></th>
-        </tr>
-    </table>
+<br>
 
-    <br>
+<!-- Timeline -->
+<div class="timelineContainer desktop" hidden>
 
-    <div class="ceremonyImageContainer desktop">
-        <p class="toronto ceremonyMiddleToronto1" hidden>12 Septembre 2020</p>
-        <p class="toronto ceremonyMiddleToronto2" hidden>La c&eacute;r&eacute;monie commence &agrave; 16h00 (veuillez arriver avant)</p>
-        <p class="toronto ceremonyMiddleToronto3" hidden>67-5536 Montevideo Road, Mississauga, ON, L5N 2P4</p>
+    <div class="timeline" id="accordion">
+        <div class="container left accordionContainer" id="2016Container">
+            <div class="content">
+                <h2 class="yearSelectorLeft">2016</h2>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2016Container" hidden>
+            <div class="contentSubMenu">
+                <h2>June</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20160612.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">12 June 2016 <br> First Picture Taken</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container right accordionContainer" id="2017Container">
+            <div class="content">
+                <h2>2017</h2>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2017Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">May</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20170521.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">21 May 2017 <br> First picture taken with Fanny’s phone</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2017Container" hidden>
+            <div class="contentSubMenu">
+                <h2>June</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20170610.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">10 June 2017 <br> Nico meets Fanny’s mom</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
 
-        <div class="toronto ceremony" hidden>
-            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/ceremony/ceremony.png" alt="awesome couple"></div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2017Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">July</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20170729.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">29 July 2017 <br> First obstacle race</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2017Container" hidden>
+            <div class="contentSubMenu">
+                <h2>October</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20171021.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20171022.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">21 October 2017 <br> Trip to Costa Rica</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">22 October 2017 <br> Nico admits that he is scared of horses</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2017Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">December</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20171212.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20171224.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">12 December 2017 <br> Forced goodbye of Mario Odyssey’s box</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">24 December 2017 <br> First Christmas at Nico’s family</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container right accordionContainer" id="2018Container">
+            <div class="content">
+                <h2>2018</h2>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2>January</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180104.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180107.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">4 January 2018 <br> Nico meets Fanny’s brother</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">7 January 2018 <br> First family ski trip</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">February</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180204.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180228.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">4 February 2018 <br> First live hockey match</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">28 February 2018 <br> Leaving to Edmonton</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2>March</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180323.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">23 March 2018 <br> Finally have a dinning table</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">April</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180428.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">28 April 2018 <br> Tourism inside Edmonton</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2>May</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180519.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">19 May 2018 <br> 16 km hiking trail in Elk island</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">July</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180728.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">28 July 2018 <br> Tubing with some Edmonton friends</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2>August</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180804.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180804_2.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">4 August 2018 <br> Trip to Calgary</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">4 August 2018 <br> Trip to Calgary</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180805.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180805_2.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">5 August 2018 <br> Fanny admits that she is scared of old ferris wheel</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">5 August 2018 <br> Fanny admits that she is scared of old ferris wheel</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180825.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180828.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">25 August 2018 <br> Nico’s sister’s wedding</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">28 August 2018 <br> First hangout with Nico’s dad</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">September</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180914.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180916.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">14 September 2018 <br> Urban tavern with Fanny’s parents</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">16 September 2018 <br> First matching sunglasses</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180923.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180929.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">23 September 2018 <br> Bubble tea with Fanny’s parents</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">29 September 2018 <br> Trip to Banff. Huge uphill not worthy hike</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180930.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20180930_2.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">30 September 2018 <br> Trip to Banff. Huge uphill not worthy hike</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">30 September 2018 <br> Trip to Banff. Huge uphill not worthy hike</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2>October</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181027.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181028.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">28 October 2018 <br> Halloween pub crawl with the coolest in Edmonton</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">28 October 2018 <br> Halloween pub crawl with the coolest in Edmonton</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">November</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181107.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181108.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">7 November 2018 <br> Trip to Poland. Getting to discover the life in Warsaw</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">8 November 2018 <br> Trip to Poland. Getting to discover the life in Warsaw</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181109.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181110.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">9 November 2018 <br> Trip to Poland. Getting to discover the life in Warsaw</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">10 November 2018 <br> Last day in Poland. A day in Wroclaw</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181112.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181112_2.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">12 November 2018 <br> Trip to Czech. Getting to discover the life in Prague. Almost threw up with wasabi chips</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">12 November 2018 <br> Trip to Czech. Getting to discover the life in Prague. Almost threw up with wasabi chips</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181113.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181115.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">13 November 2018 <br> Trip to Czech. Getting to discover the life in Prague. Almost threw up with wasabi chips</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">15 November 2018 <br> Trip to Austria. Getting to discover the life in Vienna</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181116.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181117.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">16 November 2018 <br> Eating soup in a bread in Vienna</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">17 November 2018 <br> Lost in the middle of Margarethen am Moos</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181124.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">24 November 2018 <br> Fancy dinner with filet mignon (first time ever)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2018Container" hidden>
+            <div class="contentSubMenu">
+                <h2>December</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181224.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181226.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">24 December 2018 <br> Christmas in Denver with the best people</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">26 December 2018 <br> Being a tourist with Fanny’s family in Mexico (Guanajuato)</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181227.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20181231.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">27 December 2018 <br> Being a tourist with Fanny’s family in Mexico (Aguascalientes)</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">31 December 2018 <br> Eating gorditas with Fanny’s family</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190101.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">31 December 2018 <br> First new year’s eve with Fanny’s family</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container right accordionContainer" id="2019Container">
+            <div class="content">
+                <h2>2019</h2>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">March</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190315.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190316.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">15 March 2019 <br> First Mexican birthday for Nico</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">16 March 2019 <br> Mexican wedding of the best couple</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2>April</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190415.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">15 April 2019 <br> Drinking and partying with beautiful people in Edmonton</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">May</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190518.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190519.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">18 May 2019 <br> Discovering dry lands in Drumheller</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">19 May 2019 <br> Discovering dry lands in Drumheller</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2>July</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190705.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">5 July 2019 <br> Saying goodbye for a bit</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">September</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190907.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20190914.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">7 September 2019 <br> Back together in Toronto</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">14 September 2019 <br> Tourism inside Toronto</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2>November</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191111.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191113.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">11 November 2019 <br> Trip to Japan. Discovering the life in Tokyo</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">13 November 2019 <br> Sake bar (not suspicious)</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191114.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191115.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">14 November 2019 <br> Nico being extra happy after seeing a Pokemon store</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">15 November 2019 <br> Lost in the city, in the water and in the trains</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191116.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191117.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">16 November 2019 <br> Lost in the city, in the water and in the trains</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">17 November 2019 <br> Lost in the city, in the water and in the trains</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191117_2.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191118.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">17 November 2019 <br> Biking in Hara with the ocean and Mount Fuji</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">18 November 2019 <br> Proposal day (almost arrested)</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191122.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191123.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">22 November 2019 <br> Waiting in the rain for grand opening of Nintendo store</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">23 November 2019 <br> Discovering traditional Japanese culture</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2019Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">December</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191214.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20191225.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">14 December 2019 <br> First Christmas work party together</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">24 December 2019 <br> Christmas with Nico’s family</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container right accordionContainer" id="2020Container">
+            <div class="content">
+                <h2>2020</h2>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2>February</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200202.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200202_2.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">2 February 2020 <br> Nico pranks Fanny in her birthday</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">2 February 2020 <br> Nico pranks Fanny in her birthday</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">April</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200426.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">26 April 2020 <br> First “at home” haircut due to COVID-19</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2>May</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200501.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">1 May 2020 <br> “At home” anniversary due to COVID-19</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="monthSelectorLeft">July</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200711.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200724.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">11 July 2020 <br> Sharing Mexican food and alcoholism with beautiful people in Toronto</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">24 July 2020 <br> Aggressive board game night with the best</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2>August</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200801.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200802.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">1 August 2020 <br> Camping with Nico's sisters</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">2 August 2020 <br> Rainy day activities with Nico's Mom</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200822.jpg" alt="awesome couple"></td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">22 August 2020 <br> Trying to enjoy summer in covid</td>
+                            <td class="emptyColumn"></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="containerSubMenu left accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2 class="longMonthSelectorLeft">September</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20200927.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="emptyColumn"></td>
+                            <td class="dateDescription">27 September 2020 <br> Having too much fun with the anime filter</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="containerSubMenu right accordionSubContainer 2020Container" hidden>
+            <div class="contentSubMenu">
+                <h2>October</h2>
+                <div class="imageContainer" hidden>
+                    <table>
+                        <tr>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20201003.jpg" alt="awesome couple"></td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td><img class="imageFrame" src="../global/pictures/cheesyStuff/20201004.jpg" alt="awesome couple"></td>
+                        </tr>
+                        <tr>
+                            <td class="dateDescription">3 October 2020 <br> Exploring Sauble Beach</td>
+                            <td class="emptyMiddleColumn"></td>
+                            <td class="dateDescription">4 October 2020 <br> Exploring Tobermory with friends</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="ceremonyImageContainer mobile">
-        <p class="toronto ceremonyMiddleToronto1Mobile" hidden>12 Septembre 2020</p>
-        <p class="toronto ceremonyMiddleToronto2Mobile" hidden>La c&eacute;r&eacute;monie commence &agrave; 16h00 (veuillez arriver avant)</p>
-        <p class="toronto ceremonyMiddleToronto3Mobile" hidden>67-5536 Montevideo Road, Mississauga, ON, L5N 2P4</p>
+</div>
 
-        <div class="toronto ceremony" hidden>
-            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/ceremony/ceremony.png" alt="awesome couple"></div>
-        </div>
-    </div>
+<!-- Recipe -->
 
-    <!-- Mexico -->
 
-    <div class="ceremonyImageContainer desktop">
-        <p class="mexico ceremonyMiddleMexico" hidden>15 Mai 2021</p>
+<!-- Footer -->
 
-        <div class="mexico ceremony" hidden>
-            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/ceremony/ceremony.png" alt="awesome couple"></div>
-        </div>
-    </div>
+<table class="prevNextButtons">
+    <tr>
+        <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../meetCouple/meetCouple_fr.html">Rencontrez le couple</a></td>
+        <td class="nextButtons"><a href="../home/index_fr.html">Menu Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
+    </tr>
+</table>
 
-    <div class="ceremonyImageContainer mobile">
-        <p class="mexico ceremonyMiddleMexicoMobile" hidden>15 Mai 2021</p>
 
-        <div class="mexico ceremony" hidden>
-            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/ceremony/ceremony.png" alt="awesome couple"></div>
-        </div>
-    </div>
-
-    <table class="prevNextButtonsDefault default">
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../home/index_fr.html">Menu Principal</a></td>
-            <td class="nextButtons"><a href="../party/party_fr.html">Party</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <table class="prevNextButtonsCeremony toronto" hidden>
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../home/index_fr.html">Menu Principal</a></td>
-            <td class="nextButtons"><a href="../party/party_fr.html">Party</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <table class="prevNextButtonsCeremony mexico" hidden>
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../home/index_fr.html">Menu Principal</a></td>
-            <td class="nextButtons"><a href="../party/party_fr.html">Party</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <p id="page" hidden>_fr</p>
-    </body>
+<p id="page" hidden>_fr</p>
+</body>
 </html>
