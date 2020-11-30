@@ -68,7 +68,7 @@ table.prevNextButtons {
     font-size: 28px;
     font-weight: 700;
     color: #f6c09c;
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
 @media screen and (min-width: 1700px) {
@@ -285,4 +285,9 @@ h2 {
         max-width: 200px;
         max-height: 200px;
     }
+}
+
+.mapContainer {
+    padding-top: 20px;
+    margin: auto;
 }
