@@ -106,42 +106,119 @@ function showHideMobile(isMobile){
 }
 
 function generateMap(){
-  $('#world-map-markers').vectorMap({
-    map: 'world_mill',
-    scaleColors: ['#C8EEFF', '#0071A4'],
-    normalizeFunction: 'polynomial',
-    hoverOpacity: 0.7,
-    hoverColor: false,
-    markerStyle: {
-      initial: {
-        fill: '#f83b3b',
-        stroke: '#383f47'
-      }
-    },
-    backgroundColor: '#383f47',
-    markers: [
-      {latLng: [45.50, -73.56], name: 'Montreal 2016'},
-      {latLng: [43.65, -79.38], name: 'Toronto 2017'},
-      {latLng: [9.75, -83.75], name: 'San José 2017'},
-      {latLng: [53.54, -113.49], name: 'Edmonton 2018'},
-      {latLng: [51.04, -114.07], name: 'Calgary 2018'},
-      {latLng: [51.18, -115.57], name: 'Banff 2018'},
-      {latLng: [52.23, 21.01], name: 'Warsaw 2018'},
-      {latLng: [51.10, 17.04], name: 'Wroclaw 2018'},
-      {latLng: [50.08, 14.44], name: 'Prague 2018'},
-      {latLng: [48.21, 16.37], name: 'Vienna 2018'},
-      {latLng: [39.74, -104.99], name: 'Denver 2018'},
-      {latLng: [21.02, -101.26], name: 'Guanajuato 2018'},
-      {latLng: [21.88, -102.29], name: 'Aguascalientes 2018'},
-      {latLng: [51.46, -112.71], name: 'Drumheller 2019'},
-      {latLng: [43.47, -79.69], name: 'Oakville 2019'},
-      {latLng: [35.68, 139.65], name: 'Tokyo 2019'},
-      {latLng: [35.96, 138.22], name: 'Hara 2019'},
-      {latLng: [44.63, -81.26], name: 'Sauble Beach 2020'},
-      {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
-      {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
-    ]
-  });
+  var language = $('#page').text();
+  if(language === '_fr'){
+    $('#world-map-markers').vectorMap({
+      map: 'world_mill',
+      scaleColors: ['#C8EEFF', '#0071A4'],
+      normalizeFunction: 'polynomial',
+      hoverOpacity: 0.7,
+      hoverColor: false,
+      markerStyle: {
+        initial: {
+          fill: '#f83b3b',
+          stroke: '#383f47'
+        }
+      },
+      backgroundColor: '#383f47',
+      markers: [
+        {latLng: [45.50, -73.56], name: 'Montréal 2016'},
+        {latLng: [43.65, -79.38], name: 'Toronto 2017'},
+        {latLng: [9.75, -83.75], name: 'San José 2017'},
+        {latLng: [53.54, -113.49], name: 'Edmonton 2018'},
+        {latLng: [51.04, -114.07], name: 'Calgary 2018'},
+        {latLng: [51.18, -115.57], name: 'Banff 2018'},
+        {latLng: [52.23, 21.01], name: 'Varsovie 2018'},
+        {latLng: [51.10, 17.04], name: 'Wroclaw 2018'},
+        {latLng: [50.08, 14.44], name: 'Prague 2018'},
+        {latLng: [48.21, 16.37], name: 'Vienne 2018'},
+        {latLng: [39.74, -104.99], name: 'Denver 2018'},
+        {latLng: [21.02, -101.26], name: 'Guanajuato 2018'},
+        {latLng: [21.88, -102.29], name: 'Aguascalientes 2018'},
+        {latLng: [51.46, -112.71], name: 'Drumheller 2019'},
+        {latLng: [43.47, -79.69], name: 'Oakville 2019'},
+        {latLng: [35.68, 139.65], name: 'Tokyo 2019'},
+        {latLng: [35.96, 138.22], name: 'Hara 2019'},
+        {latLng: [44.63, -81.26], name: 'Plage de Sauble 2020'},
+        {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
+        {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
+      ]
+    });
+  } else if (language === '_es') {
+    $('#world-map-markers').vectorMap({
+      map: 'world_mill',
+      scaleColors: ['#C8EEFF', '#0071A4'],
+      normalizeFunction: 'polynomial',
+      hoverOpacity: 0.7,
+      hoverColor: false,
+      markerStyle: {
+        initial: {
+          fill: '#f83b3b',
+          stroke: '#383f47'
+        }
+      },
+      backgroundColor: '#383f47',
+      markers: [
+        {latLng: [45.50, -73.56], name: 'Montreal 2016'},
+        {latLng: [43.65, -79.38], name: 'Toronto 2017'},
+        {latLng: [9.75, -83.75], name: 'San Jose 2017'},
+        {latLng: [53.54, -113.49], name: 'Edmonton 2018'},
+        {latLng: [51.04, -114.07], name: 'Calgary 2018'},
+        {latLng: [51.18, -115.57], name: 'Banff 2018'},
+        {latLng: [52.23, 21.01], name: 'Varsovia 2018'},
+        {latLng: [51.10, 17.04], name: 'Breslavia 2018'},
+        {latLng: [50.08, 14.44], name: 'Praga 2018'},
+        {latLng: [48.21, 16.37], name: 'Viena 2018'},
+        {latLng: [39.74, -104.99], name: 'Denver 2018'},
+        {latLng: [21.02, -101.26], name: 'Guanajuato 2018'},
+        {latLng: [21.88, -102.29], name: 'Aguascalientes 2018'},
+        {latLng: [51.46, -112.71], name: 'Drumheller 2019'},
+        {latLng: [43.47, -79.69], name: 'Oakville 2019'},
+        {latLng: [35.68, 139.65], name: 'Tokio 2019'},
+        {latLng: [35.96, 138.22], name: 'Hara 2019'},
+        {latLng: [44.63, -81.26], name: 'Playa Sauble 2020'},
+        {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
+        {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
+      ]
+    });
+  } else {
+    $('#world-map-markers').vectorMap({
+      map: 'world_mill',
+      scaleColors: ['#C8EEFF', '#0071A4'],
+      normalizeFunction: 'polynomial',
+      hoverOpacity: 0.7,
+      hoverColor: false,
+      markerStyle: {
+        initial: {
+          fill: '#f83b3b',
+          stroke: '#383f47'
+        }
+      },
+      backgroundColor: '#383f47',
+      markers: [
+        {latLng: [45.50, -73.56], name: 'Montreal 2016'},
+        {latLng: [43.65, -79.38], name: 'Toronto 2017'},
+        {latLng: [9.75, -83.75], name: 'San José 2017'},
+        {latLng: [53.54, -113.49], name: 'Edmonton 2018'},
+        {latLng: [51.04, -114.07], name: 'Calgary 2018'},
+        {latLng: [51.18, -115.57], name: 'Banff 2018'},
+        {latLng: [52.23, 21.01], name: 'Warsaw 2018'},
+        {latLng: [51.10, 17.04], name: 'Wroclaw 2018'},
+        {latLng: [50.08, 14.44], name: 'Prague 2018'},
+        {latLng: [48.21, 16.37], name: 'Vienna 2018'},
+        {latLng: [39.74, -104.99], name: 'Denver 2018'},
+        {latLng: [21.02, -101.26], name: 'Guanajuato 2018'},
+        {latLng: [21.88, -102.29], name: 'Aguascalientes 2018'},
+        {latLng: [51.46, -112.71], name: 'Drumheller 2019'},
+        {latLng: [43.47, -79.69], name: 'Oakville 2019'},
+        {latLng: [35.68, 139.65], name: 'Tokyo 2019'},
+        {latLng: [35.96, 138.22], name: 'Hara 2019'},
+        {latLng: [44.63, -81.26], name: 'Sauble Beach 2020'},
+        {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
+        {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
+      ]
+    });
+  }
 
   $('.world').hide();
 }
