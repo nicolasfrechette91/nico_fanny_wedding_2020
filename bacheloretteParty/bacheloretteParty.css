@@ -1,0 +1,31 @@
+/* bachelorette Party Exclusive css */
+
+p.bachelorettePartyHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 25vh;
+  text-align: left;
+  padding-left: 2vh;
+}
+
+.imageBacheloretteParty {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 225px;
+}
+
+table.prevNextButtonsBacheloretteParty {
+    table-layout:fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f6c09c;
+    padding-top: 30px;
+}

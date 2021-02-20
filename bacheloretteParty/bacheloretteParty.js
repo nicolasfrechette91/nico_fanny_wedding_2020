@@ -9,60 +9,17 @@ $(document).ready(function(){
       if(isMobile){
         // hide or show css
         $('.desktop').hide();
-        showHideCardAndAttributes("teamBachelorette-text-mobile-");
       } else {
         $('.mobile').hide();
-        showHideCardAndAttributes("teamBachelorette-text-");
       }
 
       var language = $('#page').text();
 
        $(".imagePrevPage").click(function() {
-           window.location.href = "../home/index" + language + ".html";
+           window.location.href = "../teamBachelorette/teamBachelorette" + language + ".html";
        });
 
        $(".imageNextPage").click(function() {
-           window.location.href = "../bacheloretteParty/bacheloretteParty" + language + ".html";
+           window.location.href = "../home/index" + language + ".html";
        });
 });
-
-function showHideCardAndAttributes(name){
-   $("[class^='" + name + "']").click(function() {
-         var tempClass = $(this).attr('class');
-         var tempClassNumber = tempClass.replace(/\D+/g, '');
-
-         var colorForCard = $("[class=teamBachelorette-color-" + tempClassNumber + "]").css('background-color');
-
-         // Hide / Show checker desktop
-         if($(".teamBachelorette-card-centered").is(":visible")){
-            if( colorForCard === $('.teamBachelorette-card-centered').css('background-color')){
-                $('.teamBachelorette-card-centered').hide();
-            }
-         } else {
-            $('.teamBachelorette-card-centered').show();
-         }
-
-         // Hide / Show checker mobile
-         if($(".teamBachelorette-card-centered-mobile").is(":visible")){
-            if( colorForCard === $('.teamBachelorette-card-centered-mobile').css('background-color')){
-                $('.teamBachelorette-card-centered-mobile').hide();
-            }
-         } else {
-            $('.teamBachelorette-card-centered-mobile').show();
-         }
-
-         // Fetch persons info and assign it to the card
-         $('.teamBachelorette-card-centered').css('background-color', colorForCard);
-         $('.teamBachelorette-card-centered-mobile').css('background-color', colorForCard);
-
-         var textForCard = $("[class=teamBachelorette-text-" + tempClassNumber + "]").text();
-         $('.teamBachelorette-card-text-title').text(textForCard);
-         $('.teamBachelorette-card-text-title-mobile').text(textForCard);
-
-         $('.imageTeamBacheloretteCard').attr('src', "../global/pictures/teamBachelorette/ghost" + tempClassNumber + ".jpg");
-         $('.imageTeamBacheloretteCardMobile').attr('src', "../global/pictures/teamBachelorette/ghost" + tempClassNumber + ".jpg");
-
-         $('.teamBachelorette-page-redirect').attr('href', './bachelorette' + tempClassNumber + '.html');
-         $('.teamBachelorette-page-redirect-mobile').attr('href', './bachelorette' + tempClassNumber + '.html');
-   });
-}

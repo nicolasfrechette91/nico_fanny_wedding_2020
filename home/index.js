@@ -283,15 +283,15 @@ $(document).ready(function(){
     window.location.href = "../teamBachelorette/teamBachelorette" + language + ".html";
   });
 
-  $("[id^='bachelorette']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+  $("[id^='bacheloretteParty']").click(function() {
+    window.location.href = "../bacheloretteParty/bacheloretteParty" + language + ".html";
   });
 
   $("[id^='teamGroom']").click(function() {
     window.location.href = "../teamBachelor/teamBachelor" + language + ".html";
   });
 
-  $("[id^='bachelor']").click(function() {
+  $("[id^='bachelorParty']").click(function() {
     window.location.href = "../underConstruction/underConstruction" + language + ".html";
   });
 
