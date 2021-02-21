@@ -9,26 +9,49 @@ $(document).ready(function(){
       if(isMobile){
         // hide or show css
         $('.desktop').hide();
+        goToPicturePage("previousImage");
+        goToPicturePage("nextImage");
       } else {
         $('.mobile').hide();
+        goToPicturePage("previousImage");
+        goToPicturePage("nextImage");
       }
 
-      var language = $('#page').text();
+      const params = new URLSearchParams(document.location.search);
+      const language = params.get("lang");
+
+      if(language === '_fr') {
+        $('.en').hide();
+        $('.es').hide();
+        $('.fr').show();
+      } else if (language === '_es') {
+        $('.en').hide();
+        $('.es').show();
+        $('.fr').hide();
+      } else {
+        $('.en').show();
+        $('.es').hide();
+        $('.fr').hide();
+      }
+
       var returnPage = $('#returnPage').text();
 
        $(".imagePrevPage").click(function() {
            window.location.href = returnPage + language + ".html";
        });
 
-       $(".previousImage").click(function() {
-           var tempClass = $(this).attr('class');
-           var classNumber = tempClass.replace(/\D+/g, '');
-           window.location.href = "bachelorettePartyCategoryTorontoPicture" + classNumber + language + ".html";
-       });
-
-       $(".nextImage").click(function() {
-           var tempClass = $(this).attr('class');
-           var classNumber = tempClass.replace(/\D+/g, '');
-           window.location.href = "bachelorettePartyCategoryTorontoPicture" + classNumber + language + ".html";
-       });
 });
+
+function goToPicturePage(name){
+    $("[class*='" + name + "']").click(function() {
+        var tempClass = $(this).attr('class');
+        var classNumber = tempClass.replace(/\D+/g, '');
+        const params = new URLSearchParams(document.location.search);
+        var language = params.get("lang");
+        if(language !== '_fr' && language !== '_es') {
+            language = '';
+        }
+        var returnPage = $('#returnPage').text();
+        window.location.href = returnPage + "Picture" + classNumber + ".html?lang=" + language;
+    });
+}

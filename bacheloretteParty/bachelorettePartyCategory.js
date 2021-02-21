@@ -27,6 +27,6 @@ function goToPicturePage(name){
         var tempClass = $(this).attr('class');
         var classNumber = tempClass.replace(/\D+/g, '');
         var language = $('#page').text();
-        window.location.href = "bachelorettePartyCategoryTorontoPicture" + classNumber + language + ".html";
+        window.location.href = "bachelorettePartyCategoryTorontoPicture" + classNumber + ".html?lang=" + language;
     });
 }
