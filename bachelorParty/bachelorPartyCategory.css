@@ -1,0 +1,95 @@
+/* bachelorette Party Category Exclusive css */
+
+p.bachelorettePartyHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 25vh;
+  text-align: left;
+  padding-left: 2vh;
+}
+
+.imageBachelorettePartyCategory {
+    display: block;
+    cursor: pointer;
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.imageBachelorettePartyCategoryMobile {
+    display: block;
+    cursor: pointer;
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+table.category {
+    table-layout:fixed;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.tdImage {
+    padding-left: 5%;
+}
+
+.tdImageRight {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+table.prevNextButtonsBacheloretteParty {
+    table-layout:fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f6c09c;
+    padding-top: 30px;
+}
+
+/* Media Query if screen smaller than X */
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+
+    table.prevNextButtonsBacheloretteParty {
+        padding-top: 20px;
+    }
+
+    .imageBachelorettePartyCategory {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .imageBachelorettePartyCategory {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .imageBachelorettePartyCategory {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+    .imageBachelorettePartyCategory {
+        height: 375px;
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+    .imageBachelorettePartyCategory {
+        height: 425px;
+        width: 425px;
+    }
+}

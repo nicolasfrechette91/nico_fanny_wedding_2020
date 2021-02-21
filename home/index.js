@@ -292,7 +292,7 @@ $(document).ready(function(){
   });
 
   $("[id^='bachelorParty']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../bachelorParty/bachelorParty" + language + ".html";
   });
 
   $("[id^='godParentsHeader']").click(function() {
@@ -300,7 +300,7 @@ $(document).ready(function(){
   });
 
   $("[id^='picturesHeader']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../pictures/pictures" + language + ".html";
   });
 
   $("[id^='contactHeader']").click(function() {
