@@ -71,10 +71,6 @@ table.prevNextButtons {
     padding-top: 200px;
 }
 
-@media screen and (min-width: 1700px) {
-
-}
-
 h2 {
     cursor: pointer;
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
@@ -279,7 +275,6 @@ h2 {
   border-radius: 6px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (min-width: 1700px) {
     .imageFrame{
         max-width: 200px;

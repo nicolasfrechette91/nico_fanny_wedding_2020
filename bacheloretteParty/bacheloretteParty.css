@@ -52,3 +52,18 @@ table.prevNextButtonsBacheloretteParty {
     color: #f6c09c;
     padding-top: 50px;
 }
+
+/* Media Query if screen smaller than X */
+@media screen and (max-width: 1000px) {
+    .categoryTitle {
+        font-size: 30px;
+    }
+
+    .categoryPicturesAmount {
+        font-size: 25px;
+    }
+
+    table.prevNextButtonsBacheloretteParty {
+        padding-top: 200px;
+    }
+}
