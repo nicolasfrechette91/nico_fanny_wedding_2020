@@ -12,12 +12,35 @@ p.bachelorettePartyHeader {
   padding-left: 2vh;
 }
 
-.imageBacheloretteParty {
+.imageBachelorettePartyCategory {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    width: 226px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.categoryTitle {
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.categoryPicturesAmount {
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 5%;
+}
+
+table.category {
+    table-layout:fixed;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.tdImage {
+    padding-left: 5%;
 }
 
 table.prevNextButtonsBacheloretteParty {
@@ -27,5 +50,5 @@ table.prevNextButtonsBacheloretteParty {
     font-size: 28px;
     font-weight: 700;
     color: #f6c09c;
-    padding-top: 30px;
+    padding-top: 50px;
 }
