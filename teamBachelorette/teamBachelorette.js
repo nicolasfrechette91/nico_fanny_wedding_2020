@@ -30,6 +30,7 @@ function showHideCardAndAttributes(name){
    $("[class^='" + name + "']").click(function() {
          var tempClass = $(this).attr('class');
          var tempClassNumber = tempClass.replace(/\D+/g, '');
+         var language = $('#page').text();
 
          var colorForCard = $("[class=teamBachelorette-color-" + tempClassNumber + "]").css('background-color');
 
@@ -62,7 +63,7 @@ function showHideCardAndAttributes(name){
          $('.imageTeamBacheloretteCard').attr('src', "../global/pictures/teamBachelorette/ghost" + tempClassNumber + ".jpg");
          $('.imageTeamBacheloretteCardMobile').attr('src', "../global/pictures/teamBachelorette/ghost" + tempClassNumber + ".jpg");
 
-         $('.teamBachelorette-page-redirect').attr('href', './bachelorette' + tempClassNumber + '.html');
-         $('.teamBachelorette-page-redirect-mobile').attr('href', './bachelorette' + tempClassNumber + '.html');
+         $('.teamBachelorette-page-redirect').attr('href', './bachelorette' + tempClassNumber + language + '.html');
+         $('.teamBachelorette-page-redirect-mobile').attr('href', './bachelorette' + tempClassNumber + language + '.html');
    });
 }
