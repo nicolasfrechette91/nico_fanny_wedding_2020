@@ -1,4 +1,4 @@
-/* bachelorette Party Category Exclusive css */
+/* bachelorette Party Picture Exclusive css */
 
 p.bachelorettePartyHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
@@ -12,12 +12,12 @@ p.bachelorettePartyHeader {
   padding-left: 2vh;
 }
 
-.imageBachelorettePartyCategory {
+.mainImage {
     display: block;
     cursor: pointer;
     padding-top: 20px;
-    height: 200px;
-    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imageBachelorettePartyCategoryMobile {
@@ -34,13 +34,12 @@ table.category {
     padding-top: 30px;
 }
 
-.tdImage {
-    padding-left: 5%;
+.tdArrow {
+    width: 5%;
 }
 
-.tdImageRight {
-    padding-left: 5%;
-    padding-right: 5%;
+.tdImage {
+    width: 90%;
 }
 
 table.prevNextButtonsBacheloretteParty {
@@ -57,39 +56,6 @@ table.prevNextButtonsBacheloretteParty {
 @media screen and (min-width: 701px) and (max-width: 1000px) {
 
     table.prevNextButtonsBacheloretteParty {
-        padding-top: 20px;
-    }
-
-    .imageBachelorettePartyCategory {
-        height: 150px;
-        width: 150px;
-    }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
-    .imageBachelorettePartyCategory {
-        height: 250px;
-        width: 250px;
-    }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
-    .imageBachelorettePartyCategory {
-        height: 300px;
-        width: 300px;
-    }
-}
-
-@media screen and (min-width: 1401px) and (max-width: 1600px) {
-    .imageBachelorettePartyCategory {
-        height: 375px;
-        width: 375px;
-    }
-}
-
-@media screen and (min-width: 1601px) {
-    .imageBachelorettePartyCategory {
-        height: 425px;
-        width: 425px;
+        padding-top: 150px;
     }
 }
