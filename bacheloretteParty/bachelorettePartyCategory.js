@@ -16,11 +16,7 @@ $(document).ready(function(){
       var language = $('#page').text();
 
        $(".imagePrevPage").click(function() {
-           window.location.href = "../teamBachelorette/teamBachelorette" + language + ".html";
-       });
-
-       $(".imageNextPage").click(function() {
-           window.location.href = "../home/index" + language + ".html";
+           window.location.href = "bacheloretteParty" + language + ".html";
        });
 
        $(".Toronto").click(function() {
