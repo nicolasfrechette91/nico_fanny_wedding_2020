@@ -1,6 +1,6 @@
-/* bachelorette Party Exclusive css */
+/* bachelor Party Exclusive css */
 
-p.bachelorettePartyHeader {
+p.bachelorPartyHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
   font-style: normal;
@@ -12,14 +12,14 @@ p.bachelorettePartyHeader {
   padding-left: 2vh;
 }
 
-.imageBachelorettePartyCategory {
+.imageBachelorPartyCategory {
     display: block;
     height: 200px;
     width: 200px;
     cursor: pointer;
 }
 
-.imageBachelorettePartyCategoryMobile {
+.imageBachelorPartyCategoryMobile {
     display: block;
     cursor: pointer;
     padding-top: 20px;
@@ -52,14 +52,14 @@ table.category {
     padding-left: 5%;
 }
 
-table.prevNextButtonsBacheloretteParty {
+table.prevNextButtonsBachelorParty {
     table-layout:fixed;
     width: 100%;
     font-family: 'Berkshire Swash',cursive;
     font-size: 28px;
     font-weight: 700;
     color: #f6c09c;
-    padding-top: 50px;
+    padding-top: 250px;
 }
 
 /* Media Query if screen smaller than X */
@@ -72,39 +72,39 @@ table.prevNextButtonsBacheloretteParty {
         font-size: 25px;
     }
 
-    table.prevNextButtonsBacheloretteParty {
-        padding-top: 200px;
+    table.prevNextButtonsBachelorParty {
+        padding-top: 500px;
     }
 
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 150px;
         width: 150px;
     }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 250px;
         width: 250px;
     }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 300px;
         width: 300px;
     }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 1600px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 375px;
         width: 375px;
     }
 }
 
 @media screen and (min-width: 1601px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 425px;
         width: 425px;
     }

@@ -16,14 +16,10 @@ $(document).ready(function(){
       var language = $('#page').text();
 
        $(".imagePrevPage").click(function() {
-           window.location.href = "../teamBachelorette/teamBachelorette" + language + ".html";
-       });
-
-       $(".imageNextPage").click(function() {
            window.location.href = "../home/index" + language + ".html";
        });
 
        $(".Toronto").click(function() {
-        window.location.href = "bachelorettePartyCategoryToronto" + language + ".html";
+        window.location.href = "bachelorPartyCategoryToronto" + language + ".html";
        });
 });

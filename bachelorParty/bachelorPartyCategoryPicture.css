@@ -1,6 +1,6 @@
-/* bachelorette Party Picture Exclusive css */
+/* bachelor Party Picture Exclusive css */
 
-p.bachelorettePartyHeader {
+p.bachelorPartyHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
   font-style: normal;
@@ -21,7 +21,7 @@ p.bachelorettePartyHeader {
     max-width: 1000px;
 }
 
-.imageBachelorettePartyCategoryMobile {
+.imageBachelorPartyCategoryMobile {
     display: block;
     cursor: pointer;
     padding-top: 20px;
@@ -43,7 +43,7 @@ table.category {
     width: 90%;
 }
 
-table.prevNextButtonsBacheloretteParty {
+table.prevNextButtonsBachelorParty {
     table-layout:fixed;
     width: 100%;
     font-family: 'Berkshire Swash',cursive;
@@ -60,7 +60,7 @@ table.prevNextButtonsBacheloretteParty {
         max-width: 700px;
     }
 
-    table.prevNextButtonsBacheloretteParty {
+    table.prevNextButtonsBachelorParty {
         padding-top: 100px;
     }
 }

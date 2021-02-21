@@ -18,7 +18,7 @@ $(document).ready(function(){
     var language = $('#page').text();
 
     $(".imagePrevPage").click(function() {
-       window.location.href = "bacheloretteParty" + language + ".html";
+       window.location.href = "bachelorParty" + language + ".html";
     });
 });
 
@@ -27,6 +27,6 @@ function goToPicturePage(name){
         var tempClass = $(this).attr('class');
         var classNumber = tempClass.replace(/\D+/g, '');
         var language = $('#page').text();
-        window.location.href = "bachelorettePartyCategoryTorontoPicture" + classNumber + ".html?lang=" + language;
+        window.location.href = "bachelorPartyCategoryTorontoPicture" + classNumber + ".html?lang=" + language;
     });
 }

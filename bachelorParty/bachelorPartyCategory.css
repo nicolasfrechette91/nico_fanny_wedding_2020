@@ -1,6 +1,6 @@
-/* bachelorette Party Category Exclusive css */
+/* bachelor Party Category Exclusive css */
 
-p.bachelorettePartyHeader {
+p.bachelorPartyHeader {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 44px;
   font-style: normal;
@@ -12,7 +12,7 @@ p.bachelorettePartyHeader {
   padding-left: 2vh;
 }
 
-.imageBachelorettePartyCategory {
+.imageBachelorPartyCategory {
     display: block;
     cursor: pointer;
     padding-top: 20px;
@@ -20,7 +20,7 @@ p.bachelorettePartyHeader {
     width: 200px;
 }
 
-.imageBachelorettePartyCategoryMobile {
+.imageBachelorPartyCategoryMobile {
     display: block;
     cursor: pointer;
     padding-top: 20px;
@@ -43,7 +43,7 @@ table.category {
     padding-right: 5%;
 }
 
-table.prevNextButtonsBacheloretteParty {
+table.prevNextButtonsBachelorParty {
     table-layout:fixed;
     width: 100%;
     font-family: 'Berkshire Swash',cursive;
@@ -56,39 +56,39 @@ table.prevNextButtonsBacheloretteParty {
 /* Media Query if screen smaller than X */
 @media screen and (min-width: 701px) and (max-width: 1000px) {
 
-    table.prevNextButtonsBacheloretteParty {
+    table.prevNextButtonsBachelorParty {
         padding-top: 20px;
     }
 
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 150px;
         width: 150px;
     }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 250px;
         width: 250px;
     }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 300px;
         width: 300px;
     }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 1600px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 375px;
         width: 375px;
     }
 }
 
 @media screen and (min-width: 1601px) {
-    .imageBachelorettePartyCategory {
+    .imageBachelorPartyCategory {
         height: 425px;
         width: 425px;
     }
