@@ -14,7 +14,6 @@ p.bachelorettePartyHeader {
 
 .mainImage {
     display: block;
-    cursor: pointer;
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +40,10 @@ table.category {
 
 .tdImage {
     width: 90%;
+}
+
+.arrowPointer {
+    cursor: pointer;
 }
 
 table.prevNextButtonsBacheloretteParty {
