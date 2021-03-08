@@ -16,10 +16,18 @@ $(document).ready(function(){
       var language = $('#page').text();
 
        $(".imagePrevPage").click(function() {
-           window.location.href = "../home/index" + language + ".html";
+           window.location.href = "../pictures" + language + ".html";
        });
 
-       $(".Toronto").click(function() {
-        window.location.href = "./Toronto/picturesToronto" + language + ".html";
+       $(".Ceremony").click(function() {
+        window.location.href = "picturesCategoryCeremony" + language + ".html";
+       });
+
+       $(".Couple").click(function() {
+        window.location.href = "picturesCategoryCouple" + language + ".html";
+       });
+
+       $(".Venue").click(function() {
+        window.location.href = "picturesCategoryVenue" + language + ".html";
        });
 });

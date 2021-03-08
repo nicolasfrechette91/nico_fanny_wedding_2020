@@ -62,6 +62,10 @@ table.prevNextButtonsPictures {
     padding-top: 50px;
 }
 
+.nextRow {
+    padding-top: 70px;
+}
+
 /* Media Query if screen smaller than X */
 @media screen and (min-width: 701px) and (max-width: 1000px) {
     .categoryTitle {

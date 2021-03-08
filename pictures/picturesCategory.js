@@ -9,10 +9,10 @@ $(document).ready(function(){
     if(isMobile){
     // hide or show css
     $('.desktop').hide();
-    goToPicturePage("Toronto");
+    goToPicturePage("Toronto", "picturesSubCategoryTorontoPicture");
     } else {
     $('.mobile').hide();
-    goToPicturePage("Toronto");
+    goToPicturePage("Toronto", "picturesSubCategoryTorontoPicture");
     }
 
     var language = $('#page').text();
@@ -22,11 +22,11 @@ $(document).ready(function(){
     });
 });
 
-function goToPicturePage(name){
+function goToPicturePage(name, categoryName){
     $("[class*='" + name + "']").click(function() {
         var tempClass = $(this).attr('class');
         var classNumber = tempClass.replace(/\D+/g, '');
         var language = $('#page').text();
-        window.location.href = "picturesCategoryTorontoPicture" + classNumber + ".html?lang=" + language;
+        window.location.href = categoryName + classNumber + ".html?lang=" + language;
     });
 }
