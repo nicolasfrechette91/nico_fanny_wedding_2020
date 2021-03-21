@@ -6,19 +6,23 @@ $(document).ready(function(){
     isMobile = true;
     }
 
+    var folder = $('#folder').text();
+    var categoryName = $('#categoryName').text();
+
     if(isMobile){
     // hide or show css
     $('.desktop').hide();
-    goToPicturePage("Toronto", "picturesSubCategoryTorontoPicture");
+    goToPicturePage(folder, categoryName);
     } else {
     $('.mobile').hide();
-    goToPicturePage("Toronto", "picturesSubCategoryTorontoPicture");
+    goToPicturePage(folder, categoryName);
     }
 
     var language = $('#page').text();
+    var pageReturn = $('#pageReturn').text();
 
     $(".imagePrevPage").click(function() {
-       window.location.href = "pictures" + language + ".html";
+       window.location.href = pageReturn + language + ".html";
     });
 });
 
