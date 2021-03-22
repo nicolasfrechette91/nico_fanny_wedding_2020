@@ -13,7 +13,23 @@ $(document).ready(function(){
         $('.mobile').hide();
       }
 
-      var language = $('#page').text();
+
+        const params = new URLSearchParams(document.location.search);
+        const language = params.get("lang");
+
+        if(language === '_fr') {
+          $('.en').hide();
+          $('.es').hide();
+          $('.fr').show();
+        } else if (language === '_es') {
+          $('.en').hide();
+          $('.es').show();
+          $('.fr').hide();
+        } else {
+          $('.en').show();
+          $('.es').hide();
+          $('.fr').hide();
+        }
 
        $(".imagePrevPage").click(function() {
            window.location.href = "teamBachelorette" + language + ".html";

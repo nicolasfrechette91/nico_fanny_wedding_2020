@@ -63,7 +63,7 @@ function showHideCardAndAttributes(name){
          $('.imageTeamBacheloretteCard').attr('src', "../global/pictures/teamBachelorette/ghost" + tempClassNumber + ".jpg");
          $('.imageTeamBacheloretteCardMobile').attr('src', "../global/pictures/teamBachelorette/ghost" + tempClassNumber + ".jpg");
 
-         $('.teamBachelorette-page-redirect').attr('href', './bachelorette' + tempClassNumber + language + '.html');
-         $('.teamBachelorette-page-redirect-mobile').attr('href', './bachelorette' + tempClassNumber + language + '.html');
+         $('.teamBachelorette-page-redirect').attr('href', './bachelorette' + tempClassNumber + '.html?lang=' + language);
+         $('.teamBachelorette-page-redirect-mobile').attr('href', './bachelorette' + tempClassNumber + '.html?lang=' + language);
    });
 }
