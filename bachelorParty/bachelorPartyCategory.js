@@ -6,13 +6,13 @@ $(document).ready(function(){
     isMobile = true;
     }
 
+    goToPicturePage("Toronto");
+
     if(isMobile){
-    // hide or show css
-    $('.desktop').hide();
-    goToPicturePage("Toronto");
+        // hide or show css
+        $('.desktop').hide();
     } else {
-    $('.mobile').hide();
-    goToPicturePage("Toronto");
+        $('.mobile').hide();
     }
 
     var language = $('#page').text();
@@ -27,6 +27,6 @@ function goToPicturePage(name){
         var tempClass = $(this).attr('class');
         var classNumber = tempClass.replace(/\D+/g, '');
         var language = $('#page').text();
-        window.location.href = "bachelorPartyCategoryTorontoPicture" + classNumber + ".html?lang=" + language;
+        window.location.href = "bachelorPartyCategoryTorontoPicture.html?lang=" + language + "&number=" + classNumber;
     });
 }
