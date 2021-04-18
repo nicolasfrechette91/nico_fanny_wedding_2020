@@ -31,6 +31,6 @@ function goToPicturePage(name, categoryName){
         var tempClass = $(this).attr('class');
         var classNumber = tempClass.replace(/\D+/g, '');
         var language = $('#page').text();
-        window.location.href = categoryName + classNumber + ".html?lang=" + language;
+        window.location.href = categoryName + ".html?lang=" + language + "&number=" + classNumber;
     });
 }

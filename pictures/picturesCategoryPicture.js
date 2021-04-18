@@ -6,30 +6,83 @@ $(document).ready(function(){
         isMobile = true;
       }
 
-      if(isMobile){
+    $('.mainImage').hide();
+    $('.prevNextButtonsPictures').hide();
+    $('.previousImage').hide();
+    $('.nextImage').hide();
+    replaceMainPicture();
+    goToPictureBeforePage("previousImage");
+    goToPictureNextPage("nextImage");
+
+    if(isMobile){
         // hide or show css
         $('.desktop').hide();
-        goToPicturePage("previousImage");
-        goToPicturePage("nextImage");
-      } else {
+    } else {
         $('.mobile').hide();
-        goToPicturePage("previousImage");
-        goToPicturePage("nextImage");
-      }
+    }
 
-      const params = new URLSearchParams(document.location.search);
-      const language = params.get("lang");
+});
+
+function goToPictureBeforePage(name){
+    $("[class*='" + name + "']").click(function() {
+        const params = new URLSearchParams(document.location.search);
+        var language = params.get("lang");
+        var number = params.get("number");
+        number--;
+        if(number === 0){
+            number = $('#categoryNumberOfPictures').text();
+        }
+        if(language !== '_fr' && language !== '_es') {
+            language = '';
+        }
+        var returnPage = $('#returnPage').text();
+        window.location.href = returnPage + "Picture.html?lang=" + language + "&number=" + number;
+    });
+}
+
+function goToPictureNextPage(name){
+    $("[class*='" + name + "']").click(function() {
+        const params = new URLSearchParams(document.location.search);
+        var language = params.get("lang");
+        var number = params.get("number");
+        number++;
+        if(number > $('#categoryNumberOfPictures').text()){
+            number = 1;
+        }
+        if(language !== '_fr' && language !== '_es') {
+            language = '';
+        }
+        var returnPage = $('#returnPage').text();
+        window.location.href = returnPage + "Picture.html?lang=" + language + "&number=" + number;
+    });
+}
+
+function replaceMainPicture(){
+    const params = new URLSearchParams(document.location.search);
+    var number = params.get("number");
+    var imagePath = $('#picturePath').text();
+    var imagePathCleaned = imagePath.replace(/\d+/g, number);
+    $('.mainImage').attr('src', imagePathCleaned);
+    $('.mainImage').fadeIn(500);
+    $('.previousImage').fadeIn(500);
+    $('.nextImage').fadeIn(500);
+    showBottomMenu();
+}
+
+function showBottomMenu(){
+const params = new URLSearchParams(document.location.search);
+    const language = params.get("lang");
 
       if(language === '_fr') {
         $('.en').hide();
         $('.es').hide();
-        $('.fr').show();
+        $('.fr').fadeIn(500);
       } else if (language === '_es') {
         $('.en').hide();
-        $('.es').show();
+        $('.es').fadeIn(500);
         $('.fr').hide();
       } else {
-        $('.en').show();
+        $('.en').fadeIn(500);
         $('.es').hide();
         $('.fr').hide();
       }
@@ -39,19 +92,4 @@ $(document).ready(function(){
        $(".imagePrevPage").click(function() {
            window.location.href = returnPage + language + ".html";
        });
-
-});
-
-function goToPicturePage(name){
-    $("[class*='" + name + "']").click(function() {
-        var tempClass = $(this).attr('class');
-        var classNumber = tempClass.replace(/\D+/g, '');
-        const params = new URLSearchParams(document.location.search);
-        var language = params.get("lang");
-        if(language !== '_fr' && language !== '_es') {
-            language = '';
-        }
-        var returnPage = $('#returnPage').text();
-        window.location.href = returnPage + "Picture" + classNumber + ".html?lang=" + language;
-    });
 }
