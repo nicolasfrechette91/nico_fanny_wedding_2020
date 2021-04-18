@@ -8,14 +8,13 @@ $(document).ready(function(){
 
     var folder = $('#folder').text();
     var categoryName = $('#categoryName').text();
+    goToPicturePage(folder, categoryName);
 
     if(isMobile){
-    // hide or show css
-    $('.desktop').hide();
-    goToPicturePage(folder, categoryName);
+        // hide or show css
+        $('.desktop').hide();
     } else {
-    $('.mobile').hide();
-    goToPicturePage(folder, categoryName);
+        $('.mobile').hide();
     }
 
     var language = $('#page').text();
