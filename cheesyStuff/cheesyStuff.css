@@ -286,3 +286,7 @@ h2 {
     padding-top: 20px;
     margin: auto;
 }
+
+.recipeSubMenu {
+    display: none;
+}

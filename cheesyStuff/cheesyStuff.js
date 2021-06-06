@@ -11,9 +11,43 @@ $(document).ready(function(){
 
     generateMap();
 
+//  $("[id$='Button']").click(function() {
+//    var fullID = $(this).attr('id');
+//    var currentButtonName = fullID.split('Button')[0];
+//
+//    $('.showHide').hide();
+//    $("[id$='SubMenu'").css('background-color', '');
+//    if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
+//        unselectEveryButtons();
+//    } else {
+//        unselectEveryButtons();
+//        $('.' + currentButtonName + 'SubMenu').show();
+//        $('.' + currentButtonName).show();
+//        $(this).css('background-color', '#eb4034');
+//    }
+//  });
+//
+
+  $("[id$='SubMenu']").click(function() {
+    var fullID = $(this).attr('id');
+    var currentButtonName = fullID.split('SubMenu')[0];
+
+    $('.showHide').hide();
+    if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
+        $(this).css('background-color', '');
+        $('.' + currentButtonName).hide();
+    } else {
+        $("[id$='SubMenu'").css('background-color', '');
+        $('.' + currentButtonName).show();
+        $(this).css('background-color', '#eb4034');
+    }
+  });
+
    $('#timelineButton').click(function() {
      $('.recipe').hide();
      $('.world').hide();
+     $("[id$='SubMenu'").css('background-color', '');
+     $('.recipeSubMenu').hide();
      if ($('#timelineButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
         $('.timelineContainer').hide();
@@ -31,11 +65,14 @@ $(document).ready(function(){
      $('.prevNextButtons').css('padding-top', '200px');
      $('.timelineContainer').hide();
      $('.world').hide();
+     $("[id$='SubMenu'").css('background-color', '');
      if ($('#recipeButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.recipe').hide();
+        $('.recipeSubMenu').hide();
         $('#recipeButton').css('background-color', '');
      } else {
          $('.recipe').show();
+         $('.recipeSubMenu').show();
          $(this).css('background-color', '#eb4034');
          $('#timelineButton').css('background-color', '');
          $('#worldButton').css('background-color', '');
@@ -45,6 +82,8 @@ $(document).ready(function(){
    $('#worldButton').click(function() {
      $('.timelineContainer').hide();
      $('.recipe').hide();
+     $("[id$='SubMenu'").css('background-color', '');
+     $('.recipeSubMenu').hide();
      if ($('#worldButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
         $('.world').hide();
@@ -83,8 +122,6 @@ $(document).ready(function(){
         }
      });
 
-//    $('#world-map').vectorMap({map: 'world_mill'});
-
      var language = $('#page').text();
 
      $(".imagePrevPage").click(function() {
@@ -103,6 +140,13 @@ function showHideMobile(isMobile){
       } else {
         $('.mobile').hide();
     }
+}
+
+function unselectEveryButtons(){
+    $('#timelineButton').css('background-color', '');
+    $('#recipeButton').css('background-color', '');
+    $('#worldButton').css('background-color', '');
+    $("[class$='SubMenu'").hide();
 }
 
 function generateMap(){
