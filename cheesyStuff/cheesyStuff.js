@@ -34,11 +34,13 @@ $(document).ready(function(){
 
     $('.showHide').hide();
     if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
+        $('.prevNextButtons').css('padding-top', '200px');
         $(this).css('background-color', '');
         $('.' + currentButtonName).hide();
     } else {
         $("[id$='SubMenu'").css('background-color', '');
         $('.' + currentButtonName).show();
+        $('.prevNextButtons').css('padding-top', '0px');
         $(this).css('background-color', '#eb4034');
     }
   });
