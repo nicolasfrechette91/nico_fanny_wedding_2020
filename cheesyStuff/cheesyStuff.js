@@ -11,26 +11,19 @@ $(document).ready(function(){
 
     generateMap();
 
-//  $("[id$='Button']").click(function() {
-//    var fullID = $(this).attr('id');
-//    var currentButtonName = fullID.split('Button')[0];
-//
-//    $('.showHide').hide();
-//    $("[id$='SubMenu'").css('background-color', '');
-//    if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
-//        unselectEveryButtons();
-//    } else {
-//        unselectEveryButtons();
-//        $('.' + currentButtonName + 'SubMenu').show();
-//        $('.' + currentButtonName).show();
-//        $(this).css('background-color', '#eb4034');
-//    }
-//  });
-//
+    $('.carousel').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      centerMode: false,
+    });
 
-  $("[id$='SubMenu']").click(function() {
-    var fullID = $(this).attr('id');
-    var currentButtonName = fullID.split('SubMenu')[0];
+    var isFirstTime = true;
+
+  $("[class$='SubMenu']").click(function() {
+    var fullClasses = $(this).attr('class');
+    var lastClassAttribute = fullClasses.split(' ').pop();
+    var currentButtonName = lastClassAttribute.split('SubMenu')[0];
 
     $('.showHide').hide();
     if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
@@ -38,7 +31,7 @@ $(document).ready(function(){
         $(this).css('background-color', '');
         $('.' + currentButtonName).hide();
     } else {
-        $("[id$='SubMenu'").css('background-color', '');
+        $("[class$='SubMenu']").css('background-color', '');
         $('.' + currentButtonName).show();
         $('.prevNextButtons').css('padding-top', '0px');
         $(this).css('background-color', '#eb4034');
@@ -48,8 +41,8 @@ $(document).ready(function(){
    $('#timelineButton').click(function() {
      $('.recipe').hide();
      $('.world').hide();
-     $("[id$='SubMenu'").css('background-color', '');
-     $('.recipeSubMenu').hide();
+     $("[class$='SubMenu']").css('background-color', '');
+     $('.recipeOptions').hide();
      if ($('#timelineButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
         $('.timelineContainer').hide();
@@ -64,17 +57,22 @@ $(document).ready(function(){
    });
 
    $('#recipeButton').click(function() {
+      if(isFirstTime){
+        $('.slick-next').click();
+        isFirstTime = false;
+      }
+
      $('.prevNextButtons').css('padding-top', '200px');
      $('.timelineContainer').hide();
      $('.world').hide();
-     $("[id$='SubMenu'").css('background-color', '');
+     $("[class$='SubMenu']").css('background-color', '');
      if ($('#recipeButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.recipe').hide();
-        $('.recipeSubMenu').hide();
+        $('.recipeOptions').hide();
         $('#recipeButton').css('background-color', '');
      } else {
          $('.recipe').show();
-         $('.recipeSubMenu').show();
+         $('.recipeOptions').show();
          $(this).css('background-color', '#eb4034');
          $('#timelineButton').css('background-color', '');
          $('#worldButton').css('background-color', '');
@@ -84,8 +82,8 @@ $(document).ready(function(){
    $('#worldButton').click(function() {
      $('.timelineContainer').hide();
      $('.recipe').hide();
-     $("[id$='SubMenu'").css('background-color', '');
-     $('.recipeSubMenu').hide();
+     $("[class$='SubMenu']").css('background-color', '');
+     $('.recipeOptions').hide();
      if ($('#worldButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
         $('.world').hide();
@@ -148,7 +146,7 @@ function unselectEveryButtons(){
     $('#timelineButton').css('background-color', '');
     $('#recipeButton').css('background-color', '');
     $('#worldButton').css('background-color', '');
-    $("[class$='SubMenu'").hide();
+    $("[class$='SubMenu']").hide();
 }
 
 function generateMap(){

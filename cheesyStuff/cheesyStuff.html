@@ -11,6 +11,9 @@
       <link rel="stylesheet" href="../global/jquery-jvectormap-2.0.5/jquery-jvectormap-2.0.5.css"/>
       <script src="../global/jquery-jvectormap-2.0.5/jquery-jvectormap-2.0.5.min.js"></script>
       <script src="../global/jquery-jvectormap-2.0.5/jquery-jvectormap-world-mill.js"></script>
+      <link rel="stylesheet" type="text/css" href="../global/slick-1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="../global/slick-1.8.1/slick/slick-theme.css"/>
+      <script type="text/javascript" src="../global/slick-1.8.1/slick/slick.min.js"></script>
   </head>
   <body>
     <p class="cheesyStuffHeader">Cheesy Stuff</p>
@@ -851,16 +854,16 @@
     <!-- Recipe -->
     <div class="recipe desktop" hidden>
 
-      <table class="recipeSubMenu">
-        <tr>
-          <th class="cheesyStuff"><button type="button" id="recipeOkonomiyakiSubMenu" class="cheesyStuffButton">Okonomiyaki</button></th>
-          <th class="cheesyStuff"><button type="button" id="recipeSpagSauceSubMenu" class="cheesyStuffButton">Spaghetti Sauce</button></th>
-          <th class="cheesyStuff"><button type="button" id="recipeBroccoliChickenSubMenu" class="cheesyStuffButton">Broccoli Stuffed Chicken</button></th>
-          <th class="cheesyStuff"><button type="button" id="recipeCarnitasSubMenu" class="cheesyStuffButton">Carnitas</button></th>
-          <th class="cheesyStuff"><button type="button" id="recipeChipotleBeansSubMenu" class="cheesyStuffButton">Chipotle Beans</button></th>
-          <th class="cheesyStuff"><button type="button" id="recipeChipSauceSubMenu" class="cheesyStuffButton">Jalapeño/sour cream chips</button></th>
-        </tr>
-      </table>
+      <div class="recipeOptions">
+        <div class="carousel">
+          <div class="cheesyStuff"><button type="button" id="recipeChipSauceSubMenu" class="cheesyStuffButton recipeChipSauceSubMenu">Jalapeño/sour cream chips</button></div>
+          <div class="cheesyStuff"><button type="button" id="recipeOkonomiyakiSubMenu" class="cheesyStuffButton recipeOkonomiyakiSubMenu">Okonomiyaki</button></div>
+          <div class="cheesyStuff"><button type="button" id="recipeSpagSauceSubMenu" class="cheesyStuffButton recipeSpagSauceSubMenu">Spaghetti Sauce</button></div>
+          <div class="cheesyStuff"><button type="button" id="recipeBroccoliChickenSubMenu" class="cheesyStuffButton recipeBroccoliChickenSubMenu">Broccoli Stuffed Chicken</button></div>
+          <div class="cheesyStuff"><button type="button" id="recipeCarnitasSubMenu" class="cheesyStuffButton recipeCarnitasSubMenu">Carnitas</button></div>
+          <div class="cheesyStuff"><button type="button" id="recipeChipotleBeansSubMenu" class="cheesyStuffButton recipeChipotleBeansSubMenu">Chipotle Beans</button></div>
+        </div>
+      </div>
 
       <!-- Recipe Okonomiyaki  -->
       <div class="recipeContainer">

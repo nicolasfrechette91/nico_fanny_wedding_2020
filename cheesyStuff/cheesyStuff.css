@@ -334,3 +334,17 @@ h2 {
     max-width: 150px;
     max-height: 150px;
 }
+
+.slick-prev:before, .slick-next:before {
+    color: #F6C09C !important;
+}
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+
+.carousel {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
