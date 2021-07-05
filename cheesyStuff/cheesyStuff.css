@@ -345,6 +345,17 @@ h2 {
 }
 
 .carousel {
+    visibility: hidden
     margin-left: 5vw;
     margin-right: 5vw;
+}
+
+.slick-initialized { visibility: visible; }
+
+.draggable {
+    margin-left: 5vw !important;
+}
+
+.slick-prev {
+    margin-left: 5vw !important;
 }

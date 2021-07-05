@@ -11,13 +11,6 @@ $(document).ready(function(){
 
     generateMap();
 
-    $('.carousel').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      centerMode: false,
-    });
-
     var isFirstTime = true;
 
   $("[class$='SubMenu']").click(function() {
@@ -28,13 +21,13 @@ $(document).ready(function(){
     $('.showHide').hide();
     if ($(this).css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
-        $(this).css('background-color', '');
+        $('.' + lastClassAttribute).css('background-color', '');
         $('.' + currentButtonName).hide();
     } else {
         $("[class$='SubMenu']").css('background-color', '');
         $('.' + currentButtonName).show();
         $('.prevNextButtons').css('padding-top', '0px');
-        $(this).css('background-color', '#eb4034');
+        $('.' + lastClassAttribute).css('background-color', '#eb4034');
     }
   });
 
@@ -58,14 +51,18 @@ $(document).ready(function(){
 
    $('#recipeButton').click(function() {
       if(isFirstTime){
-        $('.slick-next').click();
+        $('.carousel').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: false,
+        });
         isFirstTime = false;
       }
 
      $('.prevNextButtons').css('padding-top', '200px');
      $('.timelineContainer').hide();
      $('.world').hide();
-     $("[class$='SubMenu']").css('background-color', '');
      if ($('#recipeButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.recipe').hide();
         $('.recipeOptions').hide();
