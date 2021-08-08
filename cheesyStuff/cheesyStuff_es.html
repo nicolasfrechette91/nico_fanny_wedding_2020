@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="../global/jquery-jvectormap-2.0.5/jquery-jvectormap-2.0.5.css"/>
         <script src="../global/jquery-jvectormap-2.0.5/jquery-jvectormap-2.0.5.min.js"></script>
         <script src="../global/jquery-jvectormap-2.0.5/jquery-jvectormap-world-mill.js"></script>
+        <link rel="stylesheet" type="text/css" href="../global/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../global/slick-1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="../global/slick-1.8.1/slick/slick.min.js"></script>
     </head>
     <body>
         <p class="cheesyStuffHeader">Cheesy Stuff</p>
@@ -826,6 +829,222 @@
         </div>
 
         <!-- Recipe -->
+        <div class="recipe desktop" hidden>
+
+            <div class="recipeOptions">
+                <div class="carousel">
+                    <div class="cheesyStuff"><button type="button" id="recipeOkonomiyakiSubMenu" class="cheesyStuffButton recipeOkonomiyakiSubMenu">Okonomiyaki</button></div>
+                    <div class="cheesyStuff"><button type="button" id="recipeSpagSauceSubMenu" class="cheesyStuffButton recipeSpagSauceSubMenu">Spaghetti Sauce</button></div>
+                    <div class="cheesyStuff"><button type="button" id="recipeBroccoliChickenSubMenu" class="cheesyStuffButton recipeBroccoliChickenSubMenu">Broccoli Stuffed Chicken</button></div>
+                    <div class="cheesyStuff"><button type="button" id="recipeCarnitasSubMenu" class="cheesyStuffButton recipeCarnitasSubMenu">Carnitas</button></div>
+                    <div class="cheesyStuff"><button type="button" id="recipeChipotleBeansSubMenu" class="cheesyStuffButton recipeChipotleBeansSubMenu">Chipotle Beans</button></div>
+                    <div class="cheesyStuff"><button type="button" id="recipeChipSauceSubMenu" class="cheesyStuffButton recipeChipSauceSubMenu">Jalapeño/sour cream chips</button></div>
+                </div>
+            </div>
+
+            <!-- Recipe Okonomiyaki  -->
+            <div class="recipeContainer">
+                <table class="recipeOkonomiyaki recipeCard showHide" hidden>
+                    <tr>
+                        <td class="recipeHeader">Ingredients</td>
+                        <td rowspan="10"><img class="imageRecipe" src="../global/pictures/recipe/okonomiyaki.jpg" alt="awesome couple"></td>
+                    </tr>
+                    <tr><td>* Cabbage</td></tr>
+                    <tr><td>* Scallions</td></tr>
+                    <tr><td>* 1 cup panko breadcrumbs</td></tr>
+                    <tr><td>* ¾ teaspoon sea salt</td></tr>
+                    <tr><td>* 3 eggs, beaten</td></tr>
+                    <tr><td>* Extra-virgin olive oil</td></tr>
+                    <tr><td>* Mayo</td></tr>
+                    <tr><td>* Sriracha sauce</td></tr>
+                    <tr><td>* Sesame seeds</td></tr>
+                    <tr><td>* Soy sauce</td></tr>
+                    <tr>
+                        <td class="recipeHeader">Methods</td>
+                    </tr>
+                    <tr><td colspan="2">1. Shred cabbage with a mandolin as thin as possible until you get 3 fully packed cups.</td></tr>
+                    <tr><td colspan="2">2. Chop scallions finely until you get 1 ¼ cups.</td></tr>
+                    <tr><td colspan="2">3. In a large bowl, combine the cabbage, scallions, panko, and salt.</td></tr>
+                    <tr><td colspan="2">4. Mix the eggs in the bowl gently. (Note: the mixture will be very loose and cabbagey, not like a flour pancake batter. If it's very dry, let it sit for 10 minutes).</td></tr>
+                    <tr><td colspan="2">5. Heat a nonstick skillet over medium heat. Brush the skillet with olive oil and use a ¼ measuring cup to scoop the cabbage mixture into the skillet. (It's ok if it doesn't seem cohesive, it'll bind together as the egg cooks).</td></tr>
+                    <tr><td colspan="2">6. Flatten gently with a spatula so that the mixture is about 1/2 inch thick. Cook 3 minutes per side, or until browned, turning the heat to low as needed.</td></tr>
+                    <tr><td colspan="2">7. Mix mayo with sriracha to taste.</td></tr>
+                    <tr><td colspan="2">8. To serve, drizzle the okonomiyaki with the sriracha mayo and top with sesame seeds and soy sauce.</td></tr>
+                    <tr><td colspan="2">9. If desired, sprinkle with slices or nori sheets, pickled ginger and microgreens.</td></tr>
+                </table>
+            </div>
+
+            <!-- Recipe Spag Sauce  -->
+            <div class="recipeContainer">
+                <table class="recipeSpagSauce recipeCard showHide" hidden>
+                    <tr>
+                        <td class="recipeHeader">Ingredients</td>
+                        <td rowspan="10"><img class="imageRecipe" src="../global/pictures/recipe/spaghetti.jpg" alt="awesome couple"></td>
+                    </tr>
+                    <tr><td>* 2 cans of crushed tomatoes (796 ml)</td></tr>
+                    <tr><td>* 1 large onion</td></tr>
+                    <tr><td>* 2 garlic cloves</td></tr>
+                    <tr><td>* 2-3 celery stalks</td></tr>
+                    <tr><td>* 1 cup of mushrooms</td></tr>
+                    <tr><td>* 1-2 bell pepper</td></tr>
+                    <tr><td>* ½ pepperoni</td></tr>
+                    <tr><td>* 1½ cup of parmesan cheese</td></tr>
+                    <tr><td>* 1½ kg of ground meat</td></tr>
+                    <tr><td>* 2 eggs</td></tr>
+                    <tr><td>* Olive oil</td></tr>
+                    <tr><td>* Parsley, Basil</td></tr>
+                    <tr><td>* ¼ to ½ cup of Italian spices</td></tr>
+                    <tr><td>* 2-3 bay leaves</td></tr>
+                    <tr><td>* Salt and Pepper, to taste</td></tr>
+                    <tr><td>* Cayenne pepper, to taste</td></tr>
+                    <tr><td>* Sugar, to taste</td></tr>
+                    <tr>
+                        <td class="recipeHeader">Methods</td>
+                    </tr>
+                    <tr><td colspan="2">1. Finely dice the onion, the bell peppers and the pepperoni.</td></tr>
+                    <tr><td colspan="2">2. Finely slice the garlic, the celery and the mushrooms.</td></tr>
+                    <tr><td colspan="2">3. Beat the eggs in a small bowl for later use.</td></tr>
+                    <tr><td colspan="2">4. In a large pot, cook the onion with olive oil and add the bay leaves.</td></tr>
+                    <tr><td colspan="2">5. Add all the vegetables and keep mixing to avoid burning them.</td></tr>
+                    <tr><td colspan="2">6. Add the garlic, crushed tomatoes, Italian spices, basil, sugar, cayenne pepper, pepperoni, salt and pepper.</td></tr>
+                    <tr><td colspan="2">7. Reduce the temperature to simmer and put a lid on it while you prepare the meat.</td></tr>
+                    <tr><td colspan="2">8. In a large bol, mix with your hand the ground meat, beaten eggs, parsley, Italian spices, ½ cup of parmesan cheese, salt and pepper.</td></tr>
+                    <tr><td colspan="2">9. Add the meat mix to the pot while stirring.</td></tr>
+                    <tr><td colspan="2">10. Let the sauce simmer for 1 hour while covered.</td></tr>
+                    <tr><td colspan="2">11. Make sure to stir the pot regularly.</td></tr>
+                    <tr><td colspan="2">12. After the hour, you should add an extra cup of Parmesan cheese.</td></tr>
+                    <tr><td colspan="2">13. Now you can adjust the flavour to your liking by adding more salt, pepper, cayenne pepper, sugar until you are happy.</td></tr>
+                    <tr><td colspan="2">© Guyl&egrave;ne Fr&eacute;chette</td></tr>
+                </table>
+            </div>
+
+            <!-- Recipe Broccoli Stuffed Chicken  -->
+            <div class="recipeContainer">
+                <table class="recipeBroccoliChicken recipeCard showHide" hidden>
+                    <tr>
+                        <td class="recipeHeader">Ingredients</td>
+                        <td rowspan="10"><img class="imageRecipe" src="../global/pictures/recipe/broccoli-chicken.jpg" alt="awesome couple"></td>
+                    </tr>
+                    <tr><td>* 4 large chicken breasts</td></tr>
+                    <tr><td>* salt & pepper</td></tr>
+                    <tr><td>* 1½ tea spoon of garlic powder</td></tr>
+                    <tr><td>* ¼ tea spoon of paprika</td></tr>
+                    <tr><td>* 1 cup broccoli florets</td></tr>
+                    <tr><td>* ½ cup red bell pepper</td></tr>
+                    <tr><td>* 1 cup mild cheddar cheese</td></tr>
+                    <tr><td>* 1 table spoon of Mayo</td></tr>
+                    <tr><td>* 2 table spoon of olive oil</td></tr>
+                    <tr>
+                        <td class="recipeHeader">Methods</td>
+                    </tr>
+                    <tr><td colspan="2">1. Finely chop the broccoli, finely dice the bell pepper and shred the cheese.</td></tr>
+                    <tr><td colspan="2">2. Preheat oven to 425 degrees F.</td></tr>
+                    <tr><td colspan="2">3. Season both sides of the chicken breasts with salt, pepper, paprika and ½ tsp of the garlic powder.</td></tr>
+                    <tr><td colspan="2">4. Use a sharp knife to cut a slice through the middle of the chicken breasts, but not all the way through, creating a pocket for the filling.</td></tr>
+                    <tr><td colspan="2">5. In a bowl combine the broccoli, bell pepper, cheese, mayo, remaining garlic powder and salt and pepper to taste.</td></tr>
+                    <tr><td colspan="2">6. Mix until combined, then divide the mixture between the chicken breasts, using a toothpick to secure if necessary.</td></tr>
+                    <tr><td colspan="2">7. Heat a large skillet over medium heat and add the olive oil.</td></tr>
+                    <tr><td colspan="2">8. Sear the chicken for 3 to 4 minutes on each side.</td></tr>
+                    <tr><td colspan="2">9. Transfer the chicken to a container that goes into the oven. Cover the container with foil.</td></tr>
+                    <tr><td colspan="2">10. Bake in preheated oven for 15-17 minutes or until chicken is cooked.</td></tr>
+                    <tr><td colspan="2">11. Let rest, covered for 5 minutes before enjoying.</td></tr>
+                </table>
+            </div>
+
+            <!-- Recipe Carnitas  -->
+            <div class="recipeContainer">
+                <table class="recipeCarnitas recipeCard showHide" hidden>
+                    <tr>
+                        <td class="recipeHeader">Ingredients</td>
+                        <td rowspan="10"><img class="imageRecipe" src="../global/pictures/recipe/carnitas.jpg" alt="awesome couple"></td>
+                    </tr>
+                    <tr><td>* 1.5 kg pork shoulder or tenderloin</td></tr>
+                    <tr><td>* 4 to 5 cups of chicken stock</td></tr>
+                    <tr><td>* 4 garlic cloves</td></tr>
+                    <tr><td>* 1 medium onion</td></tr>
+                    <tr><td>* 1 teaspoon cumin</td></tr>
+                    <tr><td>* 1 teaspoon cinnamon powder or 1 cinnamon stick</td></tr>
+                    <tr><td>* 2 bay leaves</td></tr>
+                    <tr><td>* 1 tablespoon soy sauce</td></tr>
+                    <tr><td>* Juice from 1 fresh orange</td></tr>
+                    <tr><td>* Salt</td></tr>
+                    <tr><td>* Ground black pepper</td></tr>
+                    <tr>
+                        <td class="recipeHeader">Methods</td>
+                    </tr>
+                    <tr><td colspan="2">1. Crush the garlic and roughly chop the onion.</td></tr>
+                    <tr><td colspan="2">2. Cut pork into large cubes.</td></tr>
+                    <tr><td colspan="2">3. Place pork shoulder cubes and fat in a large bowl.</td></tr>
+                    <tr><td colspan="2">4. Season very generously with salt and ground black pepper.</td></tr>
+                    <tr><td colspan="2">5. Add crushed garlic cloves, chopped onion, cumin, cinnamon, bay leaves, soy sauce, and orange juice.</td></tr>
+                    <tr><td colspan="2">6. Mix well and let the meat marinate for 20 minutes.</td></tr>
+                    <tr><td colspan="2">7. Brown meat in the pressure cooker. Leave only a short period of time per side only to sear the meat.</td></tr>
+                    <tr><td colspan="2">8. Put all the seared meat with the marinade in the instant pot or pressure cooker.</td></tr>
+                    <tr><td colspan="2">9. Pour chicken stock.</td></tr>
+                    <tr><td colspan="2">10. Close lid and pressure cook at high pressure for 30 minutes with 15 minutes natural release.</td></tr>
+                    <tr><td colspan="2">11. Release the remaining pressure after 15 minutes and open the lid carefully.</td></tr>
+                    <tr><td colspan="2">12. Transfer the pork shoulder cubes onto a baking tray. Taste and see if the pork cubes are salty enough. If the pork cubes are not salty enough, add more salt into the cooking liquid.</td></tr>
+                    <tr><td colspan="2">13. Drizzle some of the cooking liquid on to each pork piece. The cooking liquid should be mostly fat. If not, mix ¼ cup (63ml) cooking liquid with 2 tbsp (30ml) of vegetable oil and drizzle over each piece of pork.</td></tr>
+                    <tr><td colspan="2">14. Place pork shoulder cubes under a broiler or the top rack of a preheated 450°F oven until the surface is crisped. Roughly 8 – 10 minutes.</td></tr>
+                    <tr><td colspan="2">15. Flip the pork shoulder cubes, drizzle each piece with more cooking liquid and place in the oven again until the surface is crisped.</td></tr>
+                    <tr><td colspan="2">16. Serve with tortillas, sauce, lemon and pico de gallo.</td></tr>
+                </table>
+            </div>
+
+            <!-- Recipe Chipotle Beans  -->
+            <div class="recipeContainer">
+                <table class="recipeChipotleBeans recipeCard showHide" hidden>
+                    <tr>
+                        <td class="recipeHeader">Ingredients</td>
+                        <td rowspan="10"><img class="imageRecipe" src="../global/pictures/recipe/chipotle-beans.jpg" alt="awesome couple"></td>
+                    </tr>
+                    <tr><td>* 2 cans of beans (any type is fine)</td></tr>
+                    <tr><td>* ½ can chipotle</td></tr>
+                    <tr><td>* 1 onion</td></tr>
+                    <tr><td>* Oil</td></tr>
+                    <tr><td>* Sour cream</td></tr>
+                    <tr><td>* Cheese</td></tr>
+                    <tr><td>* Green onion</td></tr>
+                    <tr><td>* Salt</td></tr>
+                    <tr>
+                        <td class="recipeHeader">Methods</td>
+                    </tr>
+                    <tr><td colspan="2">1. Chop the onion in small cubes.</td></tr>
+                    <tr><td colspan="2">2. In a pan, warm oil and add the onion until caramelized.</td></tr>
+                    <tr><td colspan="2">3. Rinse beans with water using a strainer. This step is important to remove the excess salt from the canned beans.</td></tr>
+                    <tr><td colspan="2">4. Add beans in the pan with onion and let them warm for a couple of minutes.</td></tr>
+                    <tr><td colspan="2">5. Using a masher, mash the beans a little and let them mix with the onions.</td></tr>
+                    <tr><td colspan="2">6. Put the semi-mashed beans and onions in the blender with the ½ can of chipotle and blend them all together.</td></tr>
+                    <tr><td colspan="2">7. Add a bit more oil in a pan, warm it and add the blended mix to reheat. Adjust salt as needed.</td></tr>
+                    <tr><td colspan="2">8. Shred cheese.</td></tr>
+                    <tr><td colspan="2">9. Cut green onion</td></tr>
+                    <tr><td colspan="2">10. To serve, add beans with top of sour cream, cheese, and green onion.</td></tr>
+                </table>
+            </div>
+
+            <!-- Recipe Chip Sauce  -->
+            <div class="recipeContainer">
+                <table class="recipeChipSauce recipeCard showHide" hidden>
+                    <tr>
+                        <td class="recipeHeader">Ingredients</td>
+                        <td rowspan="6"><img class="imageRecipe" src="../global/pictures/recipe/chipotle-beans.jpg" alt="awesome couple"></td>
+                    </tr>
+                    <tr><td>* 1 can of jalapeño in vinegar (200 ml)</td></tr>
+                    <tr><td>* 1 tomato</td></tr>
+                    <tr><td>* Sour cream</td></tr>
+                    <tr><td>* 1 bag of chips (preferably natural and thick)</td></tr>
+                    <tr>
+                        <td class="recipeHeader">Methods</td>
+                    </tr>
+                    <tr><td colspan="2">1. Cut tomato in 4.</td></tr>
+                    <tr><td colspan="2">2. In blender, add cut tomato and the full jalapeño can (including vinegar).</td></tr>
+                    <tr><td colspan="2">3. Blend the ingredients until only small pieces are visible.</td></tr>
+                    <tr><td colspan="2">4. To serve, put the bag of chips in a bowl, add jalapeño sauce and adjust the spice with sour cream.</td></tr>
+                    <tr><td colspan="2">5. Eat with a spoon if you don't want to dirty your hands.</td></tr>
+                </table>
+            </div>
+
+        </div>
 
         <!-- World -->
         <div class="world mapContainer" id="world-map-markers" style="width: 800px; height: 600px"></div>
