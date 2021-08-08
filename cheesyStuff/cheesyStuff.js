@@ -51,12 +51,21 @@ $(document).ready(function(){
 
    $('#recipeButton').click(function() {
       if(isFirstTime){
-        $('.carousel').slick({
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          centerMode: false,
-        });
+        if(isMobile){
+            $('.carousel').slick({
+              infinite: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              centerMode: false,
+            });
+        } else {
+            $('.carousel').slick({
+              infinite: true,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              centerMode: false,
+            });
+        }
         isFirstTime = false;
       }
 
