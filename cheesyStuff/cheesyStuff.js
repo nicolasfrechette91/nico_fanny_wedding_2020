@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     var isFirstTime = true;
 
-  $("[class$='containerSubMenu']").click(function() {
+  $("[class$='SubMenu']").click(function() {
     var fullClasses = $(this).attr('class');
     var lastClassAttribute = fullClasses.split(' ').pop();
     var currentButtonName = lastClassAttribute.split('SubMenu')[0];
@@ -24,7 +24,7 @@ $(document).ready(function(){
         $('.' + lastClassAttribute).css('background-color', '');
         $('.' + currentButtonName).hide();
     } else {
-        $("[class$='containerSubMenu']").css('background-color', '');
+        $("[class$='SubMenu']").css('background-color', '');
         $('.' + currentButtonName).show();
         $('.prevNextButtons').css('padding-top', '0px');
         $('.' + lastClassAttribute).css('background-color', '#eb4034');
@@ -34,7 +34,7 @@ $(document).ready(function(){
    $('#timelineButton').click(function() {
      $('.recipe').hide();
      $('.world').hide();
-     $("[class$='containerSubMenu']").css('background-color', '');
+     $("[class$='SubMenu']").css('background-color', '');
      $('.recipeOptions').hide();
      if ($('#timelineButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
@@ -88,7 +88,7 @@ $(document).ready(function(){
    $('#worldButton').click(function() {
      $('.timelineContainer').hide();
      $('.recipe').hide();
-     $("[class$='containerSubMenu']").css('background-color', '');
+     $("[class$='SubMenu']").css('background-color', '');
      $('.recipeOptions').hide();
      if ($('#worldButton').css('background-color') === 'rgb(235, 64, 52)') {
         $('.prevNextButtons').css('padding-top', '200px');
@@ -152,7 +152,7 @@ function unselectEveryButtons(){
     $('#timelineButton').css('background-color', '');
     $('#recipeButton').css('background-color', '');
     $('#worldButton').css('background-color', '');
-    $("[class$='containerSubMenu']").hide();
+    $("[class$='SubMenu']").hide();
 }
 
 function generateMap(){
