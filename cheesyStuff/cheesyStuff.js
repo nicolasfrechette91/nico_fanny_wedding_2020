@@ -172,9 +172,9 @@ function generateMap(){
       },
       backgroundColor: '#383f47',
       markers: [
-        {latLng: [45.50, -73.56], name: 'Montréal 2016'},
+        {latLng: [45.50, -73.56], name: 'Montr&eacute;al 2016'},
         {latLng: [43.65, -79.38], name: 'Toronto 2017'},
-        {latLng: [9.75, -83.75], name: 'San José 2017'},
+        {latLng: [9.75, -83.75], name: 'San Jos&eacute; 2017'},
         {latLng: [53.54, -113.49], name: 'Edmonton 2018'},
         {latLng: [51.04, -114.07], name: 'Calgary 2018'},
         {latLng: [51.18, -115.57], name: 'Banff 2018'},
@@ -191,7 +191,10 @@ function generateMap(){
         {latLng: [35.96, 138.22], name: 'Hara 2019'},
         {latLng: [44.63, -81.26], name: 'Plage de Sauble 2020'},
         {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
-        {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
+        {latLng: [49.28, -123.12], name: 'Vancouver 2020'},
+        {latLng: [36.17, -115.14], name: 'Las Vegas 2021'},
+        {latLng: [19.90, -155.58], name: 'Hawaii 2021'},
+        {latLng: [20.65, -105.23], name: 'Puerto Vallarta 2022'}
       ]
     });
   } else if (language === '_es') {
@@ -228,7 +231,10 @@ function generateMap(){
         {latLng: [35.96, 138.22], name: 'Hara 2019'},
         {latLng: [44.63, -81.26], name: 'Playa Sauble 2020'},
         {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
-        {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
+        {latLng: [49.28, -123.12], name: 'Vancouver 2020'},
+        {latLng: [36.17, -115.14], name: 'Las Vegas 2021'},
+        {latLng: [19.90, -155.58], name: 'Hawaii 2021'},
+        {latLng: [20.65, -105.23], name: 'Puerto Vallarta 2022'}
       ]
     });
   } else {
@@ -248,7 +254,7 @@ function generateMap(){
       markers: [
         {latLng: [45.50, -73.56], name: 'Montreal 2016'},
         {latLng: [43.65, -79.38], name: 'Toronto 2017'},
-        {latLng: [9.75, -83.75], name: 'San José 2017'},
+        {latLng: [9.75, -83.75], name: 'San Jos&eacute; 2017'},
         {latLng: [53.54, -113.49], name: 'Edmonton 2018'},
         {latLng: [51.04, -114.07], name: 'Calgary 2018'},
         {latLng: [51.18, -115.57], name: 'Banff 2018'},
@@ -265,7 +271,10 @@ function generateMap(){
         {latLng: [35.96, 138.22], name: 'Hara 2019'},
         {latLng: [44.63, -81.26], name: 'Sauble Beach 2020'},
         {latLng: [45.25, -81.66], name: 'Tobermory 2020'},
-        {latLng: [49.28, -123.12], name: 'Vancouver 2020'}
+        {latLng: [49.28, -123.12], name: 'Vancouver 2020'},
+        {latLng: [36.17, -115.14], name: 'Las Vegas 2021'},
+        {latLng: [19.90, -155.58], name: 'Hawaii 2021'},
+        {latLng: [20.65, -105.23], name: 'Puerto Vallarta 2022'}
       ]
     });
   }
