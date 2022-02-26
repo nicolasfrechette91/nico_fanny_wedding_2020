@@ -23,7 +23,8 @@ $(document).ready(function(){
     });
 
     $(".teamBachelorTableCellFirst").css("padding-left", "10%");
-    $(".teamBachelorTableCellFirst").css("padding-right", "2px");
+    $(".teamBachelorTableCellFirst").css("padding-right", "80px");
+    $(".luigiTable").css("padding-right", "150px");
 
     $(".luigi.imageTableSelection").click(function() {
         showHideSelectedCharacter('luigi');

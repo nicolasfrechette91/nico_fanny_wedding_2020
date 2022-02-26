@@ -54,16 +54,16 @@ span.teamGroomHeaderImage {
 
 .teamBachelorTableCell {
     padding: 0;
-    width: 238px;
+    width: 210px;
 }
 
 .teamBachelorTableCellFirst {
-    width: 238px;
+    width: 200px;
 }
 
 .teamBachelorTableCellLast {
     padding-right: 2%;
-    width: 238px;
+    width: 200px;
 }
 
 .imageBack {
@@ -86,18 +86,20 @@ span.teamGroomHeaderImage {
 }
 
 .imageTableSelection {
-    width: 233px;
+    margin-top: -5px;
+    width: 200px;
     border-color: #52342C;
     border-style: solid;
-    border-width: 5px;
+    border-width: 6px;
 }
 
 .imageTableSelectionOriginal {
-    width: 233px;
-    height: 200px;
+    width: 200px;
+    height: 172px;
     border-color: #52342C;
     border-style: solid;
     border-width: 5px;
+    margin-top: -7px;
 }
 
 p.teamGroomBestTimeRow {
