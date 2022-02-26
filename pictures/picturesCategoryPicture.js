@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('.prevNextButtonsPictures').hide();
     $('.previousImage').hide();
     $('.nextImage').hide();
-    replaceMainPicture();
+    replaceMainPicture(isMobile);
     goToPictureBeforePage("previousImage");
     goToPictureNextPage("nextImage");
 
@@ -57,15 +57,20 @@ function goToPictureNextPage(name){
     });
 }
 
-function replaceMainPicture(){
+function replaceMainPicture(isMobile){
     const params = new URLSearchParams(document.location.search);
     var number = params.get("number");
     var imagePath = $('#picturePath').text();
     var imagePathCleaned = imagePath.replace(/\d+/g, number);
     $('.mainImage').attr('src', imagePathCleaned);
-    $('.mainImage').fadeIn(500);
+    $('.mainImage').fadeIn(1500);
     $('.previousImage').fadeIn(500);
     $('.nextImage').fadeIn(500);
+    if(!isMobile){
+        $('html, body').animate({
+            scrollTop: $('.mainImage').offset().top
+        }, 'slow');
+    }
     showBottomMenu();
 }
 
