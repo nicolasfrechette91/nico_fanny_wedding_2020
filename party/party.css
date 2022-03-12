@@ -24,6 +24,19 @@ p.partyTop {
   padding: 2vh;
 }
 
+p.partyTopMobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  text-align: left;
+  background-color: #f6c09c;
+  margin: 2vh;
+  padding: 2vh;
+}
+
 p.partyMiddleToronto1 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
@@ -144,52 +157,52 @@ p.partyMiddleToronto3MobileSpanish {
   min-width: 225px;
 }
 
-p.partyMiddleMexico {
+p.partyMiddleMexico1 {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 28px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  text-align: left;
-  white-space: nowrap;
+  text-align: center;
   position: absolute;
-  top: 300px;
-  left: 635px;
-  z-index: 1;
-}
-
-p.partyMiddleMexicoMobile {
-  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  text-align: left;
-  white-space: nowrap;
-  position: absolute;
-  top: 280px;
-  left: 390px;
-  z-index: 1;
-}
-
-p.partyMiddleMexicoSpanish {
-  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  text-align: left;
-  white-space: nowrap;
-  position: absolute;
-  top: 300px;
+  top: 190px;
   left: 585px;
   z-index: 1;
+  min-width: 250px;
 }
 
-p.partyMiddleMexicoMobileSpanish {
+p.partyMiddleMexico2 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 275px;
+  left: 510px;
+  z-index: 1;
+  min-width: 400px;
+}
+
+p.partyMiddleMexico3 {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 330px;
+  left: 585px;
+  z-index: 1;
+  min-width: 250px;
+}
+
+p.partyMiddleMexico1Mobile {
   font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
   font-size: 24px;
   font-style: normal;
@@ -199,8 +212,68 @@ p.partyMiddleMexicoMobileSpanish {
   text-align: left;
   white-space: nowrap;
   position: absolute;
-  top: 280px;
+  top: 195px;
+  left: 340px;
+  z-index: 1;
+}
+
+p.partyMiddleMexico2Mobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 245px;
+  left: 280px;
+  z-index: 1;
+  min-width: 350px;
+}
+
+p.partyMiddleMexico3Mobile {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 290px;
   left: 350px;
+  z-index: 1;
+  min-width: 225px;
+}
+
+p.partyMiddleMexico1French{
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  top: 210px;
+  left: 585px;
+  z-index: 1;
+  min-width: 250px;
+}
+
+p.partyMiddleMexico1MobileSpanish {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  position: absolute;
+  min-width: 225px;
+  top: 180px;
+  left: 345px;
   z-index: 1;
 }
 
@@ -303,11 +376,26 @@ table.prevNextButtonsParty {
 
     p.partyMiddleMexico {
       top: 300px;
-      left: 885px;
+      left: 865px;
     }
 
-    p.partyMiddleMexicoSpanish {
-      top: 300px;
-      left: 825px;
+    p.partyMiddleMexico1 {
+      top: 200px;
+      left: 840px;
+    }
+
+    p.partyMiddleMexico2 {
+     top: 270px;
+     left: 760px;
+    }
+
+    p.partyMiddleMexico3 {
+      top: 330px;
+      left: 835px;
+    }
+
+    p.partyMiddleMexico1French {
+      top: 220px;
+      left: 835px;
     }
 }
