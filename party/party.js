@@ -44,7 +44,7 @@ $(document).ready(function(){
      });
 
      $(".imageNextPage").click(function() {
-         window.location.href = "../home/index" + language + ".html";
+         window.location.href = "../present/present" + language + ".html";
      });
 });
 

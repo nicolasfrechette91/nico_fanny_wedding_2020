@@ -276,7 +276,7 @@ $(document).ready(function(){
   });
 
   $("[id^='gifts']").click(function() {
-    window.location.href = "../underConstruction/underConstruction" + language + ".html";
+    window.location.href = "../present/present" + language + ".html";
   });
 
   $("[id^='teamBride']").click(function() {
