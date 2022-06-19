@@ -1,94 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Party</title>
+        <title>Cadeaux</title>
         <link rel="icon" type="image/png" href="../global/pictures/favicon.png"/>
         <link rel="stylesheet" href="../global/css/global.css">
-        <link rel="stylesheet" href="party.css">
+        <link rel="stylesheet" href="present.css">
         <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
         <script src="../global/jquery/jquery-3.5.1.min.js"></script>
-        <script src="party.js"></script>
+        <script src="present.js"></script>
     </head>
     <body>
-    <p class="partyHeader">Party</p>
+    <p class="presentHeader">Cadeaux</p>
 
-    <p class="partyTop desktop">En raison du COVID-19, nous avons &eacute;t&eacute; oblig&eacute;s de reporter la c&eacute;r&eacute;monie initiale jusqu'en 2022.
-        Cependant, nous avons pris la d&eacute;cision en tant que couple de r&eacute;aliser notre projet de mariage en 2020.
-        Pour cela, nous avons pr&eacute;vu une petite c&eacute;r&eacute;monie civile &agrave; Toronto en 2020, suivie de la c&eacute;r&eacute;monie religieuse et de la f&ecirc;te en 2022.
-    </p>
+    <div class="presentImageContainer desktop">
+        <p class="presentMiddle1">Votre pr&eacute;sence est notre cadeau.</p>
+        <p class="presentMiddle3">S'il vous pla&icirc;t, n'achetez rien!</p>
 
-    <p class="partyTopMobile mobile">En raison du COVID-19, nous avons &eacute;t&eacute; oblig&eacute;s de reporter la c&eacute;r&eacute;monie initiale jusqu'en 2022.
-        Cependant, nous avons pris la d&eacute;cision en tant que couple de r&eacute;aliser notre projet de mariage en 2020.
-        Pour cela, nous avons pr&eacute;vu une petite c&eacute;r&eacute;monie civile &agrave; Toronto en 2020, suivie de la c&eacute;r&eacute;monie religieuse et de la f&ecirc;te en 2022.
-    </p>
-
-    <br>
-    <table>
-        <tr>
-            <th class="party"><button type="button" id="torontoButton" class="partyButton">Toronto 2020</button></th>
-            <th class="party"><button type="button" id="mexicoButton" class="partyButton">Mexico 2022</button></th>
-        </tr>
-    </table>
-
-    <br>
-
-    <div class="partyImageContainer desktop">
-        <p class="toronto partyMiddleToronto1" hidden>Apr&egrave;s la c&eacute;r&eacute;monie, nous fournirons le d&icirc;ner et les boissons.</p>
-        <p class="toronto partyMiddleToronto3" hidden>67-5536 Montevideo Road, Mississauga, ON, L5N 2P4</p>
-
-        <div class="toronto party" hidden>
-            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/party/party.png" alt="awesome couple"></div>
+        <div class="present">
+            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/present/present.png" alt="awesome couple"></div>
         </div>
     </div>
 
-    <div class="partyImageContainer mobile">
-        <p class="toronto partyMiddleToronto1Mobile" hidden>Apr&egrave;s la c&eacute;r&eacute;monie, nous fournirons le d&icirc;ner et les boissons.</p>
-        <p class="toronto partyMiddleToronto3Mobile" hidden>67-5536 Montevideo Road, Mississauga, ON, L5N 2P4</p>
+    <div class="presentImageContainer mobile">
+        <p class="presentMiddle1MobileFrench">Votre pr&eacute;sence est notre cadeau.</p>
+        <p class="presentMiddle3Mobile">S'il vous pla&icirc;t, n'achetez rien!</p>
 
-        <div class="toronto party" hidden>
-            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/party/party.png" alt="awesome couple"></div>
+        <div class="present">
+            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/present/present.png" alt="awesome couple"></div>
         </div>
     </div>
 
-    <!-- Mexico -->
-
-    <div class="partyImageContainer desktop">
-        <p class="mexico partyMiddleMexico1French" hidden>6 Ao&ucirc;t 2022 20:00</p>
-        <p class="mexico partyMiddleMexico2" hidden>Villa Constanza</p>
-        <p class="mexico partyMiddleMexico3" hidden>Blvd. Juan Pablo II #1008, Fracc. Santa Imelda, Aguascalientes</p>
-
-        <div class="mexico party" hidden>
-            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/party/party.png" alt="awesome couple"></div>
-        </div>
-    </div>
-
-    <div class="partyImageContainer mobile">
-        <p style="left: 360px" class="mexico partyMiddleMexico1Mobile" hidden>6 Ao&ucirc;t 2022 20:00</p>
-        <p class="mexico partyMiddleMexico2Mobile" hidden>Villa Constanza</p>
-        <p class="mexico partyMiddleMexico3Mobile" hidden>Blvd. Juan Pablo II #1008, Fracc. Santa Imelda, Aguascalientes</p>
-
-        <div class="mexico party" hidden>
-            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/party/party.png" alt="awesome couple"></div>
-        </div>
-    </div>
-
-    <table class="prevNextButtonsDefault default">
+    <table class="prevNextButtonsPresent">
         <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../ceremony/ceremony_fr.html">C&eacute;r&eacute;monie</a></td>
-            <td class="nextButtons"><a href="../home/index_fr.html">Menu Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <table class="prevNextButtonsParty toronto" hidden>
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../ceremony/ceremony_fr.html">C&eacute;r&eacute;monie</a></td>
-            <td class="nextButtons"><a href="../home/index_fr.html">Menu Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <table class="prevNextButtonsParty mexico" hidden>
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../ceremony/ceremony_fr.html">C&eacute;r&eacute;monie</a></td>
+            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../party/party_fr.html">Party</a></td>
             <td class="nextButtons"><a href="../home/index_fr.html">Menu Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
         </tr>
     </table>
