@@ -1,95 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fiesta</title>
+        <title>Regalos</title>
         <link rel="icon" type="image/png" href="../global/pictures/favicon.png"/>
         <link rel="stylesheet" href="../global/css/global.css">
-        <link rel="stylesheet" href="party.css">
+        <link rel="stylesheet" href="present.css">
         <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
         <script src="../global/jquery/jquery-3.5.1.min.js"></script>
-        <script src="party.js"></script>
+        <script src="present.js"></script>
     </head>
     <body>
-    <p class="partyHeader">Fiesta</p>
+    <p class="presentHeader">Regalos</p>
 
-    <p class="partyTop desktop">Debido al coronavirus, nos vimos obligados a posponer la ceremonia original hasta el 2022.
-        Sin embrago, decidimos realizar nuestros planes de casarnos en 2020.
-        Entonces, hemos planeado una peque&ntilde;a ceremonia civil en Toronto en el 2020. Esta ceremonia ser&aacute; seguida por la ceremonia religiosa y la fiesta oficial en el 2022.
-    </p>
+    <div class="presentImageContainer desktop">
+        <p class="presentMiddle1Spanish">Como no podemos transportar regalos, les pedimos no darnos nada material.</p>
+        <p class="presentMiddle3Spanish">¡El que vengan a la boda es nuestro regalo!</p>
 
-    <p class="partyTopMobile mobile">Debido al coronavirus, nos vimos obligados a posponer la ceremonia original hasta el 2022.
-        Sin embrago, decidimos realizar nuestros planes de casarnos en 2020.
-        Entonces, hemos planeado una peque&ntilde;a ceremonia civil en Toronto en el 2020. Esta ceremonia ser&aacute; seguida por la ceremonia religiosa y la fiesta oficial en el 2022.
-    </p>
-
-    <br>
-    <table>
-        <tr>
-            <th class="party"><button type="button" id="torontoButton" class="partyButton">Toronto 2020</button></th>
-            <th class="party"><button type="button" id="mexicoButton" class="partyButton">M&eacute;xico 2022</button></th>
-        </tr>
-    </table>
-
-    <br>
-
-    <div class="partyImageContainer desktop">
-        <p class="toronto partyMiddleToronto1Spanish" hidden>Despu&eacute;s de la ceremonia, proporcionaremos cena y bebidas.</p>
-        <p class="toronto partyMiddleToronto3Spanish" hidden>67-5536 Montevideo Road, Mississauga, ON, L5N 2P4</p>
-
-        <div class="toronto party" hidden>
-            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/party/party.png" alt="awesome couple"></div>
+        <div class="present">
+            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/present/present.png" alt="awesome couple"></div>
         </div>
     </div>
 
-    <div class="partyImageContainer mobile">
-        <p class="toronto partyMiddleToronto1MobileSpanish" hidden>Despu&eacute;s de la ceremonia, proporcionaremos cena y bebidas.</p>
-        <p class="toronto partyMiddleToronto3MobileSpanish" hidden>67-5536 Montevideo Road, Mississauga, ON, L5N 2P4</p>
+    <div class="presentImageContainer mobile">
+        <p class="presentMiddle1MobileSpanish">Como no podemos transportar regalos, les pedimos no darnos nada material.</p>
+        <p class="presentMiddle3MobileSpanish">¡El que vengan a la boda es nuestro regalo!</p>
 
-        <div class="toronto party" hidden>
-            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/party/party.png" alt="awesome couple"></div>
+        <div class="present">
+            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/present/present.png" alt="awesome couple"></div>
         </div>
     </div>
 
-    <!-- Mexico -->
-
-    <div class="partyImageContainer desktop">
-        <p class="mexico partyMiddleMexico1" hidden>6 de Agosto del 2022 20:00</p>
-        <p class="mexico partyMiddleMexico2" hidden>Villa Constanza</p>
-        <p class="mexico partyMiddleMexico3" hidden>Blvd. Juan Pablo II #1008, Fracc. Santa Imelda, Aguascalientes</p>
-
-        <div class="mexico party" hidden>
-            <div class="imageContainer"><img class="imageFrame" src="../global/pictures/party/party.png" alt="awesome couple"></div>
-        </div>
-    </div>
-
-    <div class="partyImageContainer mobile">
-        <p class="mexico partyMiddleMexico1MobileSpanish" hidden>6 de Agosto del 2022 20:00</p>
-        <p class="mexico partyMiddleMexico2Mobile" hidden>Villa Constanza</p>
-        <p class="mexico partyMiddleMexico3Mobile" hidden>Blvd. Juan Pablo II #1008, Fracc. Santa Imelda, Aguascalientes</p>
-<!--        <p class="mexico partyMiddleMexicoMobileSpanish" hidden>6 de Agosto del 2022</p>-->
-
-        <div class="mexico party" hidden>
-            <div class="imageContainerMobile"><img class="imageFrameMobile" src="../global/pictures/party/party.png" alt="awesome couple"></div>
-        </div>
-    </div>
-
-    <table class="prevNextButtonsDefault default">
+    <table class="prevNextButtonsPresent">
         <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../ceremony/ceremony_es.html">Ceremonia</a></td>
-            <td class="nextButtons"><a href="../home/index_es.html">Men&uacute; Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <table class="prevNextButtonsParty toronto" hidden>
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../ceremony/ceremony_es.html">Ceremonia</a></td>
-            <td class="nextButtons"><a href="../home/index_es.html">Men&uacute; Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
-        </tr>
-    </table>
-
-    <table class="prevNextButtonsParty mexico" hidden>
-        <tr>
-            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../ceremony/ceremony_es.html">Ceremonia</a></td>
+            <td class="prevButtons"><img class="imagePrevPage" src="../global/pictures/PrevPage.png" alt="awesome couple"><a href="../party/party_es.html">Fiesta</a></td>
             <td class="nextButtons"><a href="../home/index_es.html">Men&uacute; Principal</a><img class="imageNextPage" src="../global/pictures/NextPage.png" alt="awesome couple"></td>
         </tr>
     </table>
