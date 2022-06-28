@@ -402,8 +402,15 @@ table.prevNextButtonsCeremony {
     }
 
     p.ceremonyMiddleMexico {
-      top: 300px;
-      left: 865px;
+      left: 860px;
+    }
+
+    p.ceremonyMiddleMexico2 {
+      left: 795px;
+    }
+
+    p.ceremonyMiddleMexico3 {
+      left: 810px;
     }
 
     p.ceremonyMiddleMexicoSpanish {
