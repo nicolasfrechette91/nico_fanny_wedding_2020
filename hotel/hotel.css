@@ -140,3 +140,13 @@ td.hotelRowTable {
     margin-right: auto;
     width: 30vh;
 }
+
+.extraHotelTableSpacerDesktop {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.extraHotelTableSpacerMobile {
+    padding-left: 42px;
+    padding-right: 42px;
+}

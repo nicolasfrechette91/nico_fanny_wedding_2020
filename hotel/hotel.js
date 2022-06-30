@@ -10,6 +10,7 @@ $(document).ready(function(){
 
    $('#realPlazaButton').click(function() {
      $('.medrano').hide();
+     $('.extra').hide();
      if ($('#realPlazaButton').css('background-color') === 'rgb(235, 64, 52)') {
          $('.realPlaza').hide();
          $('#realPlazaButton').css('background-color', '');
@@ -18,11 +19,13 @@ $(document).ready(function(){
          showHideMobile(isMobile);
          $(this).css('background-color', '#eb4034');
          $('#medranoButton').css('background-color', '');
+          $('#extraButton').css('background-color', '');
      }
    });
 
    $('#medranoButton').click(function() {
      $('.realPlaza').hide();
+     $('.extra').hide();
      if ($('#medranoButton').css('background-color') === 'rgb(235, 64, 52)') {
          $('.medrano').hide();
          $('#medranoButton').css('background-color', '');
@@ -31,11 +34,28 @@ $(document).ready(function(){
          showHideMobile(isMobile);
          $(this).css('background-color', '#eb4034');
          $('#realPlazaButton').css('background-color', '');
+         $('#extraButton').css('background-color', '');
+     }
+   });
+
+   $('#extraButton').click(function() {
+     $('.realPlaza').hide();
+     $('.medrano').hide();
+     if ($('#extraButton').css('background-color') === 'rgb(235, 64, 52)') {
+         $('.extra').hide();
+         $('#extraButton').css('background-color', '');
+     } else {
+         $('.extra').show();
+         showHideMobile(isMobile);
+         $(this).css('background-color', '#eb4034');
+         $('#realPlazaButton').css('background-color', '');
+         $('#medranoButton').css('background-color', '');
      }
    });
 
    $('#realPlazaButtonMobile').click(function() {
      $('.medrano').hide();
+     $('.extra').hide();
      if ($('#realPlazaButtonMobile').css('background-color') === 'rgb(235, 64, 52)') {
          $('.realPlaza').hide();
          $('#realPlazaButtonMobile').css('background-color', '');
@@ -44,11 +64,13 @@ $(document).ready(function(){
          showHideMobile(isMobile);
          $(this).css('background-color', '#eb4034');
          $('#medranoButtonMobile').css('background-color', '');
+         $('#extraButtonMobile').css('background-color', '');
      }
    });
 
    $('#medranoButtonMobile').click(function() {
      $('.realPlaza').hide();
+     $('.extra').hide();
      if ($('#medranoButtonMobile').css('background-color') === 'rgb(235, 64, 52)') {
          $('.medrano').hide();
          $('#medranoButtonMobile').css('background-color', '');
@@ -57,8 +79,24 @@ $(document).ready(function(){
          showHideMobile(isMobile);
          $(this).css('background-color', '#eb4034');
          $('#realPlazaButtonMobile').css('background-color', '');
+         $('#extraButtonMobile').css('background-color', '');
      }
    });
+
+   $('#extraButtonMobile').click(function() {
+        $('.realPlaza').hide();
+        $('.medrano').hide();
+        if ($('#extraButtonMobile').css('background-color') === 'rgb(235, 64, 52)') {
+            $('.extra').hide();
+            $('#extraButtonMobile').css('background-color', '');
+        } else {
+            $('.extra').show();
+            showHideMobile(isMobile);
+            $(this).css('background-color', '#eb4034');
+            $('#realPlazaButtonMobile').css('background-color', '');
+            $('#medranoButtonMobile').css('background-color', '');
+        }
+      });
 
   var language = $('#page').text();
 
