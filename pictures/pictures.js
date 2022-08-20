@@ -22,4 +22,8 @@ $(document).ready(function(){
        $(".Toronto").click(function() {
         window.location.href = "./Toronto/picturesToronto" + language + ".html";
        });
+
+       $(".Mexico").click(function() {
+        window.location.href = "./Mexico/picturesMexico" + language + ".html";
+       });
 });

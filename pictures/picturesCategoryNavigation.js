@@ -23,8 +23,20 @@ $(document).ready(function(){
         window.location.href = "picturesCategoryCeremony" + language + ".html";
        });
 
+       $(".Civil").click(function() {
+        window.location.href = "picturesCategoryCivil" + language + ".html";
+       });
+
        $(".Couple").click(function() {
         window.location.href = "picturesCategoryCouple" + language + ".html";
+       });
+
+       $(".Photobooth").click(function() {
+        window.location.href = "picturesCategoryPhotobooth" + language + ".html";
+       });
+
+       $(".Photoshoot").click(function() {
+        window.location.href = "picturesCategoryPhotoshoot" + language + ".html";
        });
 
        $(".Venue").click(function() {
