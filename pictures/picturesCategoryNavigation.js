@@ -42,4 +42,8 @@ $(document).ready(function(){
        $(".Venue").click(function() {
         window.location.href = "picturesCategoryVenue" + language + ".html";
        });
+
+       $(".Video").click(function() {
+        window.location.href = "picturesCategoryVideo" + language + ".html";
+       });
 });
