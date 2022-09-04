@@ -26,4 +26,8 @@ $(document).ready(function(){
        $(".Toronto").click(function() {
         window.location.href = "bachelorettePartyCategoryToronto" + language + ".html";
        });
+
+       $(".Mexico").click(function() {
+        window.location.href = "bachelorettePartyCategoryMexico" + language + ".html";
+       });
 });
