@@ -13,7 +13,220 @@
     <p class="bachelorPartyHeader">Bachelor Party</p>
 
     <div class="desktop">
-      <img style="padding-left: 30%" src="../global/pictures/bachelorParty/sad_face.png">
+
+      <img src="fp.png" style="visibility: hidden; position: absolute;">
+      <img src="pmode.png" style="visibility: hidden; position: absolute;">
+      <audio id="music" style="display: none" controls>
+        <source src="birthday.m4a" type="audio/mp3">
+      </audio>
+      <div id="fover" style="visibility: hidden; left: 0; top: 0; position: fixed; width: 100%; height: 100%; pointer-events: none; z-index: 105; background-color: rgba(255, 0, 0, .25)"></div>
+
+      <img id="fmode" src="fmode.png" style="visibility: hidden; position:absolute; bottom:0px; left:50%; transform: translate(-50%, 0); z-index:103; cursor: pointer;" onclick="ToggleAudio();">
+      <img id="fanny" src="f.png" style="visibility: hidden; position:absolute; bottom:0px; right:0px; z-index:100; cursor: pointer;" onclick="PartyHat()">
+      <img id="eye0" src="i.png" style="visibility: hidden; position:absolute; bottom:218px; right:205px; z-index:101; cursor: pointer;" onclick="PartyHat()">
+      <img id="eye1" src="i.png" style="visibility: hidden; position:absolute; bottom:225px; right:137px; z-index:101; cursor: pointer;" onclick="PartyHat()">
+
+      <script>
+            window.addEventListener('keypress', FannyCheck, true);
+            window.addEventListener('mousemove', MoveEyes, true);
+
+            let fannyMode = false;
+            let keyword = 'fanny';
+            function FannyCheck(event) {
+                if (event.key === keyword[0]) {
+                    keyword = keyword.slice(1);
+                    if (keyword.length == 0) {
+                        let fmode = document.getElementById('fmode');
+                        let fanny = document.getElementById('fanny');
+                        let eye0 = document.getElementById('eye0');
+                        let eye1 = document.getElementById('eye1');
+
+                        if (!fannyMode) {
+                            fannyMode = true;
+
+                            fmode.style.visibility = fanny.style.visibility = eye0.style.visibility = eye1.style.visibility = 'visible';
+                            fmode.style.opacity = fanny.style.opacity = eye0.style.opacity = eye1.style.opacity = '0';
+
+                            let i = 0;
+                            function fadeIn() {
+                                setTimeout(() => {
+                                    i += .05;
+
+                                    fmode.style.opacity = fanny.style.opacity = eye0.style.opacity = eye1.style.opacity = i.toString();
+
+                                    if (i < 1) {
+                                        fadeIn();
+                                    } else {
+                                        SpinEyes(190);
+                                    }
+                                }, 20);
+                            }
+                            fadeIn();
+
+                        } else {
+                            fannyMode = false;
+                            if (playing) {
+                                ToggleAudio();
+                            }
+
+                            let i = 1;
+                            function fadeOut() {
+                                setTimeout(() => {
+                                    i -= .05;
+
+                                    fmode.style.opacity = fanny.style.opacity = eye0.style.opacity = eye1.style.opacity = i.toString();
+
+                                    if (i > 0) {
+                                        fadeOut();
+                                    } else {
+                                        fmode.style.visibility = fanny.style.visibility = eye0.style.visibility = eye1.style.visibility = 'hidden';
+                                        spinningEyes = false;
+                                        eyeOrigin.forEach((eye, index) => {
+                                            const element = document.getElementById('eye' + index);
+                                            element.style.right = eye[0] + 'px';
+                                            element.style.bottom = eye[1] + 'px';
+                                        });
+                                    }
+                                }, 20);
+                            }
+                            fadeOut();
+
+                        }
+                        keyword = 'fanny';
+                    }
+                } else {
+                    keyword = 'fanny';
+                }
+            }
+
+            let partyHat = false;
+            function PartyHat() {
+                let fanny = document.getElementById('fanny');
+                if (!partyHat) {
+                    fanny.src = 'fp.png';
+                    eyeOrigin.forEach((eye, index) => {
+                        const element = document.getElementById('eye' + index);
+                        element.style.right = eye[0] + 'px';
+                        element.style.bottom = eye[1] + 6 + 'px';
+                    });
+                } else {
+                    fanny.src = 'f.png';
+                    eyeOrigin.forEach((eye, index) => {
+                        const element = document.getElementById('eye' + index);
+                        element.style.right = eye[0] + 'px';
+                        element.style.bottom = eye[1] + 'px';
+                    });
+                }
+                partyHat = !partyHat;
+            }
+
+            let spinningEyes = false;
+            const eyeOrigin = [[205, 218], [137, 225]];
+            function MoveEyes(event) {
+                if (fannyMode && !spinningEyes) {
+                    const width = window.visualViewport.width;
+                    const height = window.visualViewport.height;
+
+                    const mouseX = width - event.clientX;
+                    const mouseY = height - event.clientY;
+
+                    eyeOrigin.forEach((eye, index) => {
+                        const element = document.getElementById('eye' + index);
+
+                        const xOffset = (mouseX - eye[0]) / width;
+                        const yOffset = (mouseY - eye[1]) / height;
+
+                        const angle = Math.atan2(yOffset, xOffset);
+                        const xDistance = Math.cos(angle);
+                        const yDistance = Math.sin(angle);
+
+                        element.style.right = (eye[0] + xDistance*9) + 'px';
+                        element.style.bottom = (eye[1] + yDistance*6) + 'px';
+                    });
+                }
+            }
+
+
+            function SpinEyes(times) {
+                if (spinningEyes) {
+                    spinningEyes = false;
+                    return;
+                }
+
+                spinningEyes = true;
+                let angle = 1.57;
+                function rotate() {
+                    setTimeout(() => {
+                        eyeOrigin.forEach((eye, index) => {
+                            const element = document.getElementById('eye' + index);
+
+                            const xDistance = Math.cos(angle) * 2;
+                            const yDistance = Math.sin(angle);
+
+                            element.style.right = (eye[0] + Math.sign(xDistance) * Math.min(9, Math.abs(xDistance*9))) + 'px';
+                            element.style.bottom = eye[1] + 'px';
+
+                            angle += .05;
+                            if (times !== undefined) {
+                                times -= 1;
+                            }
+                        });
+                        if (spinningEyes && (times === undefined || times > 0)) {
+                            rotate();
+                        } else {
+                            eyeOrigin.forEach((eye, index) => {
+                                const element = document.getElementById('eye' + index);
+                                element.style.right = eye[0] + 'px';
+                                element.style.bottom = eye[1] + 'px';
+                            });
+                            spinningEyes = false;
+                        }
+                    }, 10);
+                }
+                rotate();
+            }
+
+            let playing = false;
+            function ToggleAudio() {
+                let musicElement = document.getElementById("music");
+                let overlay = document.getElementById("fover");
+                let fmode = document.getElementById('fmode');
+                if (playing) {
+                    musicElement.pause();
+                    musicElement.currentTime = 0;
+                    overlay.style.visibility = 'hidden';
+                    fmode.src = 'fmode.png';
+                } else {
+                    musicElement.play();
+                    overlay.style.visibility = 'visible';
+                    fmode.src = 'pmode.png';
+                    LoopAudio();
+                }
+                playing = !playing;
+            }
+
+            let color = 0;
+            let count = 0;
+            function LoopAudio() {
+                let musicElement = document.getElementById("music");
+                let overlay = document.getElementById("fover");
+                setTimeout(() => {
+                    if (musicElement.currentTime >= 6.29) {
+                        musicElement.currentTime = 0.1;
+                    }
+                    if (count++ > 17) {
+                        count = 0;
+                        color = (color + 1) % 3;
+                        let c = [0, 0, 0];
+                        c[color] = 255;
+                        overlay.style.backgroundColor = `rgba(${c[0]},${c[1]},${c[2]},.25)`;
+                    }
+                    if (playing) {
+                        LoopAudio();
+                    }
+                }, 20);
+            }
+        </script>
 
       <table class="category">
         <tr>
