@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bachelor Party</title>
+      <link rel="icon" type="image/png" href="../global/pictures/favicon.png"/>
+      <link rel="stylesheet" href="../global/css/global.css">
+      <link rel="stylesheet" href="bachelorParty2.css">
+      <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+      <script src="../global/jquery/jquery-3.5.1.min.js"></script>
+      <script src="bachelorParty2.js"></script>
+  </head>
+  <body>
+    <p class="bachelorPartyHeader">Fanny's secret game</p>
+    <p class="categoryTitle">Press f to start</p>
+
+    <div class="desktop">
+
+      <div id="fover" style="visibility: hidden; left: 0; top: 0; position: fixed; width: 100%; height: 100%; z-index: 102; background-color: rgba(255, 255, 255, 0)"></div>
+      <div id="fmode" style="background:url('fmode2.png') 0px 0px; background-size:cover; visibility:hidden; position:absolute; width:884px; height:69px; bottom:0px; left:50%; transform: translate(-50%, 0); z-index:103;"></div>
+      <div id="fanny" style="background:url('f2.png') 0px 0px; background-size:cover; visibility:hidden; position:absolute; width:154px; height:188px; top:0px; left:0px; z-index:105; cursor: pointer;" onclick="Caught();"></div>
+      <div id="fmad" style="background:url('fmad.png') 0px 0px; visibility:hidden; background-position:bottom left; position:absolute; width:500px; height:900px; bottom:50%; left:50%; transform: translate(-50%, 50%); z-index:103;"></div>
+      <div id="fglad" style="background:url('fglad.png') 0px 0px; visibility:hidden; position:absolute; width:700px; height:900px; bottom:50%; left:50%; transform: translate(-50%, 50%); z-index:103;"></div>
+      <div id="flev" style="visibility:hidden; position:absolute; width:150px; height:30px; right: 0px; padding:5px 5px 30px 20px; z-index:103; font-weight:900; font-size:xx-large; background-color:#AAAAFF;">Level</div>
+
+      <script>
+      window.addEventListener('keypress', FannyCheck, true);
+
+      let fannyMode = false;
+      let keyword = 'f';
+      function FannyCheck(event) {
+          if (!fannyMode && event.key === keyword[0]) {
+              keyword = keyword.slice(1);
+              if (keyword.length == 0) {
+                  let fmode = document.getElementById('fmode');
+                  let fanny = document.getElementById('fanny');
+                  let fover = document.getElementById('fover');
+
+                  fannyMode = true;
+                  fmode.style.visibility = fanny.style.visibility = fover.style.visibility = 'visible';
+
+                  fanny.style.left = '-154px';
+                  fanny.style.top = '0px';
+
+                  if (level > 0) {
+                    let flev = document.getElementById('flev');
+                    flev.innerText = 'Level ' + (level + 1);
+                    flev.style.visibility = 'visible';
+                  }
+
+                  fannyPos = [0, 300];
+
+                  MoveFanny();
+                  FlashBanner();
+
+                  keyword = 'f';
+              }
+          } else {
+              keyword = 'f';
+          }
+      }
+
+      let fannyPos = [0, 300];
+      let fannyInterval;
+      let bannerInterval;
+
+      let level = 0;
+
+      function MoveFanny() {
+          const width = window.visualViewport.width;
+          const height = window.visualViewport.height;
+
+          let fanny = document.getElementById('fanny');
+
+          let hPos = Math.floor(Math.random() * (height-188));
+          fanny.style.top = hPos + 'px';
+
+          let dir = Math.random() > .5 ? -1 : 1;
+
+          let position = 0;
+          fannyPos[0] = dir > 0 ? -154 : width;
+          fanny.style.transform = `scaleX(${dir})`;
+
+          const interval = 50;
+          fannyInterval = setInterval(() => {
+              fanny.style.backgroundPosition = `-${position}px 0px`;
+              fanny.style.left = `${fannyPos[0]}px`;
+              position = (position + 154) % 1540;
+              fannyPos[0] += dir * (25 + (7 * level));
+
+              if (fannyPos[0] < -154 || fannyPos[0] > width || fannyPos[1] < -188 || fannyPos[1] > height) {
+                  Escaped();
+              }
+          }, interval);
+      }
+
+      function Caught() {
+          Reset();
+
+          level++;
+
+          ShowMad();
+      }
+
+      function Escaped() {
+          Reset();
+          ShowGlad();
+      }
+
+      function FlashBanner() {
+          let fmode = document.getElementById('fmode');
+
+          let position = 0;
+          bannerInterval = setInterval(() => {
+              fmode.style.backgroundPosition = `-${position}px 0px`
+              position = (position + 884) % 1768;
+          }, 300);
+      }
+
+      function Reset() {
+          let fmode = document.getElementById('fmode');
+          let fanny = document.getElementById('fanny');
+          let fover = document.getElementById('fover');
+
+          clearInterval(fannyInterval);
+          clearInterval(bannerInterval);
+          fmode.style.visibility = fanny.style.visibility = fover.style.visibility = 'hidden';
+      }
+
+      function ShowMad() {
+          let fmad = document.getElementById('fmad');
+          let flev = document.getElementById('flev');
+
+          fmad.style.visibility = 'visible';
+
+          setTimeout(() => {
+              fmad.style.backgroundSize = "800px";
+              fmad.style.backgroundPosition="60% 10%"
+              setTimeout(() => {
+                  fmad.style.backgroundSize = "1400px";
+                  fmad.style.backgroundPosition="15% 15%"
+                  setTimeout(() => {
+                      fmad.style.backgroundSize = "2000px";
+                      fmad.style.backgroundPosition="88% 20%"
+                      setTimeout(() => {
+                          fmad.style.backgroundSize = "auto";
+                          fmad.style.visibility = flev.style.visibility = 'hidden';
+                          fannyMode = false;
+                      }, 2000);
+                  }, 500);
+              }, 500);
+          }, 2000);
+      }
+
+      function ShowGlad() {
+          let fglad = document.getElementById('fglad');
+          let flev = document.getElementById('flev');
+
+          fglad.style.visibility = 'visible';
+
+          setTimeout(() => {
+              fglad.style.visibility = flev.style.visibility = 'hidden';
+              fannyMode = false;
+          }, 3000);
+      }
+
+        </script>
+
+      <table class="category">
+        <tr>
+          <td class="tdImage"></td>
+          <td class="tdImage"></td>
+          <td class="tdImage"></td>
+        </tr>
+        <tr>
+          <td class="categoryTitle"></td>
+          <td class="categoryTitle"></td>
+          <td class="categoryTitle"></td>
+        </tr>
+        <tr>
+          <td class="categoryPicturesAmount"></td>
+          <td class="categoryPicturesAmount"></td>
+          <td class="categoryPicturesAmount"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="bachelorPartyMobile mobile">
+      <img style="padding-left: 15%; padding-top: 64px" src="../global/pictures/bachelorParty/sad_face.png">
+
+      <table class="category">
+        <tr>
+          <td class="tdImage"></td>
+          <td class="tdImage"></td>
+        </tr>
+        <tr>
+          <td class="categoryTitle"></td>
+          <td class="categoryTitle"></td>
+        </tr>
+        <tr>
+          <td class="categoryPicturesAmount"></td>
+          <td class="categoryPicturesAmount"></td>
+        </tr>
+      </table>
+    </div>
+
+    <p id="page" hidden></p>
+
+  </body>
+</html>

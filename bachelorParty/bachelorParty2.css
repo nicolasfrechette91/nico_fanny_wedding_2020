@@ -1,0 +1,110 @@
+/* bachelor Party Exclusive css */
+
+p.bachelorPartyHeader {
+  font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 25vh;
+  text-align: left;
+  padding-left: 2vh;
+}
+
+.imageBachelorPartyCategory {
+    display: block;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.imageBachelorPartyCategoryMobile {
+    display: block;
+    cursor: pointer;
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.categoryTitle {
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.categoryPicturesAmount {
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 5%;
+}
+
+table.category {
+    table-layout:fixed;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.tdImage {
+    padding-left: 5%;
+}
+
+table.prevNextButtonsBachelorParty {
+    table-layout:fixed;
+    width: 100%;
+    font-family: 'Berkshire Swash',cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f6c09c;
+}
+
+/* Media Query if screen smaller than X */
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .categoryTitle {
+        font-size: 30px;
+    }
+
+    .categoryPicturesAmount {
+        font-size: 25px;
+    }
+
+    table.prevNextButtonsBachelorParty {
+        padding-top: 200px;
+    }
+
+    .imageBachelorPartyCategory {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .imageBachelorPartyCategory {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .imageBachelorPartyCategory {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+    .imageBachelorPartyCategory {
+        height: 375px;
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+    .imageBachelorPartyCategory {
+        height: 425px;
+        width: 425px;
+    }
+}
